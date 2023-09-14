@@ -131,7 +131,39 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
   ![Alt text][copy-secret]
 
-You are now ready to provision your Netpump Server cluster
+16. Edit the manifest
+>
+  1. Click `Manifest` in the menu
+
+  ![Manifest](images/app-reg/900-manifestmenu.png)
+
+  2. Edit the manifest to set `accessTokenAcceptedVersion` to the value `2`
+
+  !["accessTokenAcceptedVersion": 2,](images/app-reg/1000-manifestdetails.png)
+
+  3. Click `Save`
+
+17. Assign users
+>
+  1. Click `Overview` in the menu
+
+  2. Click on the link next to the `Managed application in local directory` label
+
+  ![Overview and link](images/app-reg/1100-overview.png)
+
+  3. Click Properties
+
+  4. Set `Assignment Required` to `Yes`
+
+  ![Assignment required](images/app-reg/1200-appregproperties.png)
+
+  5. `Save`
+
+
+## Ready to provision cluster
+You are now ready to provision your Netpump Server cluster.
+
+
 
 [add-a-scope]: images/add-a-scope.png
 [transfer-all-form]: images/transfer-all-form.png
