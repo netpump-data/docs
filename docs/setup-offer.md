@@ -4,8 +4,7 @@ This guide will show you how to setup the Netpump Server through Azure's marketp
 The user of this guide should have basic or moderate knowledge of how to use Azure Portal, and Azure Active Directory.
 
 1. A valid deployment environment
- > The service is intended to be used in an existing network with valid SMB share setup and network routing
- > If you wish to deploy a novel lab test see [Example][example-network] for example ideal network architecture. 
+ > The service is intended to be used in an existing network with valid SMB share setup and network routing.
 
 2. Provision of the Enterprise Application.
  > A guide can be find provision the enterprise application can be found [here](setup-app-registration.md)
@@ -17,7 +16,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
 ## Provisioning Netpump server
 
-1. Goto azure (portal)[portal.azure.com] and login with your credentials
+1. Goto Azure Portal https://portal.azure.com and login 
 2. Create a new resource
 ![Alt text][create-new-resource]
 3. search for `Netpump` 
@@ -52,7 +51,9 @@ After the deployments complete you edit the NIC of the Netpump Server so that tw
 * Netpump Desktop application needs access to the Netpump Destination Server
 * The Netpump Destination server and the Netpump origin server 
 
-Once that is done, you *should* be able to connect to the Netpump server using the Netpump Desktop application.
+12. Repeat the above process for each server in your Netpump cluster. At a minimum you will need to provision two servers to see accelerated file transfers between them.
+
+Once that is done, you should be able to connect to the Netpump server using the Netpump Desktop application.
 
 [search-netpump]: images/search-netpump.png
 [create-new-resource]: images/create-new-resource.png

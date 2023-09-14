@@ -1,12 +1,14 @@
-This guide will show you how to setup the Netpump Server through Azure's marketplace offering
+This guide will show you how to setup the app registration for a Netpump Server cluster through Azure portal.
 
-## Prerequisite
+Each cluster of Netpump Servers uses a single app registration. All Netpump Servers in the cluster can communicate with each other. All users assigned to the app registration can use the Netpump Servers.
+
+## Audience
 The user of this guide should have basic or moderate knowledge of how to use Azure Portal, and Azure Active Directory.
 
 ## Steps
 
 1. Goto `https://portal.azure.com` and login
-2. Goto `Azure Active Directory`
+2. Search for `Azure Active Directory` and click on it.
 ![Alt text][click-aad]
 
 3. Click `Add` then select `App Registration`
@@ -14,8 +16,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
 4. Type in a name for the app e.g. `Netpump Server`
 
-5. Select `Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)`
-![Alt text][click-app-registration-supported]
+5. Select `Accounts in this organizational directory only`
 
 6. Click `Register`
 7. Click `Expose an Api`
@@ -26,8 +27,8 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 ![Alt text][expose-api-id-uri-save]
 > whether you use a default value or a specific value is based on individual company policy, it has no effort on Netpump.
 
-11. Create two scopes, the first scope is for `Transfers.All`
-> The only value here is that is a hard requirement is the scope name, all the other views can set based on individual company policy 
+11. Create a scopes `Transfers.All`
+> The only value here is that is a requirement is the scope name, the text descriptions can be varied depending on your preference.
 
   1. Click `Add a Scope`
   ![Alt text][add-a-scope]
@@ -38,72 +39,81 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
   | ------------- | ------------- |
   | **Scope name**\* | Transfers.All |
   | Who can consent?  | Admin and users |
-  | Admin consent description  | Allows all Transfer Operations |
-  | User consent display name  | Allows a user to handle all operation in relations Transfers |
-  | User consent description  | Transfer Admin |
-  | Content Cell  | Allows a user to handle all operation in relations Transfers |
+  | Admin consent display name  | Allows all Transfer Operations |
+  | Admin consent description | Allows a user to handle all operation in relations Transfers |
+  | User consent display name  | Transfer Admin |
+  | User consent description  | Allows a user to handle all operation in relations Transfers |
 
   3. Click `Add Scope` 
 ---
+12. Create an App Role
+>
+  1. Click App Roles
 
-12. create a second scope for `File.Transfer`
-> 
-  1. Click `Add a Scope`
-  ![Alt text][add-a-scope]
-  2. Fill in the form in with the below values
-  ![Alt text][file-transfer]
+![App role][300-approlemenu]
+
+  2. Click Create App Role
+
+  3. Enter the details as follows:
+
+![Create app role](images/app-reg/400-approlecreate.png)
 
   |||
   | ------------- | ------------- |
-  | **Scope name**\*  | File.Transfer |
-  | Who can consent?  | Admin and users |
-  | Admin consent description  | Start file transfers |
-  | User consent display name  | Allows users to start file transfers |
-  | User consent description  | Start file transfers |
-  | Content Cell  | Allows you to start file transfers |
+  | Display name | Automation |
+  | Allowed member types | Applications |
+  | Value | Automation |
+  | Description | Server to server and script access |
 
-  3. Click `Add Scope`
 ---
-
 13. Adding authorized client applications
 >
   1. Click `Add a client application`
 ![Alt text][add-client-application]
 
   2. Add the client ID `d99b6435-bf29-4655-a1a2-ed1dbad109b3`
-  ![Alt text][client-id]
+ 
   > This guid is for the global `Netpump Desktop` Application 
 
   3. Tick boxes for 
-   * `File.Transfer`
-   * `Transfers.all`
-   > The prefixes will change depending on the Application ID URI 
+   * `Transfers.All`
+   > The prefix will change depending on the Application ID URI 
 
-  ![Alt text][client-authorized-scopes]
+  ![Alt text](images/app-reg/500-addclientapp.png)
 
 ---
 
 14. Setup permissions
 >
   1. Click `API permissions`
-  ![Alt text][click-api-permissions]
+
+  ![Alt text](images/app-reg/550-apipermmenu.png)
 
   2. Click `Add permission`
   ![Alt text][click-add-permission]
 
-  3. Click `My APIs`
-  ![Alt text][click-my-apis]
+  3. Click `APIs my Organization Uses`
 
-  4. Click `Netpump Server`
+  4. Search for `Netpump Server`
   > The name will depend what name you gave the application in the `App Registration`
 
-  ![Alt text][click-my-apis-netpump-server]
+  ![Alt text](images/app-reg/600-apipermapp.png)
 
-  5. Add the `File.Transfer` permission
-  ![Alt text][my-apis-add-file-transfer]
+  5. At the "What type of permission?" question, choose `Delegated`, and add the `Transfers.All` permission
+  ![Alt text](images/app-reg/700-apipermscope.png)
 
-  6. Add the `Transfers.All` permission
-  ![Alt text][my-apis-add-transfers-all]
+  6. Click `Add permissions` to save this permission.
+
+  7. Click `Add permission` a second time
+  ![Alt text][click-add-permission]
+
+  8. Search for `Netpump Server` again
+  > The name will depend what name you gave the application in the `App Registration`
+
+  9. At the "What type of permission?" question, this time choose `Application`, and add the `Automation` permission
+  ![Alt text](images/app-reg/800-apipermauto.png)
+
+  10. Click `Add permissions` to save this permission.
 
 ---
 15. Create the Client Secret
@@ -121,13 +131,13 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
   ![Alt text][copy-secret]
 
-You are now ready to prevision your Netpump Server
+You are now ready to provision your Netpump Server cluster
 
 [add-a-scope]: images/add-a-scope.png
 [transfer-all-form]: images/transfer-all-form.png
 [file-transfer]: images/file-transfer.png
-[click-aad]: images/click-aad.png
-[click-add-app-registration]: images/click-add-app-registration.png
+[click-aad]: images/app-reg/100-aad.png
+[click-add-app-registration]: images/app-reg/200-appreg.png
 [click-app-registration-supported]: images/app-registration-supported.png
 [click-expose-api]: images/click-expose-api.png
 [expose-api-id-uri]: images/expose-api-id-uri.png
@@ -144,3 +154,4 @@ You are now ready to prevision your Netpump Server
 [create-certificates-secrets]: images/create-certificates-secrets.png
 [new-client-secret]: images/new-client-secret.png
 [copy-secret]: images/copy-secret.png
+[300-approlemenu]: images/app-reg/300-approlemenu.png
