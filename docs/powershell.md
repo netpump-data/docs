@@ -84,6 +84,6 @@ Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\
 
 1. Click Start, and Yes to confirm
 
-![Screenshot](images/ps/700-start-runbook.png)
+    ![Screenshot](images/ps/700-start-runbook.png)
 
 1. Your file is copied from the source to the destination via Netpump
