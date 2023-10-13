@@ -159,6 +159,8 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
   5. `Save`
 
+18. Give the Service Principal permissions to your SSL certificate in Key Vault.
+> As a prerequisite, you need a Key Vault with a valid SSL certificate for the domain you want to host your Netpump server on. In the Key Vault, assign the Key Vault Secrets User role to the Service Principal for the newly created App Registration.
 
 ## Ready to provision cluster
 You are now ready to provision your Netpump Server cluster.

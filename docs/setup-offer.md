@@ -11,8 +11,11 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
 3. Download and install the Netpump Desktop application [here][download-link]
 
-4. A keyVault with a provisioned SSL Certificate of the custom domain you wish to host the Netpump Server Application on.
-> You will also need to provision a Managed User Identity that has the required access to the Keyvault.
+4. A domain name and DNS entries for each server you will create.
+> Managing DNS is outside the scope of this documentation.
+
+5. A keyVault with a provisioned SSL Certificate of the custom domain you wish to host the Netpump Server Application on.
+> Acquiring a certificate is outside the scope of this documentation. Azure Key Vault provides ways to acquire certificates from third party certification authorities, or import your own.
 
 ## Provisioning Netpump server
 
@@ -52,6 +55,8 @@ After the deployments complete you edit the NIC of the Netpump Server so that tw
 * The Netpump Destination server and the Netpump origin server 
 
 12. Repeat the above process for each server in your Netpump cluster. At a minimum you will need to provision two servers to see accelerated file transfers between them.
+
+13. Create a DNS entry for the newly created server in your DNS system. The domain name you choose must match the SSL certificate configured in your Key Vault.
 
 Once that is done, you should be able to connect to the Netpump server using the Netpump Desktop application.
 
