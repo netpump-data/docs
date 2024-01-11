@@ -38,7 +38,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 3. Click `Save`
 
    ![Save the Application ID URI][expose-api-id-uri-save]
-   > :information_source: **Note:** Whether you use a default value or a specific value is based on individual company policy, it has no impact on Netpump.
+   > ℹ️ **Note:** Whether you use a default value or a specific value is based on individual company policy, it has no impact on Netpump.
 
 #### Create scope `Transfers.All`
 
@@ -47,7 +47,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
    ![Click to add a scope][add-a-scope]
 
 2. Fill in the form in with the below values
-   > :information_source: **Note:** Only `Scope Name` is required to match the below value, the consent display names and descriptions can be adjusted to suit company requirements and policy.
+   > ℹ️ **Note:** Only `Scope Name` is required to match the below value, the consent display names and descriptions can be adjusted to suit company requirements and policy.
 
    |||
    | ------------- | ------------- |
@@ -70,11 +70,11 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
 2. Add the client ID `d99b6435-bf29-4655-a1a2-ed1dbad109b3`
 
-   > :information_source: **Note:** This guid is for the global Netpump Desktop Application 
+   > ℹ️ **Note:** This guid is for the global Netpump Desktop Application 
 
 3. Tick boxes for
    * `Transfers.All`
-      > :information_source: **Note:** The prefix will change depending on the Application ID URI 
+      > ℹ️ **Note:** The prefix will change depending on the Application ID URI 
 
    ![Alt text](images/app-reg/500-addclientapp.png)
 
@@ -114,7 +114,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 3. Click `APIs my Organization Uses`
 
 4. Search for `Netpump Server`
-   > :information_source: **Note:** The name will depend what name you gave the application in the `App Registration`
+   > ℹ️ **Note:** The name will depend what name you gave the application in the `App Registration`
 
    ![Alt text](images/app-reg/600-apipermapp.png)
 
@@ -129,7 +129,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
    ![Alt text][click-add-permission]
 
 8. Search for `Netpump Server` again
-   > :information_source: **Note:** The name will depend what name you gave the application in the `App Registration`
+   > ℹ️ **Note:** The name will depend what name you gave the application in the `App Registration`
 
 9. At the "What type of permission?" question, this time choose `Application`, and add the `Automation` permission
 
@@ -148,10 +148,10 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
    ![Alt text][new-client-secret]
 
 3. Enter a description for this secret, select the desired expiry (per company requirements) and click `Add`
-   > :information_source: **Note:** This secret will be used for the authentication settings when provisioning Netpump servers.
+   > ℹ️ **Note:** This secret will be used for the authentication settings when provisioning Netpump servers.
 
 4. Copy the client secret and save it for Netpump server provisioning later
-   > :information_source: **Note:** You can not view this secret after you leave this page.
+   > ℹ️ **Note:** You can not view this secret after you leave this page.
 
    ![Alt text][copy-secret]
 
@@ -191,7 +191,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
 ### Key Vault - Service Principal permissions
 
-> :information_source: **Note:** As a prerequisite, you need a Key Vault with a valid SSL certificate for the domain you want to host your Netpump server on. The steps below cover giving your app registration (service principal) access to that Key Vault.
+> ℹ️ **Note:** As a prerequisite, you need a Key Vault with a valid SSL certificate for the domain you want to host your Netpump server on. The steps below cover giving your app registration (service principal) access to that Key Vault.
 
 1. Open your Key Vault resource in Azure Portal and click on `Access control (IAM)`
 
@@ -204,7 +204,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
    ![Pick Key Vault Secrets User role](images/app-reg/1500-key-vault-pick-role.png)
 
 4. Click `Select members` then search for `Netpump Server`
-   > :information_source: **Note:** The name will depend what name you gave the application in the `App Registration`
+   > ℹ️ **Note:** The name will depend what name you gave the application in the `App Registration`
 
    ![Add the Netpump Server service principal](images/app-reg/1600-key-vault-select-netpump-server.png)
 

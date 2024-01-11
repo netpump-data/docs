@@ -4,13 +4,13 @@ This guide will show you how to setup the Netpump Server through Azure's marketp
 The user of this guide should have basic or moderate knowledge of how to use Azure Portal, and Microsoft Entra ID.
 
 1. A valid deployment environment
-   > :information_source: **Note:** The service is intended to be used in an existing network with valid SMB share setup and network routing.
+   > ℹ️ **Note:** The service is intended to be used in an existing network with valid SMB share setup and network routing.
 
 2. A domain name and DNS entries for each server you will create.
-   > :information_source: **Note:** Managing DNS is outside the scope of this documentation.
+   > ℹ️ **Note:** Managing DNS is outside the scope of this documentation.
 
 3. An Azure Key Vault with a provisioned SSL Certificate of the custom domain you wish to host the Netpump Server Application on.
-   > :information_source: **Note:** Acquiring a certificate is outside the scope of this documentation. Azure Key Vault provides ways to acquire certificates from third party certification authorities, or import your own.
+   > ℹ️ **Note:** Acquiring a certificate is outside the scope of this documentation. Azure Key Vault provides ways to acquire certificates from third party certification authorities, or import your own.
    * You can [follow this quickstart from Microsoft](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) to set up a new Key Vault in Azure if you don't have one configured already.
 
 4. The Netpump server cluster Enterprise Application
@@ -30,7 +30,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
    ![Search for Netpump][search-netpump]
 
-> :information_source: **Note:** If the Netpump subscription has been shared with you as a private plan, you will need to click `View private plans` to see the plan.
+> ℹ️ **Note:** If the Netpump subscription has been shared with you as a private plan, you will need to click `View private plans` to see the plan.
 
 4. Select the Netpump offer
 
