@@ -3,174 +3,219 @@ This guide will show you how to setup the app registration for a Netpump Server 
 Each cluster of Netpump Servers uses a single app registration. All Netpump Servers in the cluster can communicate with each other. All users assigned to the app registration can use the Netpump Servers.
 
 ## Audience
-The user of this guide should have basic or moderate knowledge of how to use Azure Portal, and Azure Active Directory.
+The user of this guide should have basic or moderate knowledge of how to use Azure Portal, and Microsoft Entra ID.
 
 ## Steps
 
+### Create new App Registration
 1. Goto `https://portal.azure.com` and login
-2. Search for `Azure Active Directory` and click on it.
-![Alt text][click-aad]
+2. Search for `Microsoft Entra ID` and click on it.
+![Search for Microsoft Entra ID][click-entra-id]
 
 3. Click `Add` then select `App Registration`
-![Alt text][click-add-app-registration]
+![Add App Registration][click-add-app-registration]
 
 4. Type in a name for the app e.g. `Netpump Server`
 
 5. Select `Accounts in this organizational directory only`
 
 6. Click `Register`
-7. Click `Expose an Api`
-![Alt text][click-expose-api]
-8. Click `Add` next to the `Application ID URI`
-![Alt text][expose-api-id-uri] 
-9. Click `Save`
-![Alt text][expose-api-id-uri-save]
-> whether you use a default value or a specific value is based on individual company policy, it has no effort on Netpump.
 
-11. Create a scopes `Transfers.All`
-> The only value here is that is a requirement is the scope name, the text descriptions can be varied depending on your preference.
+### Set up API requirements for the App Registration
 
-  1. Click `Add a Scope`
-  ![Alt text][add-a-scope]
-  2. Fill in the form in with the below values
-![Alt text][transfer-all-form]
+#### Setup the Application ID URI
 
-  |||
-  | ------------- | ------------- |
-  | **Scope name**\* | Transfers.All |
-  | Who can consent?  | Admin and users |
-  | Admin consent display name  | Allows all Transfer Operations |
-  | Admin consent description | Allows a user to handle all operation in relations Transfers |
-  | User consent display name  | Transfer Admin |
-  | User consent description  | Allows a user to handle all operation in relations Transfers |
+1. Click `Expose an Api`
+![Click on Expose an Api][click-expose-api]
+2. Click `Add` next to the `Application ID URI`
+![Click to add Application ID URI][expose-api-id-uri] 
+3. Click `Save`
+![Save the Application ID URI][expose-api-id-uri-save]
+> :information_source: **Note:** Whether you use a default value or a specific value is based on individual company policy, it has no impact on Netpump.
 
-  3. Click `Add Scope` 
----
-12. Create an App Role
->
-  1. Click App Roles
+#### Create scope `Transfers.All`
+
+1. Click `Add a Scope`
+![Click to add a scope][add-a-scope]
+2. Fill in the form in with the below values
+> :information_source: **Note:** Only `Scope Name` is required to match the below value, the consent display names and descriptions can be adjusted to suit company requirements and policy.
+
+|||
+| ------------- | ------------- |
+| **Scope name**\* | Transfers.All |
+| Who can consent?  | Admin and users |
+| Admin consent display name  | Allows all Transfer Operations |
+| Admin consent description | Allows a user to handle all operation in relations Transfers |
+| User consent display name  | Transfer Admin |
+| User consent description  | Allows a user to handle all operation in relations Transfers |
+
+![Fill in scope settings][transfer-all-form]
+
+3. Click `Add Scope`
+
+#### Add authorized client applications
+
+1. Click `Add a client application`
+
+![Click to add a client application][add-client-application]
+
+2. Add the client ID `d99b6435-bf29-4655-a1a2-ed1dbad109b3`
+
+> :information_source: **Note:** This guid is for the global Netpump Desktop Application 
+
+3. Tick boxes for 
+  * `Transfers.All`
+  > :information_source: **Note:** The prefix will change depending on the Application ID URI 
+
+![Alt text](images/app-reg/500-addclientapp.png)
+
+4. Click `Add application`
+
+### Create an App Role
+
+1. Click `App roles`
 
 ![App role][300-approlemenu]
 
-  2. Click Create App Role
+2. Click `Create App Role`
 
-  3. Enter the details as follows:
+3. Enter the details as follows:
+
+|||
+| ------------- | ------------- |
+| Display name | Automation |
+| Allowed member types | Applications |
+| Value | Automation |
+| Description | Server to server and script access |
 
 ![Create app role](images/app-reg/400-approlecreate.png)
 
-  |||
-  | ------------- | ------------- |
-  | Display name | Automation |
-  | Allowed member types | Applications |
-  | Value | Automation |
-  | Description | Server to server and script access |
+4. Click `Apply`
 
----
-13. Adding authorized client applications
->
-  1. Click `Add a client application`
-![Alt text][add-client-application]
+### Setup permissions
 
-  2. Add the client ID `d99b6435-bf29-4655-a1a2-ed1dbad109b3`
- 
-  > This guid is for the global `Netpump Desktop` Application 
+1. Click `API permissions`
 
-  3. Tick boxes for 
-   * `Transfers.All`
-   > The prefix will change depending on the Application ID URI 
+![Alt text](images/app-reg/550-apipermmenu.png)
 
-  ![Alt text](images/app-reg/500-addclientapp.png)
+2. Click `Add permission`
 
----
+![Alt text][click-add-permission]
 
-14. Setup permissions
->
-  1. Click `API permissions`
+3. Click `APIs my Organization Uses`
 
-  ![Alt text](images/app-reg/550-apipermmenu.png)
+4. Search for `Netpump Server`
+> :information_source: **Note:** The name will depend what name you gave the application in the `App Registration`
 
-  2. Click `Add permission`
-  ![Alt text][click-add-permission]
+![Alt text](images/app-reg/600-apipermapp.png)
 
-  3. Click `APIs my Organization Uses`
+5. At the "What type of permission?" question, choose `Delegated`, and add the `Transfers.All` permission
 
-  4. Search for `Netpump Server`
-  > The name will depend what name you gave the application in the `App Registration`
+![Alt text](images/app-reg/700-apipermscope.png)
 
-  ![Alt text](images/app-reg/600-apipermapp.png)
+6. Click `Add permissions` to save this permission.
 
-  5. At the "What type of permission?" question, choose `Delegated`, and add the `Transfers.All` permission
-  ![Alt text](images/app-reg/700-apipermscope.png)
+7. Click `Add permission` a second time
 
-  6. Click `Add permissions` to save this permission.
+![Alt text][click-add-permission]
 
-  7. Click `Add permission` a second time
-  ![Alt text][click-add-permission]
+8. Search for `Netpump Server` again
+> :information_source: **Note:** The name will depend what name you gave the application in the `App Registration`
 
-  8. Search for `Netpump Server` again
-  > The name will depend what name you gave the application in the `App Registration`
+9. At the "What type of permission?" question, this time choose `Application`, and add the `Automation` permission
 
-  9. At the "What type of permission?" question, this time choose `Application`, and add the `Automation` permission
-  ![Alt text](images/app-reg/800-apipermauto.png)
+![Alt text](images/app-reg/800-apipermauto.png)
 
-  10. Click `Add permissions` to save this permission.
+10. Click `Add permissions` to save this permission.
 
----
-15. Create the Client Secret
->
-  1. Click `Certificates & secrets`
-  ![Alt text][create-certificates-secrets]
+### Create the Client Secret
 
-  2. Click `New client secret`
-  ![Alt text][new-client-secret]
+1. Click `Certificates & secrets`
 
-  3. Fill in the form and click `save`
+![Alt text][create-certificates-secrets]
 
-  4. Copy the client secret and save it for later
-  > You can not view this secret after you leave this page. You will need for when prevision the Netpump Server
+2. Click `New client secret`
 
-  ![Alt text][copy-secret]
+![Alt text][new-client-secret]
 
-16. Edit the manifest
->
-  1. Click `Manifest` in the menu
+3. Enter a description for this secret, select the desired expiry (per company requirements) and click `Add`
+> :information_source: **Note:** This secret will be used for the authentication settings when provisioning Netpump servers.
 
-  ![Manifest](images/app-reg/900-manifestmenu.png)
+4. Copy the client secret and save it for Netpump server provisioning later
+> :information_source: **Note:** You can not view this secret after you leave this page.
 
-  2. Edit the manifest to set `accessTokenAcceptedVersion` to the value `2`
+![Alt text][copy-secret]
 
-  !["accessTokenAcceptedVersion": 2,](images/app-reg/1000-manifestdetails.png)
+### Edit the manifest
 
-  3. Click `Save`
+1. Click `Manifest` in the menu
 
-17. Assign users
->
-  1. Click `Overview` in the menu
+![Manifest](images/app-reg/900-manifestmenu.png)
 
-  2. Click on the link next to the `Managed application in local directory` label
+2. Edit the manifest to set `accessTokenAcceptedVersion` to the value `2`
 
-  ![Overview and link](images/app-reg/1100-overview.png)
+!["accessTokenAcceptedVersion": 2,](images/app-reg/1000-manifestdetails.png)
 
-  3. Click Properties
+3. Click `Save`
 
-  4. Set `Assignment Required` to `Yes`
+### Assign users
 
-  ![Assignment required](images/app-reg/1200-appregproperties.png)
+1. Click `Overview` in the menu
 
-  5. `Save`
+2. Click on the link next to the `Managed application in local directory` label
 
-18. Give the Service Principal permissions to your SSL certificate in Key Vault.
-> As a prerequisite, you need a Key Vault with a valid SSL certificate for the domain you want to host your Netpump server on. In the Key Vault, assign the Key Vault Secrets User role to the Service Principal for the newly created App Registration.
+![Overview and link](images/app-reg/1100-overview.png)
+
+3. Click `Properties`
+
+4. Set `Assignment Required` to `Yes`
+
+![Assignment required](images/app-reg/1200-appregproperties.png)
+
+5. `Save`
+
+6. Click `Users and groups`
+
+7. Add all users who require access to configure or use the Netpump service
+
+![Add users](images/app-reg/1300-add-users.png)
+
+### Key Vault - Service Principal permissions
+
+> :information_source: **Note:** As a prerequisite, you need a Key Vault with a valid SSL certificate for the domain you want to host your Netpump server on. The steps below cover giving your app registration (service principal) access to that Key Vault.
+
+1. Open your Key Vault resource in Azure Portal and click on `Access control (IAM)`
+
+2. Click on `Add` > `Add role assignment`
+
+![Add role assignment](images/app-reg/1400-key-vault-add-role-assignment.png)
+
+3. Select the `Key Vault Secrets User` role then click `Next`
+
+![Pick Key Vault Secrets User role](images/app-reg/1500-key-vault-pick-role.png)
+
+4. Click `Select members` then search for `Netpump Server`
+> :information_source: **Note:** The name will depend what name you gave the application in the `App Registration`
+
+![Add the Netpump Server service principal](images/app-reg/1600-key-vault-select-netpump-server.png)
+
+5. Click `Select`
+
+6. Click `Next`
+
+7. Confirm the details and click `Review + assign`
+
+![Review and assign](images/app-reg/1700-key-vault-review-role-assignment.png)
 
 ## Ready to provision cluster
-You are now ready to provision your Netpump Server cluster.
+You are now ready to provision your Netpump server cluster.
 
 
 
 [add-a-scope]: images/add-a-scope.png
 [transfer-all-form]: images/transfer-all-form.png
 [file-transfer]: images/file-transfer.png
-[click-aad]: images/app-reg/100-aad.png
+[click-entra-id]: images/app-reg/100-entra-id.png
 [click-add-app-registration]: images/app-reg/200-appreg.png
 [click-app-registration-supported]: images/app-registration-supported.png
 [click-expose-api]: images/click-expose-api.png
