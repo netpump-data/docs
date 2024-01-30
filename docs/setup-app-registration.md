@@ -169,7 +169,7 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
    !["oauth2AllowIdTokenImplicitFlow": 3,](images/app-reg/oauth2AllowIdTokenImplicitFlow.png)
 
-4. Edit the manifest to set `replyUrlsWithType` adding in the Host URL the application will run under on the Virtual Machine. Enter 
+4. Edit the manifest to set `replyUrlsWithType` adding in the Host URL(s) the application will run under on the Virtual Machine.  These are the external URLs that are allowed to access the configuration page within the application.
 
    !["replyUrlsWithType": 4,](images/app-reg/replyUrlsWithType.png)
 
