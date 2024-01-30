@@ -165,7 +165,15 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
    !["accessTokenAcceptedVersion": 2,](images/app-reg/1000-manifestdetails.png)
 
-3. Click `Save`
+3. Edit the manifest to set `oauth2AllowIdTokenImplicitFlow` to the value `true`
+
+   !["oauth2AllowIdTokenImplicitFlow": 3,](images/app-reg/oauth2AllowIdTokenImplicitFlow.png)
+
+4. Edit the manifest to set `replyUrlsWithType` adding in the Host URL the application will run under on the Virtual Machine. Enter 
+
+   !["replyUrlsWithType": 4,](images/app-reg/replyUrlsWithType.png)
+
+5. Click `Save`
 
 ### Assign users
 
