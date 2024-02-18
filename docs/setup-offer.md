@@ -64,6 +64,8 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
 11. Select the desired certificate for the custom domain from your Key Vault (prerequisite step `3`)
 
+12. Enter a custom Endpoint URL the application will run under. The port must be a valid https protocol port number. Leave blank to use the default https://*.443 port number.
+
 13. Click `Review & create`
 
 After the deployments complete you can edit the NIC of the Netpump Server to enable:
