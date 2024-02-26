@@ -68,13 +68,13 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
 13. Click `Review & create`
 
-After the deployments complete you can edit the NIC of the Netpump Server to enable:
+After the deployments complete you can edit the NIC (Network Interface Configuration) of the Netpump Server to enable:
 * The Netpump Desktop application to be able to connect to the Netpump destination server
-* The Netpump destination server and the Netpump origin server to be able to connect to eachother
+* The Netpump destination server and the Netpump origin server to be able to connect to each other
 
 14. Repeat the above process for each server in your Netpump cluster. At a minimum you will need to provision two servers to enable accelerated file transfers between them.
 
-15. Create a DNS entry for the newly created server in your DNS system. The domain name you choose must match the SSL certificate configured in your Key Vault.
+15. Create a DNS entry for the newly created server in your DNS system and link it to the public IP associated with the NIC details. The domain name you choose must match the SSL certificate configured in your Key Vault.
 
 Once that is done, you should be able to connect to the Netpump server using the Netpump Desktop application.
 
