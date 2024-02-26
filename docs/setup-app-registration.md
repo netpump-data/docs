@@ -165,15 +165,29 @@ The user of this guide should have basic or moderate knowledge of how to use Azu
 
    !["accessTokenAcceptedVersion": 2,](images/app-reg/1000-manifestdetails.png)
 
-3. Edit the manifest to set `oauth2AllowIdTokenImplicitFlow` to the value `true`
+3. Click `Save`
 
-   !["oauth2AllowIdTokenImplicitFlow": 3,](images/app-reg/oauth2AllowIdTokenImplicitFlow.png)
+### Configure Redirect URLs and Token Authentication for Configuration Page
 
-4. Edit the manifest to set `replyUrlsWithType` adding in the Host URL(s) the application will run under on the Virtual Machine.  These are the external URLs that are allowed to access the configuration page within the application.
+For an administrator to access the Configuration Page, allowed URLs must be added to the application. The URLs should match the DNS record that will be used to access the Netpump Service Configuration Page.
 
-   !["replyUrlsWithType": 4,](images/app-reg/replyUrlsWithType.png)
+1. Click `Authentication` in the menu
 
-5. Click `Save`
+   ![Select Authentication from menu][click-authentiction]
+
+2. Click `+ Add a Platform`.
+
+   ![Add Platform][click-add-a-platform]
+
+3. Select `Web` from the Platform listing
+
+   ![Select Web Platform][select-web-platform]
+
+3. Enter a valid `Redirect URIs` that corresponds to the public DNS. Multiple URIs can be added after saving the initial entry. Select `ID tokens (used for implicit and hybrid flows)` from the options.
+   
+   ![Enter Redirect URIs and ID Tokens][enter-redirect-uris]
+
+4. Click `Configure`
 
 ### Assign users
 
@@ -251,3 +265,7 @@ You are now ready to provision your Netpump server cluster.
 [new-client-secret]: images/new-client-secret.png
 [copy-secret]: images/copy-secret.png
 [300-approlemenu]: images/app-reg/300-approlemenu.png
+[click-authentiction]: images/auth_01_select_manifest.png
+[click-add-a-platform]: images/auth_02_choose_platform.png
+[select-web-platform]: images/auth_03_choose_web_platform.png
+[enter-redirect-uris]: images/auth_04_web_platform_configuration.png
