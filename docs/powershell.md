@@ -43,47 +43,47 @@ You will need to know the following information, which you would have used when 
 ### Steps
 
 1. Download [Netpump.zip](Netpump.zip) which contains the PowerShell module. You will upload this to the Azure Automation Account later in this walkthrough.
-1. In Azure Portal, create a new Automation Account
+2. In Azure Portal, create a new Automation Account
 
     ![Screenshot](images/ps/100-create-account.png)
 
-1. Go to the newly created Automation Account
-1. Click in the Identity section in the left menu and copy the Object (principal) ID to the clipboard
+3. Go to the newly created Automation Account
+4. Click in the Identity section in the left menu and copy the Object (principal) ID to the clipboard
 
     ![Screenshot](images/ps/110-identity.png)
-1. Run PowerShell on your local computer
-1. At the PowerShell prompt, run `Connect-MgGraph -TenantId $tenantId -Scopes "User.Read","Application.ReadWrite.All"`
-1. At the PowerShell prompt, run `New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -PrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -ResourceId $NETPUMP_ENTERPRISE_APP_OBJECT_ID -AppRoleId $AUTOMATION_APP_ROLE_ID`. Replace each of the $VARIABLEs in this command with your actual values, which will all be GUIDs in the format `00000000-0000-0000-0000-000000000000`.
-1. To confirm that the above command was successful, check the Enterprise Application for your Netpump cluster, on the Users and groups page, the name of your Automation Account should now appear in the list.
+5. Run PowerShell on your local computer
+6. At the PowerShell prompt, run `Connect-MgGraph -TenantId $tenantId -Scopes "User.Read","Application.ReadWrite.All"`
+7. At the PowerShell prompt, run `New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -PrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -ResourceId $NETPUMP_ENTERPRISE_APP_OBJECT_ID -AppRoleId $AUTOMATION_APP_ROLE_ID`. Replace each of the $VARIABLEs in this command with your actual values, which will all be GUIDs in the format `00000000-0000-0000-0000-000000000000`.
+8. To confirm that the above command was successful, check the Enterprise Application for your Netpump cluster, on the Users and groups page, the name of your Automation Account should now appear in the list.
 
     ![Screenshot](images/ps/120-confirm-identity.png)
-1. Back in the Automation Account, click in the Modules section in the left menu and click Add a Module
+9. Back in the Automation Account, click in the Modules section in the left menu and click Add a Module
 
     ![Screenshot](images/ps/200-module.png)
 
-1. Upload the `Netpump.zip` file and choose 5.1 for the PowerShell version. Click Import.
+10. Upload the `Netpump.zip` file and choose 5.1 for the PowerShell version. Click Import.
 
     ![Screenshot](images/ps/300-upload-module.png)
 
-1. Go to the Runbooks section in the left menu and click Create a runbook.
+11. Go to the Runbooks section in the left menu and click Create a runbook.
 
     ![Screenshot](images/ps/400-create-runbook.png)
 
-1. Choose a name for the runbook, type of PowerShell, version 5.1, and click Create.
+12. Choose a name for the runbook, type of PowerShell, version 5.1, and click Create.
 
     ![Screenshot](images/ps/500-create-runbook.png)
 
-1. Edit the Runbook and enter the following script, replacing the parameters with your origin and destination server URLs and your origin and destination UNC paths:
+13. Edit the Runbook and enter the following script, replacing the parameters with your origin and destination server URLs and your origin and destination UNC paths:
 ```
 Connect-AzAccount -Identity
 Import-Module Netpump
 Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\YOUR-UNC\YOUR-SHARE\YOUR-FOLDER -OriginService https://YOUR-URL -Paths \\YOUR-UNC\YOUR-SHARE\YOUR-SOURCE-FILE
 ```
 
-1. Click Publish
+14. Click Publish
 
-1. Click Start, and Yes to confirm
+15. Click Start, and Yes to confirm
 
     ![Screenshot](images/ps/700-start-runbook.png)
 
-1. Your file is copied from the source to the destination via Netpump
+16. Your file is copied from the source to the destination via Netpump
