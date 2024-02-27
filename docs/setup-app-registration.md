@@ -1,3 +1,5 @@
+# Netpump Service App Registration Configuration Guide
+
 This guide will show you how to setup the app registration for a Netpump Server cluster through Azure portal.
 
 Each cluster of Netpump Servers uses a single app registration. All Netpump Servers in the cluster can communicate with each other. All users assigned to the app registration can use the Netpump Servers.

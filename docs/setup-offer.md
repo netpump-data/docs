@@ -1,3 +1,5 @@
+# Netpump Service Marketplace Offer Configuration Guide
+
 This guide will show you how to setup the Netpump Server through Azure's marketplace offering
 
 ## Prerequisites
