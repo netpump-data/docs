@@ -26,6 +26,8 @@ The Netpump Service Configuration page is available if the following requirement
 
 Note: Ensure the attached Key Vault Certificate from [Netpump Service Marketplace Offer Configuration Guide](setup-offer.md#prerequisites) prerequisites includes the chosen public URI.
 
+Once the above settings are configured the page can be accessed via the configured public URI. Once loaded you will see a page similar to the image below.
+
 ## Administrator Page Settings
 
 The Netpump Service Configuration page consists of 6 sections.
