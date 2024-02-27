@@ -16,7 +16,9 @@ The Netpump Service Configuration page is available if the following requirement
 
 1. Updated hosts file containing reference to the local URI that will be used to access the Netpump Service Configuration page.
 
+```bash
 127.0.0.1   pathto.my.domain
+```
 
 2. The local URI added to the App Registration Authentication Redirect URIs. See Configure Redirect URLs and Token Authentication for Configuration Page for details.
 
