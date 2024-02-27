@@ -19,13 +19,13 @@ The Netpump Service Configuration page is available if the following requirement
 1. Updated hosts file containing reference to the local URI that will be used to access the Netpump Service Configuration page.
 
 ```bash
-127.0.0.1   pathto.my.domain
+127.0.0.1   path.to.my.domain
 ```
 
 2. The local URI added to the App Registration Authentication Redirect URIs. See [Configure Redirect URLs and Token Authentication for Configuration Page](setup-app-registration.md#configure-redirect-urls-and-token-authentication-for-configuration-page) for details.
 
-> [!NOTE]
-> Ensure the attached Key Vault Certificate from [Netpump Service Marketplace Offer Configuration Guide](setup-offer.md#prerequisites) prerequisites includes the chosen public URI.
+**NOTE**:
+Ensure the attached Key Vault Certificate from [Netpump Service Marketplace Offer Configuration Guide](setup-offer.md#prerequisites) prerequisites includes the chosen public URI.
 
 Once the above settings are configured the page can be accessed via the configured public URI. Once loaded you will see a page similar to the image below.
 
