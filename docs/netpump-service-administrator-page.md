@@ -10,7 +10,7 @@ The Netpump Service Configuration page is available if the following requirement
 
 2. DNS A Record pointing to the Public IP Address. The public URI that will be used to access the Netpump Service Configuration page.
 
-3. The public URI added to the App Registration Authentication Redirect URIs. See Configure Redirect URLs and Token Authentication for Configuration Page for details.
+3. The public URI added to the App Registration Authentication Redirect URIs. See [Configure Redirect URLs and Token Authentication for Configuration Page](setup-app-registration.md#configure-redirect-urls-and-token-authentication-for-configuration-page) for details.
 
 ## Locally Hosted Service
 
@@ -20,6 +20,6 @@ The Netpump Service Configuration page is available if the following requirement
 127.0.0.1   pathto.my.domain
 ```
 
-2. The local URI added to the App Registration Authentication Redirect URIs. See Configure Redirect URLs and Token Authentication for Configuration Page for details.
+2. The local URI added to the App Registration Authentication Redirect URIs. See [Configure Redirect URLs and Token Authentication for Configuration Page](setup-app-registration.md#configure-redirect-urls-and-token-authentication-for-configuration-page) for details.
 
-Note: Ensure the attached Key Vault Certificate from linklinked includes the chosen public URI.
+Note: Ensure the attached Key Vault Certificate from [Netpump Service Marketplace Offer Configuration Guide](setup-offer.md#prerequisites) prerequisites includes the chosen public URI.
