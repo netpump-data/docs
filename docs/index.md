@@ -26,6 +26,18 @@ This guide describes details of the Netpump Service Configuration page contained
 
 ***
 
+**[On Premise Netpump Services Installation Guide](onprem-installer.md)**
+
+This guide shows how to install the Netpump Service locally.
+
+***
+
+**[Netpump Desktop GUI Installation Guide](desktop-gui-installer.md)**
+
+This guide shows how to install the Netpump Desktop GUI for interacting with Netpump Service instances. The Desktop GUI allows users to transfer files between registered Netpump Service instances.
+
+***
+
 **[Netpump EULA](Netpump-EULA.pdf)**
 
 Netpump End User License Agreement
