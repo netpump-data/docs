@@ -87,3 +87,159 @@ Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\
     ![Screenshot](images/ps/700-start-runbook.png)
 
 16. Your file is copied from the source to the destination via Netpump
+
+17. Examples
+    
+	.SYNOPSIS
+
+		Starts a transfer of files from an origin server to a destination server.
+
+	.DESCRIPTION
+
+		Creates and sends a request to transfer file(s) from a origin host to a remote host.
+
+	.PARAMETER DestinationService
+
+		Mandatory, the url of the destination service.
+
+	.PARAMETER DestinationFolder
+
+		Mandatory, the file share directory path on the destination server where the file(s) will be stored.
+
+	.PARAMETER OriginService
+
+		Mandatory, the url of the origin host which will send the file(s).
+
+	.PARAMETER Paths
+
+		Optional, an array of file share paths delimited by a comma.
+
+	.PARAMETER Directories
+
+		Optional, an array of file share paths of directories delimited by a comma.
+
+	.PARAMETER Pattern
+
+		Optional, a pattern to apply to a single directory. Wildcards '*' and '?' are supported.
+
+	.PARAMETER DeleteAfterSuccessfulTransfer
+
+		Optional, deletes the files from the origin server after they have been successfully transferred to the destination server.
+	.EXAMPLE
+
+		.\startTransfer.ps1 -DestinationService http://localhost:5000 -DestinationFolder \\destinationfileshare\subfolder -OriginService http://localhost:5000 -Paths \\originfileshare\subfolder\a.log,\\originfileshare\subfolder\b.log
+
+	.EXAMPLE
+
+		\startTransfer.ps1 -DestinationService http://localhost:5000 -DestinationFolder \\destinationfileshare\subfolder -OriginService http://localhost:5000 -Directories \\originfileshare\subfolder -DeleteAfterSuccessfulTransfer
+
+	.EXAMPLE
+
+		\startTransfer.ps1 -DestinationService http://localhost:5000 -DestinationFolder \\destinationfileshare\subfolder -OriginService http://localhost:5000 -Directories \\originfileshare\subfolder -Pattern *.txt
+
+	.EXAMPLE
+
+		\startTransfer.ps1 -DestinationService http://localhost:5000 -DestinationFolder \\destinationfileshare\subfolder -OriginService http://localhost:5000 -Directories \\originfileshare\subfolder1,\\originfileshare\subfolder2
+
+
+
+Function Start-NetpumpTransfer {
+Param
+(
+	[Parameter(Mandatory=$True)]
+	[string]
+	$DestinationService,
+
+	[Parameter(Mandatory=$True)]
+	[string]
+	$DestinationFolder,
+
+	[Parameter(Mandatory=$True)]
+	[string]
+	$OriginService,
+
+	[string[]]
+	$Paths,
+
+	[string[]]
+	$Directories,
+
+	[string]
+	$Pattern,
+
+	[switch]
+	$DeleteAfterSuccessfulTransfer
+)
+
+Import-Module Az.Accounts
+
+$discoveryRoute = "/controlapi/discovery";
+$discoveryUrl = "$DestinationService$discoveryRoute";
+$discoveryResponse = Invoke-RestMethod -Uri $discoveryUrl
+$clientId = $discoveryResponse.clientId
+$tenantId = $discoveryResponse.tenantId
+
+$token = (Get-AzAccessToken -ResourceUrl "api://$clientId").Token
+$AuthSecret = "Bearer $token"
+
+$route = "/controlapi/transfer/start";
+$DestinationUrl = "$DestinationService$route";
+
+$headers = @{
+	"Content-Type" = "application/json"; 
+	"Authorization" = $AuthSecret
+};
+
+$body = (New-Object PSObject | 
+	Add-Member -PassThru NoteProperty -Name localFolder -Value "$DestinationFolder" |
+	Add-Member -PassThru NoteProperty -Name remoteService -Value "$OriginService" |
+	Add-Member -PassThru NoteProperty -Name deleteAfterSuccessfulTransfer -Value $DeleteAfterSuccessfulTransfer.ToBool()
+);
+
+if (![string]::IsNullOrEmpty($Paths))
+{
+	$body = $body | Add-Member -PassThru NoteProperty -Name Paths -Value $Paths;
+}
+
+if (![string]::IsNullOrEmpty($Directories))
+{
+	$body = $body | Add-Member -PassThru NoteProperty -Name Directories -Value $Directories;
+}
+
+if (![string]::IsNullOrEmpty($Pattern))
+{
+	$body = $body | Add-Member -PassThru NoteProperty -Name Pattern -Value $Pattern;
+}
+
+try
+{
+	$response = Invoke-WebRequest -Uri $DestinationUrl -Method Put -Headers $headers -Body ($body | ConvertTo-Json) -ContentType "application/json";
+	Write-Host -Message "Response received, $($response.StatusDescription): $($response.Content)"
+
+	if($response.StatusCode -eq 200)
+	{
+		$responseModel = ConvertFrom-Json -InputObject $response.Content;
+		[System.Guid]::Parse($responseModel.id);
+	}
+
+	#Write-Host $response.StatusCode;
+	#Write-Host $response.StatusDescription;
+	#Write-Host $response.Content;
+}
+catch
+{
+	[System.Console]::Error.WriteLine($_.Exception.Message);
+	if ($_.Exception.Response -ne $null)
+	{
+		$responseStream = $_.Exception.Response.GetResponseStream()
+		$reader = New-Object System.IO.StreamReader($responseStream)
+		$responseBody = $reader.ReadToEnd();
+		[System.Console]::Error.WriteLine($responseBody);
+	}
+	$thisScript = $MyInvocation.MyCommand.Name;
+	[System.Console]::Error.WriteLine("The request was unsuccessful. See Get-Help .\$thisScript for help.");
+}
+}
+
+Export-ModuleMember -Function Start-NetpumpTransfer
+    
