@@ -54,7 +54,7 @@ Enter the Azure Authentication credentials from the `App Registration` of the Ne
 
 ![Key Vault SSL Certificate][admin-page-ssl]
 
-A link to the SSL Certificate within Azure Key Vault of the custom domain you wish to host the Netpump Server Application on.
+A link to the SSL Certificate within Azure Key Vault of the custom domain you wish to host the Netpump Server Application on. Link to  peer certificate(s) in the Azure Key Vault. These certificates will be used to authenticate to the peer service(s). The certificate(s) must be in the same Azure AD tenant as the application and the service principal must have access to the certificate(s).
 
 ### Server Message Block File Share(s)
 
