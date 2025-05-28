@@ -1,4 +1,4 @@
-# Netpump Data: High-Value Use Cases
+# Netpump Data for Azure Use Cases
 
 ## Accelerated Data Transfer Use Cases (Leveraging ~12×Speed Boost)
 
