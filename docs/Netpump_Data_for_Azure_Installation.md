@@ -104,15 +104,13 @@ In the `NetpumpClient` app, open the Manifest (you’ll find "Manifest" in the l
 
 The manifest is a JSON file. Find the `"appRoles": []` section. Insert a new object inside the array to define a role. For example, if the appRoles section is empty (`"appRoles": []`), you can replace it with the following (make sure it’s inside the square brackets and comma-separated if there are other roles):
 
-```json
-{
-  "allowedMemberTypes": ["User", "Application"],
-  "description": "Administers Netpump servers",
-  "displayName": "ServerAdmin",
-  "id": "",
-  "isEnabled": true,
-  "value": "ServerAdmin"
-}
+
+
+
+
+
+
+
 
 You will also need to verify “requestedAccessTokenversion”: 2. If it appears with a NULL value, change the value to “2” as shown.
 Important: Replace `` with a new unique GUID. (You can generate a GUID using a tool or online GUID generator. Every app role id must be a unique GUID.)
