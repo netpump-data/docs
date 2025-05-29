@@ -52,6 +52,8 @@ Create the core resource group: In the Azure Portal, go to Resource groups and c
 
 Click Review + Create, then Create. Wait for the notification that says “Deployment succeeded.” This confirms the resource group was created successfully.
 
+
+
 Create the install resource group: Repeat the above process to create a second resource group named `rg-netpump-install` in the same region. This second group will be used to hold temporary installation assets separately from core resources. Again, wait for the Deployment succeeded message.
 
 **Why two resource groups?** Separating core resources and installation assets helps with organization and cleanup. The `rg-netpump-core` group will contain the persistent Netpump service resources, while `rg-netpump-install` will contain short-lived setup resources that can be isolated or removed later.
