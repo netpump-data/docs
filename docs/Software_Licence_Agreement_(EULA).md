@@ -30,9 +30,9 @@ In this Agreement, the following terms have the following meanings unless the co
 
 **Authorisation**: 
 
-(a) any consent, authorisation, registration, filing, agreement, notarisation, certificate, permission, licence, approval, authority or exemption from, by or with a Governmental Agency; and 
+	(a) any consent, authorisation, registration, filing, agreement, notarisation, certificate, permission, licence, approval, authority or exemption from, by or with a Governmental Agency; and 
 
-(b) in respect of anything which will be proscribed or restricted in whole or part by law if a Governmental Agency intervenes or acts in any way within a specified period after lodgement, filing, registration or notification, the expiry of that period without any intervention or action.
+	(b) in respect of anything which will be proscribed or restricted in whole or part by law if a Governmental Agency intervenes or acts in any way within a specified period after lodgement, filing, registration or notification, the expiry of that period without any intervention or action.
 
 **Authorised Users**: Means on the individuals for whom the User has paid the required fees and whom are designated as an “Authorised User” to access and use the Software. Authorised Users may be an employee, contractor, consultant, agent or other third party who are acting on behalf of the User that has been authorised by the User to Use the Software.
 
