@@ -64,8 +64,7 @@ Why two resource groups? Separating core resources and installation assets helps
 
 You will create two Azure Key Vaults – one in each resource group:
 
-**1. Core Key Vault:**  
-In the `rg-netpump-core` resource group, click + Create and search for Key Vault. Select Key Vault and click Create. In the Key Vault creation form:
+**1. Core Key Vault:** In the `rg-netpump-core` resource group, click + Create and search for Key Vault. Select Key Vault and click Create. In the Key Vault creation form:
 
 - **Key Vault Name**: `kv-netpump-core` (must be globally unique within Azure, usually the prefix plus core is fine).
 
@@ -75,8 +74,7 @@ In the `rg-netpump-core` resource group, click + Create and search for Key Vault
 
 Click **Review + Create**, then **Create**. Wait for the Key Vault deployment to succeed.
 
-2. Install Key Vault:**
-Repeat the process in the `rg-netpump-install` group. Create a Key Vault named `kv-netpump-install` (same region). Wait for deployment success.
+**2. Install Key Vault:** Repeat the process in the `rg-netpump-install` group. Create a Key Vault named `kv-netpump-install` (same region). Wait for deployment success.
 
 Why two Key Vaults? The core vault (`kv-netpump-core`) is intended to store long-lived secrets like cluster certificates, while the install vault (`kv-netpump-install`) will store short-lived secrets used during the installation process. This separation adds security and clarity.
 
@@ -235,3 +233,22 @@ Region: (should auto-fill with the resource group’s region, ensure it’s the 
 Performance/Redundancy:
 
 [001]: images/installer-gui/001.png
+[002]: images/installer-gui/002.png
+[003]: images/installer-gui/003.png
+[004]: images/installer-gui/004.png
+[005]: images/installer-gui/005.png
+[006]: images/installer-gui/006.png
+[007]: images/installer-gui/007.png
+[008]: images/installer-gui/008.png
+[009]: images/installer-gui/009.png
+[010]: images/installer-gui/010.png
+[011]: images/installer-gui/011.png
+[012]: images/installer-gui/012.png
+[013]: images/installer-gui/013.png
+[014]: images/installer-gui/014.png
+[015]: images/installer-gui/015.png
+[016]: images/installer-gui/016.png
+[017]: images/installer-gui/017.png
+[018]: images/installer-gui/018.png
+[019]: images/installer-gui/019.png
+[020]: images/installer-gui/020.png
