@@ -50,7 +50,7 @@ Create the core resource group: In the Azure Portal, go to Resource groups and c
 - **Resource group name**: `rg-netpump-core` (using your chosen prefix).
 - **Region**: Your chosen region (e.g. West Europe).
 
-Click Review + Create, then Create. Wait for the notification that says “Deployment succeeded.” This confirms the resource group was created successfully.
+Click **Review + Create**, then **Create**. Wait for the notification that says “Deployment succeeded.” This confirms the resource group was created successfully.
 
 ![Create_a_resource_group][001]
 
