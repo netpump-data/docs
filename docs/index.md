@@ -8,13 +8,13 @@ This guide will show you how to setup the Netpump Data Server through Azure's ma
 
 ***
 
-**[Netpump Data for Azure Use Cases](Netpump-Data-for-Azure-Use-Cases.pdf)**
+**[Netpump Data for Azure Use Cases](Netpump-Data-for-Azure-Use-Cases.md)**
 
 'This guide will show you how to setup the app registration for a Netpump Server cluster through Azure portal.
 
 ***
 
-**[Netpump EULA](Netpump-EULA.pdf)**
+**[Netpump EULA](Software_Licence_Agreement_(EULA).md)**
 
 Netpump End User License Agreement
 
