@@ -15,7 +15,9 @@ This Software License Agreement (this “Agreement”) is a legal contract betwe
 **IF YOU DO NOT AGREE TO EACH AND EVERY TERM AND CONDITION OF THIS AGREEMENT WHICH IS INTENDED TO BE ENTERED INTO AS A DEED, YOU MAY NOT USE ANY TECHNOLOGY PROVIDED BY THE LICENSOR.** If you do not agree with each of the terms and conditions of this Agreement, do not click “I ACCEPT” or otherwise take any action that signifies your agreement to this Agreement and return the Software to the Licensor immediately.
 
 By accessing the Software, the User acknowledges and agrees that:
+
 (a) The User will be bound by the joint promises set out in the latest version of these Licence Terms available at(http://www.pacbyte.com/licence); and
+
 (b) This Agreement applies to the Software that includes, displays or links to this Licence Agreement or these Licence Terms and to any updates, supplements or support services for the Software.
 
 ## 1.  Definitions and Interpretation
@@ -30,9 +32,9 @@ In this Agreement, the following terms have the following meanings unless the co
 
 **Authorisation**: 
 
-	(a) any consent, authorisation, registration, filing, agreement, notarisation, certificate, permission, licence, approval, authority or exemption from, by or with a Governmental Agency; and 
+(a) any consent, authorisation, registration, filing, agreement, notarisation, certificate, permission, licence, approval, authority or exemption from, by or with a Governmental Agency; and 
 
-	(b) in respect of anything which will be proscribed or restricted in whole or part by law if a Governmental Agency intervenes or acts in any way within a specified period after lodgement, filing, registration or notification, the expiry of that period without any intervention or action.
+(b) in respect of anything which will be proscribed or restricted in whole or part by law if a Governmental Agency intervenes or acts in any way within a specified period after lodgement, filing, registration or notification, the expiry of that period without any intervention or action.
 
 **Authorised Users**: Means on the individuals for whom the User has paid the required fees and whom are designated as an “Authorised User” to access and use the Software. Authorised Users may be an employee, contractor, consultant, agent or other third party who are acting on behalf of the User that has been authorised by the User to Use the Software.
 
