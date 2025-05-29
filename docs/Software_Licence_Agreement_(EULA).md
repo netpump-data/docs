@@ -5,19 +5,22 @@
 This Software License Agreement (this “Agreement”) is a legal contract between you and/or the entity you represent (“User”) and PACBYTE LTD (ABN: 12 110 974 242) (“Licensor”), the owner of Netpump Data and Netpump Video including all files, documentation and other accompanying material that have been provided to the User by either by Pacbyte or on behalf of Pacbyte by a third party to which Pacbyte has granted the right to license or to sublicense Netpump Data and Netpump Video (the “Software”).
 
 **BY SELECTING “I AGREE” DURING INSTALLATION OF THE SOFTWARE, OR BY DOWNLOADING, INSTALLING, COPYING, OR USING THE SOFTWARE PROVIDED BY THE LICENSOR, OR BY OTHERWISE SIGNIFYING YOUR ACCEPTANCE OF THIS AGREEMENT, YOU ACKNOWLEDGE AND AGREE:**
-1. THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT;
-2. THAT YOU AGREE TO BE BOUND BY EACH AND EVERY TERM OF THIS AGREEMENT; AND
-3. IF YOU ARE ENTERING INTO THIS AGREEMENT ON BEHALF OF A COMPANY, THAT YOU HAVE THE POWER AND AUTHORITY TO DO SO AND TO BIND SUCH COMPANY.
+
+**(1) THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT;**
+
+**(2) THAT YOU AGREE TO BE BOUND BY EACH AND EVERY TERM OF THIS AGREEMENT; AND**
+
+**(3) IF YOU ARE ENTERING INTO THIS AGREEMENT ON BEHALF OF A COMPANY, THAT YOU HAVE THE POWER AND AUTHORITY TO DO SO AND TO BIND SUCH COMPANY.**
 
 **IF YOU DO NOT AGREE TO EACH AND EVERY TERM AND CONDITION OF THIS AGREEMENT WHICH IS INTENDED TO BE ENTERED INTO AS A DEED, YOU MAY NOT USE ANY TECHNOLOGY PROVIDED BY THE LICENSOR.** If you do not agree with each of the terms and conditions of this Agreement, do not click “I ACCEPT” or otherwise take any action that signifies your agreement to this Agreement and return the Software to the Licensor immediately.
 
 By accessing the Software, the User acknowledges and agrees that:
-- The User will be bound by the joint promises set out in the latest version of these Licence Terms available at(http://www.pacbyte.com/licence); and
-- This Agreement applies to the Software that includes, displays or links to this Licence Agreement or these Licence Terms and to any updates, supplements or support services for the Software.
+(a) The User will be bound by the joint promises set out in the latest version of these Licence Terms available at(http://www.pacbyte.com/licence); and
+(b) This Agreement applies to the Software that includes, displays or links to this Licence Agreement or these Licence Terms and to any updates, supplements or support services for the Software.
 
-## Definitions and Interpretation
+## 1.  Definitions and Interpretation
 
-### Definitions
+### 1.1.  Definitions
 
 In this Agreement, the following terms have the following meanings unless the context or subject otherwise requires:
 
@@ -25,7 +28,11 @@ In this Agreement, the following terms have the following meanings unless the co
 
 **Agreement**: this agreement, which the Parties have intended to enter into in the form of a binding deed.
 
-**Authorisation**: any consent, authorisation, registration, filing, agreement, notarisation, certificate, permission, licence, approval, authority or exemption from, by or with a Governmental Agency; and in respect of anything which will be proscribed or restricted in whole or part by law if a Governmental Agency intervenes or acts in any way within a specified period after lodgement, filing, registration or notification, the expiry of that period without any intervention or action.
+**Authorisation**: 
+
+(a) any consent, authorisation, registration, filing, agreement, notarisation, certificate, permission, licence, approval, authority or exemption from, by or with a Governmental Agency; and 
+
+(b) in respect of anything which will be proscribed or restricted in whole or part by law if a Governmental Agency intervenes or acts in any way within a specified period after lodgement, filing, registration or notification, the expiry of that period without any intervention or action.
 
 **Authorised Users**: Means on the individuals for whom the User has paid the required fees and whom are designated as an “Authorised User” to access and use the Software. Authorised Users may be an employee, contractor, consultant, agent or other third party who are acting on behalf of the User that has been authorised by the User to Use the Software.
 
@@ -63,37 +70,62 @@ b) that default is capable of remedy but it is not remedied by the User within 1
 **Indemnified Person**: the Licensor and any of its affiliates, successors and assigns, shareholders, partners, contractors, officers, servants, agents and employees.
 
 **Information**: Being a superset of Confidential Information, means:
-- all information (written, oral or otherwise) supplied or made available to the Recipient by the Provider, including information relating to or developed in connection with:
+
+(a) all information (written, oral or otherwise) supplied or made available to the Recipient by the Provider, including information relating to or developed in connection with:
   i) the business technology or other affairs of the Provider or any of its Associated Entities;
   ii) the Software;
   iii) the Intellectual Property; and;
   iv) any data, feasibility studies, systems, technology, ideas, concepts, know-how, techniques, designs, specifications, diagrams, models, functions, capabilities and designs, (including computer software, manufacturing processes or other information embodied in drawings or specifications) or intellectual property owned or used by the Provider or any of its Associated Entities;
-- all notes, records, copies or other material in whatever form made or derived in whole or in part by the Recipient from, or from inspection or evaluation of, any information of the type referred to in paragraph (a); and
-- any knowledge or information which the Recipient may acquire as a direct result of acquiring or holding information referred to in paragraph (a) or paragraph (b).
+  
+(b) all notes, records, copies or other material in whatever form made or derived in whole or in part by the Recipient from, or from inspection or evaluation of, any information of the type referred to in paragraph (a); and
+
+(c) any knowledge or information which the Recipient may acquire as a direct result of acquiring or holding information referred to in paragraph (a) or paragraph (b).
 
 **Insolvency Event**: the occurrence of any one or more of the following events in relation to any Person:
-- an application is made to a court for an order that it be wound up, declared bankrupt or that a provisional liquidator or receiver or receiver and manager be appointed, unless such application is vexatious or frivolous or is discharged within sixty (60) days;
-- liquidator or provisional liquidator is appointed, or steps are taken for such appointment;
-- an administrator or a controller is appointed to any of its assets, or steps are taken for such appointment;
-- it enters into an arrangement or composition with one or more of its creditors, or an assignment for the benefit of one or more of its creditors;
-- it proposes a winding-up or dissolution or reorganisation, moratorium, deed of company arrangement or other administration involving one or more of its creditors;
-- it is insolvent as disclosed in its accounts, or otherwise states that it is insolvent, or it is presumed to be insolvent under an applicable law;
-- it becomes an insolvent under administration or action is taken which could result in that event;
-- it is taken to have failed to comply with a statutory demand as a result of the application of any applicable legislation;
-- a writ of execution is levied against it or a material part of its property;
-- it ceases to carry on business or threatens to do so;
-- it suspends payments of its debts generally; or
-- anything occurs under the law of any jurisdiction which has a substantially similar effect to any of the above paragraphs of this definition,
+
+(a) an application is made to a court for an order that it be wound up, declared bankrupt or that a provisional liquidator or receiver or receiver and manager be appointed, unless such application is vexatious or frivolous or is discharged within sixty (60) days;
+
+(b) liquidator or provisional liquidator is appointed, or steps are taken for such appointment;
+
+(c) an administrator or a controller is appointed to any of its assets, or steps are taken for such appointment;
+
+(d) it enters into an arrangement or composition with one or more of its creditors, or an assignment for the benefit of one or more of its creditors;
+
+(e) it proposes a winding-up or dissolution or reorganisation, moratorium, deed of company arrangement or other administration involving one or more of its creditors;
+
+(f) it is insolvent as disclosed in its accounts, or otherwise states that it is insolvent, or it is presumed to be insolvent under an applicable law;
+
+(g) it becomes an insolvent under administration or action is taken which could result in that event;
+
+(h) it is taken to have failed to comply with a statutory demand as a result of the application of any applicable legislation;
+
+(i) a writ of execution is levied against it or a material part of its property;
+
+(j) it ceases to carry on business or threatens to do so;
+
+(k) it suspends payments of its debts generally; or
+
+(l) anything occurs under the law of any jurisdiction which has a substantially similar effect to any of the above paragraphs of this definition,
 including a Credit Event but excluding any corporate restructure while solvent of that Person and its Related Bodies Corporate.
 
-**Intellectual Property**: the intellectual property comprised in the Software;
-- all patents granted or pending relating to the Software;
-- all Intellectual Property Rights of any kind (other than those described in (b) relating to the Software or any similar formula, design or application, whether registered or not, having the same or a similar effect to the Software, whether or not used in connection with the Software;
-- all Trade Marks;
-- all Intellectual Property Rights, registered designs, patented technology, patented processes, trademarks, documented and undocumented knowhow, copyright materials and any other intellectual property the application of which is necessary or desirable in connection with the exploitation of the Software;
-- the intellectual property comprised in the specifications or operating manuals for the development, Use or updating of the Software;
-- all software comprising any part of or connected to or Used in connection with any of (a), (b), (c), (d), (e) or (f); and
-- any improvements, enhancements, additions, modifications, supplements, variations to, or Works relating to, any of the property referred to in (a), (b), (c), (d), (e), (f) or (g), including any patent continuations,
+**Intellectual Property**: 
+
+(a) the intellectual property comprised in the Software;
+
+(b) all patents granted or pending relating to the Software;
+
+(c) all Intellectual Property Rights of any kind (other than those described in (b) relating to the Software or any similar formula, design or application, whether registered or not, having the same or a similar effect to the Software, whether or not used in connection with the Software;
+
+(d) all Trade Marks;
+
+(e) all Intellectual Property Rights, registered designs, patented technology, patented processes, trademarks, documented and undocumented knowhow, copyright materials and any other intellectual property the application of which is necessary or desirable in connection with the exploitation of the Software;
+
+(f) the intellectual property comprised in the specifications or operating manuals for the development, Use or updating of the Software;
+
+(g) all software comprising any part of or connected to or Used in connection with any of (a), (b), (c), (d), (e) or (f); and
+
+(h) any improvements, enhancements, additions, modifications, supplements, variations to, or Works relating to, any of the property referred to in (a), (b), (c), (d), (e), (f) or (g), including any patent continuations,
+
 together with any audio-visual or other sample content provided by, or to which access is given by, the Licensor for the purposes of or in connection with the User’s use of the Software or the development of the User’s Software.
 
 **Intellectual Property Rights**: all forms of intellectual property rights throughout the world including copyright, registered patent, design, trade mark and Information, including know-how and trade-secrets.
@@ -146,11 +178,17 @@ ii) multiple virtual machines within a technical environment that partitions a p
 
 **Territory**: as specified in the Order.
 
-**Trade Mark**: the trade mark “Netpump” (with Australian registration number 1815349 and United States USPTO registration number 5471970) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” or “Class 42” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
-- the trade mark “Pacbyte®” (with Australian registration number 1758251 and United States USPTO registration number 5253194) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” or “Class 42” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
-- the trade mark “PacByte®” (with Australian registration number 1022257) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
-- any trademark that is the same as or similar to any of the trademarks described in (a), (b) or (c) that any member of the Pacbyte may register or permit to be registered in any jurisdiction; and
-- any other trademark any member of the Pacbyte may develop or register or permit to be developed or registered with respect to the Intellectual Property.
+**Trade Mark**: 
+
+(a) the trade mark “Netpump” (with Australian registration number 1815349 and United States USPTO registration number 5471970) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” or “Class 42” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
+
+(b) the trade mark “Pacbyte®” (with Australian registration number 1758251 and United States USPTO registration number 5253194) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” or “Class 42” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
+
+(c) the trade mark “PacByte®” (with Australian registration number 1022257) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
+
+(d) any trademark that is the same as or similar to any of the trademarks described in (a), (b) or (c) that any member of the Pacbyte may register or permit to be registered in any jurisdiction; and
+
+(e) any other trademark any member of the Pacbyte may develop or register or permit to be developed or registered with respect to the Intellectual Property.
 
 **Update**: means updates, fixes or other relatively minor modifications to the Software which are applied through the Licensor’s update process.
 
@@ -160,225 +198,286 @@ ii) multiple virtual machines within a technical environment that partitions a p
 
 **Works**: all inventions, designs, drawings, plans, software, hardware, reports, documents, systems, improvements and other materials in which copyright subsists.
 
-### Interpretation
+### 1.2.  Interpretation
 
 In these Licence Terms:
-- headings are for convenience only and do not affect interpretation;
-- and unless the context requires otherwise:
-  - words denoting the singular number include the plural and vice versa;
-  - words denoting any gender include any other gender;
-  - a reference to any Party includes that Party’s executors, administrators, successors and permitted assigns, including any Person taking by way of novation;
-  - a reference to any document (including these Licence Terms) is to that document as varied, novated, ratified or replaced from time to time;
-  - a reference to any statute or to any statutory provision includes any statutory modification or re-enactment of it or any statutory provision substituted for it, and all ordinances, by-laws, regulations, rules and statutory instruments (however described) issued under it;
-  - references to parties, clauses, schedules, exhibits or annexures are references to parties, clauses, schedules, exhibits and annexures to or of these Licence Terms;
-  - where a word or phrase is given a defined meaning, any other part of speech or grammatical form of that word or phrase has a corresponding meaning;
-  - mentioning anything after “include”, “includes” or “including” does not limit what else might be included;
-  - if any day appointed or specified by these Licence Terms for the payment of any money or doing of anything falls on a day which is not a Business Day, the day so appointed or specified will be deemed to be the next Business Day;
-  - a reference to a month is a reference to a calendar month;
-  - a reference to writing includes any means of producing words in a tangible and permanently visible form; and
-  - where reference is made to an Event of Default continuing, it means that the Event of Default has occurred and has not been remedied to the satisfaction of the Party entitled to rely on that Event of Default to take any action or waived by that Party in writing.
 
-## Licence
+ (a) headings are for convenience only and do not affect interpretation;
+ and unless the context requires otherwise:
+ 
+(b) words denoting the singular number include the plural and vice versa;
 
-### Licence Grant
+(c) words denoting any gender include any other gender;
+
+  (d) a reference to any Party includes that Party’s executors, administrators, successors and permitted assigns, including any Person taking by way of novation;
+  
+  (e) a reference to any document (including these Licence Terms) is to that document as varied, novated, ratified or replaced from time to time;
+  
+  (f) a reference to any statute or to any statutory provision includes any statutory modification or re-enactment of it or any statutory provision substituted for it, and all ordinances, by-laws, regulations, rules and statutory instruments (however described) issued under it;
+  
+  (g) references to parties, clauses, schedules, exhibits or annexures are references to parties, clauses, schedules, exhibits and annexures to or of these Licence Terms;
+  
+  (h) where a word or phrase is given a defined meaning, any other part of speech or grammatical form of that word or phrase has a corresponding meaning;
+  
+  (i) mentioning anything after “include”, “includes” or “including” does not limit what else might be included;
+  
+  (j) if any day appointed or specified by these Licence Terms for the payment of any money or doing of anything falls on a day which is not a Business Day, the day so appointed or specified will be deemed to be the next Business Day;
+  
+  (k) a reference to a month is a reference to a calendar month;
+  
+  (l) a reference to writing includes any means of producing words in a tangible and permanently visible form; and
+  
+  (m) where reference is made to an Event of Default continuing, it means that the Event of Default has occurred and has not been remedied to the satisfaction of the Party entitled to rely on that Event of Default to take any action or waived by that Party in writing.
+
+##2.   Licence
+
+### 2.1.  Licence Grant
 
 On the terms and conditions of these Licence Terms, the Licensor hereby grants to the User this Licence which is a non-exclusive, non-sublicensable, non-transferable and revocable licence to use the Intellectual Property:
-- in the Territory; and
-- for the Term.
 
-### Restrictions
+(a) in the Territory; and
+
+(b) for the Term.
+
+### 2.2.  Restrictions
 
 Except as otherwise expressly permitted in this Agreement, you will not:
-- reproduce, modify, adapt or create derivative works of any part of the Software;
-- rent, lease, distribute, sell, sublicense, transfer, or provide access to the Software to a third party;
-- use the Software for the benefit of any third party;
-- incorporate the Software into a product or service you provide to a third party;
-- interfere with any license key mechanism in the Software or otherwise circumvent mechanisms in the Software intended to limit your use;
-- reverse engineer, disassemble, decompile, translate, or otherwise seek to obtain or derive the source code, underlying ideas, algorithms, file formats or non-public APIs to the Software, except to the extent expressly permitted by applicable law (and then only upon advance notice to us);
-- remove or obscure any proprietary or other notices contained in the Software;
-- use the Software for competitive analysis or to build competitive products;
-- publicly disseminate information regarding the performance of the Software;
-- export, directly or indirectly, of any information, Intellectual Property or any of the Software Products to any country prohibited by the laws of the United States, Australia or United Kingdom or for which those Governments, entities or any agency thereof at the time of export requires an export licence or other government approval; or
-- encourage or assist any third party to do any of the foregoing.
 
-### Licence Key
+(a) reproduce, modify, adapt or create derivative works of any part of the Software;
+
+(b) rent, lease, distribute, sell, sublicense, transfer, or provide access to the Software to a third party;
+
+(c) use the Software for the benefit of any third party;
+
+(d) incorporate the Software into a product or service you provide to a third party;
+
+(e) interfere with any license key mechanism in the Software or otherwise circumvent mechanisms in the Software intended to limit your use;
+
+(f) reverse engineer, disassemble, decompile, translate, or otherwise seek to obtain or derive the source code, underlying ideas, algorithms, file formats or non-public APIs to the Software, except to the extent expressly permitted by applicable law (and then only upon advance notice to us);
+
+(g) remove or obscure any proprietary or other notices contained in the Software;
+
+(h) use the Software for competitive analysis or to build competitive products;
+
+(i) publicly disseminate information regarding the performance of the Software;
+
+(j) export, directly or indirectly, of any information, Intellectual Property or any of the Software Products to any country prohibited by the laws of the United States, Australia or United Kingdom or for which those Governments, entities or any agency thereof at the time of export requires an export licence or other government approval; or
+
+(k) encourage or assist any third party to do any of the foregoing.
+
+### 2.3.  Licence Key
 
 The Software may only be activated by delivery of a Licence Key, which Licence Keys may be designed to allow use of the Software in compliance with the scope of the Licence granted and termination of the Licence for non-compliance with the applicable Licence. Further, the Software may contain a metering or instrumentation capable of verifying license entitlement and transmitting reports or statistics on the Software usage to the Licensor or a third party engaged by the Licensor to collect any such reports or statistics.
 
-### Increased Scope of Use
+### 2.4.  Increased Scope of Use
 
 During the Term, a User may increase its Scope of Use (e.g., adding Authorized Users, licenses, copies or instances) by placing a new Order or, if made available by Pacbyte, directly through the applicable Software. Any increases to your Scope of Use will be subject to additional fees, as set forth in the applicable Order.
 
-### Support and Maintenance
+### 2.5.  Support and Maintenance
 
 During the period for which you have paid the applicable Support and Maintenance fee, the Licensor (or its authorised agents) will provide Support and Maintenance Services for the Software in accordance with the Pacbyte Support Policy and the Enterprise Support and Services Policy (if applicable). Support and Maintenance for Software includes access to New Releases, if and when available, and any references to “Software” in this Agreement include New Releases.
 
-### Attribution
+### 2.6.  Attribution
 
 In any use of the Software, you must not remove, obscure, or alter in any way the following attribution to Pacbyte on all user interfaces to the Software: “Powered by Pacbyte,” which must in every case include a hyperlink to(http://www.pacbyte.com/), and which must be in the same format as delivered in the Software.
 
-### System Requirements
+### 2.7.  System Requirements
 
 You are solely responsible for ensuring that your systems meet the hardware, software and any other applicable system requirements for the Software as specified in the Documentation. Pacbyte will have no obligations or responsibility under this Agreement for issues caused by your use of any third-party hardware or software not provided by Pacbyte.
 
-## Licence Fees
+## 3.  Licence Fees
 
-### Licence Fees
+### 3.1.  Licence Fees
 
 The Licensor has agreed to supply the Software to the User at no cost for the Term in consideration for the Users’ promises contained in the Agreement. If the User wishes to extend use of the Software beyond the Term, the User agrees that it will pay all fees in accordance with any future Order that may be entered into between the User and the Licensor for the use of the Software.
 
-Unless otherwise specified in the Order, the User will pay all amounts at the time the Order is placed. Other than as expressly set forth in clause 8.1 (Indemnity by User), clause 8.2 (Indemnity by Licensor), clause 8.3 (Limited Warranty) and clause 8.4 (Limit of Liability), all amounts are non-refundable, non-cancellable and non-creditable. In making payments, the User acknowledges that it is not relying on future availability of the Software beyond the current Term or any Upgrades or feature enhancements.
+(a) Unless otherwise specified in the Order, the User will pay all amounts at the time the Order is placed. Other than as expressly set forth in clause 8.1 (Indemnity by User), clause 8.2 (Indemnity by Licensor), clause 8.3 (Limited Warranty) and clause 8.4 (Limit of Liability), all amounts are non-refundable, non-cancellable and non-creditable. In making payments, the User acknowledges that it is not relying on future availability of the Software beyond the current Term or any Upgrades or feature enhancements.
 
-If the User adds Authorised Users, Servers and Devices during the Term, the Licensor will charge the User for the increased number of Authorised Users, Servers and Devices pursuant to the then-currently applicable rates in the next billing cycle. The User agrees that the Licensor may bill for renewals, additional users, additional servers and unpaid fees, as applicable.
+(b) If the User adds Authorised Users, Servers and Devices during the Term, the Licensor will charge the User for the increased number of Authorised Users, Servers and Devices pursuant to the then-currently applicable rates in the next billing cycle. The User agrees that the Licensor may bill for renewals, additional users, additional servers and unpaid fees, as applicable.
 
-If the User purchases Software through an approved Distributor or Reseller, the User owes payment to the Distributor or Reseller as agreed between the User and the Reseller, but the User acknowledges that the Licensor may terminate the User’s rights to use the Software if the Licensor does not receive the corresponding payment from the Distributor or Reseller.
+(c) If the User purchases Software through an approved Distributor or Reseller, the User owes payment to the Distributor or Reseller as agreed between the User and the Reseller, but the User acknowledges that the Licensor may terminate the User’s rights to use the Software if the Licensor does not receive the corresponding payment from the Distributor or Reseller.
 
-### Taxes
+### 3.2.  Taxes
 
-The User shall pay, taxes of any and all kind, including but not limited to, sales, use, excise, value added tax, goods and services tax, or import or export (or similar tax or duties), levied upon delivery of the Software. If applicable law requires the User to withhold any income taxes levied on payments to be made pursuant to this Agreement (“Withholding Tax”) the User shall increase such payment to the Licensor so that, after deduction for Withholding Tax, the Licensor receives payments as if no Withholding Tax had been deducted. Notwithstanding the foregoing, the User may have obtained an exemption from relevant taxes or duties as of the time such taxes or duties are levied or assessed. In that case, the User will have the right to provide to the Licensor any such exemption information, and the Licensor will use reasonable efforts to provide such invoicing documents as may enable the User to obtain a refund or credit for the amount so paid from any relevant revenue authority if such a refund or credit is available.
+The User shall pay, taxes of any and all kind, including but not limited to, sales, use, excise, value added tax, goods and services tax, or import or export (or similar tax or duties), levied upon delivery of the Software. If applicable law requires the User to withhold any income taxes levied on payments to be made pursuant to this Agreement (“**Withholding Tax**”) the User shall increase such payment to the Licensor so that, after deduction for Withholding Tax, the Licensor receives payments as if no Withholding Tax had been deducted. Notwithstanding the foregoing, the User may have obtained an exemption from relevant taxes or duties as of the time such taxes or duties are levied or assessed. In that case, the User will have the right to provide to the Licensor any such exemption information, and the Licensor will use reasonable efforts to provide such invoicing documents as may enable the User to obtain a refund or credit for the amount so paid from any relevant revenue authority if such a refund or credit is available.
 
-## User Undertakings
+## 4.  User Undertakings
 
-### Title
+### 4.1.  Title
 
-The User acknowledges:
-- that the Licensor is the owner of all intellectual property (including Intellectual Property Rights and common law rights) in the Intellectual Property and neither the User nor any third party has or will acquire, any right, title or interest (including goodwill) in or to the Intellectual Property;
-- the Licensor’s legal and beneficial interests in the Intellectual Property and the validity of its registration as the registered owner of the Intellectual Property (to the extent that the Intellectual Property is registered or capable of registration);
-- that the Licensor has a fundamental interest in maintaining its goodwill and reputation in the Intellectual Property; and
-- the Licensor gives no representation or warranty (except as specified in Clause 8.3 (Limited Warranty), express or implied, with respect to the functionality, performance, accuracy, completeness or fitness for purpose of the Software or any of the Intellectual Property.
+(a) The User acknowledges:
 
-The User undertakes that the User will not, and will not assist any other Person (whether directly or indirectly) to:
-- take any action that would or might invalidate, challenge, prejudice or put in dispute the Licensor’s right, title or interest in and to the Intellectual Property and the Intellectual Property Rights; or
-- support an application to remove, adversely affect or amend any registration of any part of the Intellectual Property or the Intellectual Property Rights.
+(i) that the Licensor is the owner of all intellectual property (including Intellectual Property Rights and common law rights) in the Intellectual Property and neither the User nor any third party has or will acquire, any right, title or interest (including goodwill) in or to the Intellectual Property;
 
-The User agrees that:
-- any and all goodwill in the Intellectual Property arising as a result of the User’s Use under this Licence inures to the Licensor’s benefit exclusively;
-- upon expiry or termination of this Licence and any rights granted under this Licence, the Licensor will not be obliged to make any payment to the User attributable to any goodwill associated with the User’s Use of the Intellectual Property; and
-- any and all enhancements to or accretions in value of the Intellectual Property arising as a result of Use of this Licence vest in the Licensor.
+(ii) the Licensor’s legal and beneficial interests in the Intellectual Property and the validity of its registration as the registered owner of the Intellectual Property (to the extent that the Intellectual Property is registered or capable of registration);
 
-### Compliance
+(iii) that the Licensor has a fundamental interest in maintaining its goodwill and reputation in the Intellectual Property; and
+
+(iv) the Licensor gives no representation or warranty (except as specified in Clause 8.3 (Limited Warranty), express or implied, with respect to the functionality, performance, accuracy, completeness or fitness for purpose of the Software or any of the Intellectual Property.
+
+(b)The User undertakes that the User will not, and will not assist any other Person (whether directly or indirectly) to:
+
+(i) take any action that would or might invalidate, challenge, prejudice or put in dispute the Licensor’s right, title or interest in and to the Intellectual Property and the Intellectual Property Rights; or
+
+(ii) support an application to remove, adversely affect or amend any registration of any part of the Intellectual Property or the Intellectual Property Rights.
+
+(c) The User agrees that:
+
+(i) any and all goodwill in the Intellectual Property arising as a result of the User’s Use under this Licence inures to the Licensor’s benefit exclusively;
+
+(ii) upon expiry or termination of this Licence and any rights granted under this Licence, the Licensor will not be obliged to make any payment to the User attributable to any goodwill associated with the User’s Use of the Intellectual Property; and
+
+(iii) any and all enhancements to or accretions in value of the Intellectual Property arising as a result of Use of this Licence vest in the Licensor.
+
+### 4.2.  Compliance
 
 The User agrees to provide the Licensor or its authorised representative with the Information requested by the Licensor for the purpose of making a reasonable assessment of whether the Intellectual Property is being Used and applied in accordance with these Licence Terms.
 
-### Notice to Licensor
+### 4.3.  Notice to Licensor
 
 Upon becoming aware, the User will promptly notify the Licensor:
-- of any Event of Default and the steps taken to remedy or prevent it (whether or not it is a defaulting Party);
-- if any representation or warranty made in this Licence proves to have been incorrect or misleading in any material respect when made;
-- of any litigation, arbitration, Tax claim, dispute or administrative proceeding to which it is a party or affecting the User or any of the User’s property the adverse determination of which could have a Material Adverse Effect;
-- of any proposal by any Governmental Agency to acquire compulsorily the whole or a substantial part of the User’s property; and
-- of the appointment of a Person under any legislation to investigate all or any part of its affairs.
 
-### No Use
+(a) of any Event of Default and the steps taken to remedy or prevent it (whether or not it is a defaulting Party);
+
+(b) if any representation or warranty made in this Licence proves to have been incorrect or misleading in any material respect when made;
+
+(c) of any litigation, arbitration, Tax claim, dispute or administrative proceeding to which it is a party or affecting the User or any of the User’s property the adverse determination of which could have a Material Adverse Effect;
+
+(d) of any proposal by any Governmental Agency to acquire compulsorily the whole or a substantial part of the User’s property; and
+
+(e) of the appointment of a Person under any legislation to investigate all or any part of its affairs.
+
+### 4.4.  No Use
 
 Except in accordance with these Licence Terms or with the prior written consent of the Licensor, the User must not Use all or any part of the Intellectual Property.
 
-### Compliance with laws
+### 4.5.  Compliance with laws
 
-Unless expressly permitted by these Licence Terms, the User agrees not to do any of the acts identified in the Commonwealth of Australia Consolidated Acts, including, without limitation:
-- section 26(1) of the Trade Marks Act 1995 (Cth);
-- section 13 of the Patents Act 1990 (Cth);
-- section 13 of the Copyright Act 1968 (Cth);
-- section 10 of the Designs Act 2003 (Cth),
-- or any comparable legislation in force in the Territory in relation to any of the Intellectual Property.
+(a) Unless expressly permitted by these Licence Terms, the User agrees not to do any of the acts identified in the Commonwealth of Australia Consolidated Acts, including, without limitation:
 
-The User must use the Intellectual Property in compliance with all applicable laws, including local laws in the Territory and any place the Intellectual Property is Used or in which the User’s Software is, or is intended to be used.
+(i) section 26(1) of the Trade Marks Act 1995 (Cth);
 
-## Confidentiality
+(ii) section 13 of the Patents Act 1990 (Cth);
 
-### Restrictions
+(iii) section 13 of the Copyright Act 1968 (Cth);
 
-Except as permitted by these Licence Terms, the Recipient will not, and will procure that its Representatives will not:
-- disclose Information, or permit Information to be disclosed, to any Person; or
-- Use Information for any purpose or in any way which is detrimental to, or in competition with, the Provider or any Affiliate of the Provider.
+(iv) section 10 of the Designs Act 2003 (Cth),
 
-### Permitted Disclosure
+or any comparable legislation in force in the Territory in relation to any of the Intellectual Property.
 
-Subject to the conditions below, the Recipient may disclose Information to such of its Representatives, but only to such extent, as is reasonably necessary to enable those Persons in the course of their duties to implement or perform the transactions contemplated by this Licence:
-- Prior to receipt by each such Representative of any Information, the Recipient will ensure that all of its Representatives are aware of the confidentiality of the Information, the existence and terms of this clause 5 (Confidentiality) and comply with the provisions of this clause 5 (Confidentiality) as if they were party to this Licence. The Recipient agrees to be responsible for any act or omission of its Representatives constituting a breach of this clause 5 and acknowledges that the Provider will be entitled to all remedies available to it at law or in equity as if the breach was caused by the Recipient.
+(b) The User must use the Intellectual Property in compliance with all applicable laws, including local laws in the Territory and any place the Intellectual Property is Used or in which the User’s Software is, or is intended to be used.
 
-### Exceptions
+## 5.  Confidentiality
+
+### (a) Restrictions: 
+Except as permitted by these Licence Terms, the Recipient will not, and will procure that its Representatives will not disclose Information, or permit Information to be disclosed, to any Person; or Use Information for any purpose or in any way which is detrimental to, or in competition with, the Provider or any Affiliate of the Provider.
+
+### (b) Permitted Disclosure
+
+(i) Subject to (ii) below, the Recipient may disclose Information to such of its Representatives, but only to such extent, as is reasonably necessary to enable those Persons in the course of their duties to implement or perform the transactions contemplated by this Licence: 
+
+(ii) Prior to receipt by each such Representative of any Information, the Recipient will ensure that all of its Representatives are aware of the confidentiality of the Information, the existence and terms of this clause 5 (Confidentiality) and comply with the provisions of this clause 5 (Confidentiality) as if they were party to this Licence. The Recipient agrees to be responsible for any act or omission of its Representatives constituting a breach of this clause 5 and acknowledges that the Provider will be entitled to all remedies available to it at law or in equity as if the breach was caused by the Recipient.
+
+### (c) Exceptions
 
 Neither clause 5(a) nor 5(b) applies to any Information which:
 - already is, or becomes, public knowledge other than as a result of a breach of this clause 5 (Confidentiality) by the Recipient or a Representative of the Recipient; or
 - is independently acquired or developed by the Recipient without the benefit or use of Information; or
 - is lawfully received by the Recipient from a third party not owing any obligation of confidentiality to the Provider or a Representative of the Provider.
 
-### Compulsory Disclosure
+### (d) Compulsory Disclosure
 
 The Recipient may, so long as the Recipient complies with clause 5(e), disclose Information if, but only to the extent that, the Recipient is required to do so by applicable law or the requirements of any Governmental Agency.
 
-### Prior Notification
+### (e) Prior Notification
 
 The Recipient will, unless prevented by law from doing so, before disclosing Information pursuant to clause 5(d):
-- give to the Provider the maximum notice reasonably practicable in the circumstances, specifying the requirement under which the Recipient is required to disclose Information and the precise Information which the Recipient is required to disclose;
-- use its best endeavours to oppose or restrict disclosure, or to make disclosure on terms which will preserve as far as possible the confidentiality of the Information;
-- take such steps as will permit the Provider to have a reasonable opportunity to oppose or to restrict such disclosure by lawful means; and
-- give all reasonable assistance and co-operation which the Provider considers necessary to prevent or minimise the disclosure of the Information.
 
-### Return or Destruction
+(i) give to the Provider the maximum notice reasonably practicable in the circumstances, specifying the requirement under which the Recipient is required to disclose Information and the precise Information which the Recipient is required to disclose;
+
+(ii) use its best endeavours to oppose or restrict disclosure, or to make disclosure on terms which will preserve as far as possible the confidentiality of the Information;
+
+(iii) take such steps as will permit the Provider to have a reasonable opportunity to oppose or to restrict such disclosure by lawful means; and
+
+(iv) give all reasonable assistance and co-operation which the Provider considers necessary to prevent or minimise the disclosure of the Information.
+
+### (f) Return or Destruction
 
 Upon the termination or completion of the transactions contemplated by this Licence the Recipient will, promptly on request by the Provider, return to the Provider all Information in the possession or control of the Recipient and Representatives of the Recipient, or, if the Provider so agrees, destroy all such Information (and the Provider will so agree in the case of Information described in paragraph (b) of the definition of “Information”).
 
-### Exceptions
+### (g) Exceptions
 
 Clause 5(f) will not apply to any Information to the extent that:
-- such Information forms part of the board minutes, board committee minutes, investment committee minutes, credit committee papers or investment committee papers of the Recipient or a Representative of the Recipient;
-- the Recipient or a Representative of the Recipient is required by law to retain a copy of the Information; and
-- such Information is archived pursuant to any auto-archiving procedures of the Recipient.
 
-### Copying
+(i) such Information forms part of the board minutes, board committee minutes, investment committee minutes, credit committee papers or investment committee papers of the Recipient or a Representative of the Recipient;
+
+(ii) the Recipient or a Representative of the Recipient is required by law to retain a copy of the Information; and
+
+(iii) such Information is archived pursuant to any auto-archiving procedures of the Recipient.
+
+### (h) Copying
 
 The Recipient may not copy or reproduce Information except to the extent absolutely necessary to enable the Recipient and its Representatives to implement or perform the transactions contemplated by this Licence.
 
-### Ownership
+### (i) Ownership
 
 The Information always remains the property of the Provider. This Licence does not give the Recipient any right, title or interest in the Information.
 
-### Undertakings and Acknowledgements
+### (j) Undertakings and Acknowledgements
 
 The Recipient agrees that:
-- it will not assert any rights in respect of, nor contest the Provider’s ownership of, Information;
-- it will take all reasonable steps to protect the Information and keep it secure from unauthorised Persons;
-- it will co-operate with the Provider in any action it reasonably takes to protect the Information;
-- it will inform the Provider immediately if it becomes aware or suspects there has been a breach of the obligations in this clause 5 or an unauthorised disclosure of Information by a Representative of the Recipient;
-- the Provider has no obligation to disclose Information to the Recipient and the Provider has an absolute discretion as to the Information which the Provider chooses to disclose; and
-- other than as expressly set out in these Licence Terms, the Provider makes no warranty or representation as to the accuracy, adequacy, or completeness of any Information, or as to the materiality of any Information in the context of the transactions contemplated by this Licence and has no responsibility or liability in any way to the Recipient or any of its Representatives in relation to the use of or reliance on the Information.
 
-### Equitable Remedies
+(i) it will not assert any rights in respect of, nor contest the Provider’s ownership of, Information;
+
+(ii) it will take all reasonable steps to protect the Information and keep it secure from unauthorised Persons;
+
+(iii) it will co-operate with the Provider in any action it reasonably takes to protect the Information;
+
+(iv) it will inform the Provider immediately if it becomes aware or suspects there has been a breach of the obligations in this clause 5 or an unauthorised disclosure of Information by a Representative of the Recipient;
+
+(v) the Provider has no obligation to disclose Information to the Recipient and the Provider has an absolute discretion as to the Information which the Provider chooses to disclose; and
+
+(vi) other than as expressly set out in these Licence Terms, the Provider makes no warranty or representation as to the accuracy, adequacy, or completeness of any Information, or as to the materiality of any Information in the context of the transactions contemplated by this Licence and has no responsibility or liability in any way to the Recipient or any of its Representatives in relation to the use of or reliance on the Information.
+
+### (k) Equitable Remedies
 
 The Recipient acknowledges that, in the event of any alleged breach of this clause 5 (Confidentiality) by the Recipient or any Representative of the Recipient, damages may not be an adequate remedy and the Provider will be entitled to seek equitable relief (including an injunction) in addition to damages. In any proceeding brought by the Provider seeking equitable relief for a breach of this clause 5, neither the Recipient nor any Representative of the Recipient may claim that the breach is one which may not or ought not to be the subject of equitable relief.
 
-### Indemnity
+### (l) Indemnity
 
 The Recipient will indemnify and hold the Provider harmless against all losses, claims, costs, demands, liabilities and expenses which may be suffered, sustained or incurred by the Provider directly or indirectly as a result of or in respect of:
-- the failure by the Recipient to observe or comply with any of the terms of this clause 5 (Confidentiality) for any reason;
-- any unauthorised disclosure of Information by the Recipient’s Representatives; or
-- any liability of the Provider to the Recipient’s Representatives in relation to the Information.
 
-### Continuation
+(i) the failure by the Recipient to observe or comply with any of the terms of this clause 5 (Confidentiality) for any reason;
+
+(ii) any unauthorised disclosure of Information by the Recipient’s Representatives; or
+
+(iii) any liability of the Provider to the Recipient’s Representatives in relation to the Information.
+
+### (m) Continuation
 
 The Recipient’s obligations under this Licence concerning protection and Use of Information continue after termination of this Licence and are enforceable by the Provider, including by way of injunction.
 
-## Intellectual Property Rights
+## 6.  Intellectual Property Rights
 
-### Licensor’s Intellectual Property Rights
+### 6.1.  Licensor’s Intellectual Property Rights
 
-The User acknowledges and agrees that, other than the User’s Software, all existing Intellectual Property Rights, title and interest in all Works created or developed by any Party or its Representatives (whether alone or with others) in connection with that Party’s implementation or performance of the transactions contemplated by this Licence are vested in the Licensor (or an assignee approved by the shareholders of the Licensor) and comprise part of the Intellectual Property. Simultaneously with their creation or development, all future Intellectual Property Rights, title and interest in all such Works will vest in the Licensor and comprise part of the Intellectual Property. The User agrees to:
-- immediately disclose to the Licensor all such Works on creation or development; and
-- execute and perform, or procure the execution or performance of, all documents and all acts and things required or desirable to secure any Intellectual Property rights of the Licensor without any remuneration or compensation.
+(a) The User acknowledges and agrees that, other than the User’s Software, all existing Intellectual Property Rights, title and interest in all Works created or developed by any Party or its Representatives (whether alone or with others) in connection with that Party’s implementation or performance of the transactions contemplated by this Licence are vested in the Licensor (or an assignee approved by the shareholders of the Licensor) and comprise part of the Intellectual Property. Simultaneously with their creation or development, all future Intellectual Property Rights, title and interest in all such Works will vest in the Licensor and comprise part of the Intellectual Property. The User agrees to:
 
-The User consents (for the benefit of the Licensor) to any and all acts or omissions (whether occurring before or after this consent is given) in relation to all Works, other than the User’s Software, made or to be made by the User or the User’s Representatives in the course of the User’s implementation or performance of the transactions contemplated by this Licence which might otherwise infringe the Moral Rights of the Licensor or its Representatives in any or all of those Works.
+(i) immediately disclose to the Licensor all such Works on creation or development; and
 
-The User warrants that it has given this consent and undertaking genuinely, and without being subjected to any duress by the Licensor or any other Person, and without relying on any representations other than those expressly set out in these Licence Terms.
+(ii) execute and perform, or procure the execution or performance of, all documents and all acts and things required or desirable to secure any Intellectual Property rights of the Licensor without any remuneration or compensation.
 
-### User’s Intellectual Property Rights
+(b) The User consents (for the benefit of the Licensor) to any and all acts or omissions (whether occurring before or after this consent is given) in relation to all Works, other than the User’s Software, made or to be made by the User or the User’s Representatives in the course of the User’s implementation or performance of the transactions contemplated by this Licence which might otherwise infringe the Moral Rights of the Licensor or its Representatives in any or all of those Works.
+
+(c) The User warrants that it has given this consent and undertaking genuinely, and without being subjected to any duress by the Licensor or any other Person, and without relying on any representations other than those expressly set out in these Licence Terms.
+
+### 6.2.  User’s Intellectual Property Rights
 
 The Licensor acknowledges and agrees that all existing Intellectual Property Rights, title and interest in all Works created or developed by the User or Representatives (whether alone or with others) in connection with that Party’s implementation or performance of the transactions contemplated by this Licence which comprise any part of the User’s Software are vested in the User and comprise part of the User’s Intellectual Property Rights. Simultaneously with their creation or development, all future Intellectual Property Rights, title and interest in all such Works will vest in the User and comprise part of the Intellectual Property Rights of the User.
 
 The User agrees that this clause relates solely to the User’s Software and nothing in this clause will have the effect of giving the User title to or any interest in any of the Intellectual Property.
 
-## Infringement
+## 7.  Infringement
 
 The User undertakes to do all things reasonably necessary for the protection of the Intellectual Property against deregistration or infringement. If any legal action is necessary to protect the Intellectual Property or the Intellectual Property Rights, the Licensor will undertake that legal action at its expense but in the name of the User if appropriate.
 
