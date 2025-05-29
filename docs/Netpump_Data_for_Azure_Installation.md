@@ -54,30 +54,33 @@ Click Review + Create, then Create. Wait for the notification that says “Deplo
 
 ![Create_a_resource_group][001]
 
-Create the install resource group: Repeat the above process to create a second resource group named `rg-netpump-install` in the same region. This second group will be used to hold temporary installation assets separately from core resources. Again, wait for the Deployment succeeded message.
+Azure Portal – Resource Group creation form with the Name and Region filled in.
 
-**Why two resource groups?** Separating core resources and installation assets helps with organization and cleanup. The `rg-netpump-core` group will contain the persistent Netpump service resources, while `rg-netpump-install` will contain short-lived setup resources that can be isolated or removed later.
+**Create the install resource group:** Repeat the above process to create a second resource group named `rg-netpump-install` in the **same region**. This second group will be used to hold temporary installation assets separately from core resources. Again, wait for the Deployment succeeded message.
+
+Why two resource groups? Separating core resources and installation assets helps with organization and cleanup. The `rg-netpump-core` group will contain the persistent Netpump service resources, while `rg-netpump-install` will contain short-lived setup resources that can be isolated or removed later.
 
 ### 2. Add Key Vaults to the Resource Groups
 
 You will create two Azure Key Vaults – one in each resource group:
 
-#### Core Key Vault
-
+**1. Core Key Vault:**  
 In the `rg-netpump-core` resource group, click + Create and search for Key Vault. Select Key Vault and click Create. In the Key Vault creation form:
 
 - **Key Vault Name**: `kv-netpump-core` (must be globally unique within Azure, usually the prefix plus core is fine).
+
 - **Region**: Same region as above.
+
 - Leave other settings at defaults (for this setup, standard SKU and default access policy settings are fine).
-- Click Review + Create, then Create. Wait for the Key Vault deployment to succeed.
 
-#### Install Key Vault
+Click **Review + Create**, then **Create**. Wait for the Key Vault deployment to succeed.
 
+2. Install Key Vault:**
 Repeat the process in the `rg-netpump-install` group. Create a Key Vault named `kv-netpump-install` (same region). Wait for deployment success.
 
-**Why two Key Vaults?** The core vault (`kv-netpump-core`) is intended to store long-lived secrets like cluster certificates, while the install vault (`kv-netpump-install`) will store short-lived secrets used during the installation process. This separation adds security and clarity.
+Why two Key Vaults? The core vault (`kv-netpump-core`) is intended to store long-lived secrets like cluster certificates, while the install vault (`kv-netpump-install`) will store short-lived secrets used during the installation process. This separation adds security and clarity.
 
-**Validation**: After creation, verify in the portal that each resource group contains one Key Vault with the expected name. For example, in `rg-netpump-core` you should see `kv-netpump-core`, and in `rg-netpump-install` you should see `kv-netpump-install`.
+**Validation**: After creation, verify in the portal that **each resource group contains one Key Vault** with the expected name. For example, in `rg-netpump-core` you should see `kv-netpump-core`, and in `rg-netpump-install` you should see `kv-netpump-install`.
 
 ### 3. Register the Server Application (Back-end AAD App)
 
