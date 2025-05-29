@@ -479,205 +479,207 @@ The User agrees that this clause relates solely to the User’s Software and not
 
 ## 7.  Infringement
 
-The User undertakes to do all things reasonably necessary for the protection of the Intellectual Property against deregistration or infringement. If any legal action is necessary to protect the Intellectual Property or the Intellectual Property Rights, the Licensor will undertake that legal action at its expense but in the name of the User if appropriate.
+(a) The User undertakes to do all things reasonably necessary for the protection of the Intellectual Property against deregistration or infringement. If any legal action is necessary to protect the Intellectual Property or the Intellectual Property Rights, the Licensor will undertake that legal action at its expense but in the name of the User if appropriate.
 
-In the event that:
-- The User receives notice of any infringement or threatened infringement of any of the Intellectual Property or any common law passing off by reason of imitations or otherwise; or
-- any third party claims that any use of the Intellectual Property is liable to cause deception or confusion to the public;
+(b) In the event that:
+
+(i) The User receives notice of any infringement or threatened infringement of any of the Intellectual Property or any common law passing off by reason of imitations or otherwise; or
+
+(ii) any third party claims that any use of the Intellectual Property is liable to cause deception or confusion to the public;
 
 the User must promptly notify the Licensor, giving full particulars, and provide all information and assistance required by the Licensor in the event that the Licensor commences or defends proceedings in relation to any claims or infringements. Any such proceedings will be under the control and at the expense of the Licensor.
 
-In the event that the Licensor does not commence or defend proceedings in relation to claims or infringements of the Intellectual Property within 2 months of receiving notification of them from the User, the User may institute proceedings in its own name as if it were the Licensor and the Licensor is not liable for any cost unless it takes part in the proceedings.
+(c) In the event that the Licensor does not commence or defend proceedings in relation to claims or infringements of the Intellectual Property within 2 months of receiving notification of them from the User, the User may institute proceedings in its own name as if it were the Licensor and the Licensor is not liable for any cost unless it takes part in the proceedings.
 
-At the request and expense of the Licensor, the User must provide all and any information concerning the User’s use of each Trade Mark and must give co‑operation and assistance to the Licensor in any dispute, litigation or settlement in relation to a Trade Mark.
+(d) At the request and expense of the Licensor, the User must provide all and any information concerning the User’s use of each Trade Mark and must give co‑operation and assistance to the Licensor in any dispute, litigation or settlement in relation to a Trade Mark.
 
-## Indemnity, Limited Warranty and Limit of Liability
+## 8.  Indemnity, Limited Warranty and Limit of Liability
 
-### Indemnity by User
-
+### 8.1.  Indemnity by User
 The User releases and indemnifies, and will keep indemnified, each Indemnified Person from and against all:
-- Claims which may be brought, commenced, prosecuted or claimed against any Indemnified Person or in which any Indemnified Person may be involved;
-- Claims or Actions arising; and
-- all loss (including indirect loss, loss of profits or consequential loss), costs (including legal costs on a full indemnity basis), damages, or liability (whether in tort (including negligence), contract breach or statutory duty, equity or otherwise) which any Indemnified Person may suffer or incur,
-  in consequence of or relating to the Use of the Intellectual Property by the User, except to the extent such claims or loss are caused by the negligence of the Licensor.
 
-### Indemnity by Licensor
+(a) Claims which may be brought, commenced, prosecuted or claimed against any Indemnified Person or in which any Indemnified Person may be involved;
 
+(b) Claims or Actions arising; and
+
+(c) all loss (including indirect loss, loss of profits or consequential loss), costs (including legal costs on a full indemnity basis), damages, or liability (whether in tort (including negligence), contract breach or statutory duty, equity or otherwise) which any Indemnified Person may suffer or incur,
+
+in consequence of or relating to the Use of the Intellectual Property by the User, except to the extent such claims or loss are caused by the negligence of the Licensor.
+
+### 8.2.  Indemnity by Licensor
 The Licensor indemnifies, and will keep indemnified, the User from and against all:
-- claims, demands, actions, proceedings, prosecutions which may be brought, commenced or prosecuted or claimed against the User or in which the User may be involved; and
-- all loss (excluding indirect loss or consequential loss), costs (including legal costs on a full indemnity basis), damages, or liability (whether in tort (including negligence), contract breach or statutory duty, equity or otherwise) which the User may suffer or incur,
-  arising in connection with the granting of the Licence or the User’s Use of the Intellectual Property in accordance with this Agreement.
 
-### Limited Warranty
+(a) claims, demands, actions, proceedings, prosecutions which may be brought, commenced or prosecuted or claimed against the User or in which the User may be involved; and
+
+(b) all loss (excluding indirect loss or consequential loss), costs (including legal costs on a full indemnity basis), damages, or liability (whether in tort (including negligence), contract breach or statutory duty, equity or otherwise) which the User may suffer or incur,
+
+arising in connection with the granting of the Licence or the User’s Use of the Intellectual Property in accordance with this Agreement.
+
+### 8.3.  Limited Warranty
 
 If at any time within the period ending seven (7) days from the earlier of the date that License first pays for or uses the Software, the Software substantially fails to perform the functions described in the Software Documentation made available by the Licensor, the User will notify the Licensor in writing during such warranty period of such alleged nonconformance during. The Licensor will, at its own cost and expense and within thirty (30) days of receipt of such written notification, correct such deficiency. Should the Licensor fail to correct such warranty breach, the User may, as its sole remedy, upon giving the Licensor written notice within five (5) days of such failure to remedy, terminate this Agreement, destroy the copy of the Software in its possession and receive a refund of all the fees paid by User for the Software.
 
-**EXCEPT AS SPECIFIED ABOVE, THE SOFTWARE ARE PROVIDED "AS IS", AT USER'S OWN RISK, WITHOUT EXPRESS OR IMPLIED WARRANTY OR CONDITION OF ANY KIND. THE LICENSOR ALSO DISCLAIMS ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.** The Licensor will have no responsibility for any harm to the User's computer system, loss or corruption of data, or other harm that results from User's access to or use of the Software.
+EXCEPT AS SPECIFIED ABOVE, THE SOFTWARE ARE PROVIDED "AS IS", AT USER'S OWN RISK, WITHOUT EXPRESS OR IMPLIED WARRANTY OR CONDITION OF ANY KIND. THE LICENSOR ALSO DISCLAIMS ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. The Licensor will have no responsibility for any harm to the User's computer system, loss or corruption of data, or other harm that results from User's access to or use of the Software.
 
-### Limit of Liability
+### 8.4.  Limit of Liability
 
 To the extent permitted under applicable law, in no event will the Licensor including its affiliates, officers, employees, agents, suppliers or licensors be liable for any consequential loss whether in contract, tort, negligence, product liability or otherwise related to the Software, Services or other subject matter hereof.
 
 The Licensor’s liability under this Agreement will not, in any event, exceed the fees, if any, paid by the User for the software and services licensed to the User under this Agreement or the Limitation of Liability agreed in the Order, whichever is the lesser. The foregoing limitations shall apply to the maximum extent permitted by applicable law, regardless of whether the Licensor has been advised of the possibility of such damages and regardless of whether any remedy fails of its essential purpose. The User and the Licensor agree that, given the price of the Software and the nature of the circumstances, the preceding limitations are fair and reasonable.
 
-## Term and Termination
+## 9.  Term and Termination
 
-### Term
-
+### 9.1.  Term.
 The Term of this Licence is specified in the Order and will commence on the date the User first accesses the Software and shall automatically renew for periods specified in the Order (the Term specified in the Order together with each renewal term, the “Term”), unless either party provides at least ninety (30) days’ written notice of its intent to terminate the Agreement prior to the completion of the then current term.
 
-### Termination for Cause
-
+### 9.2.  Termination for Cause.
 The Term may be terminated by the Licensor upon notice in the event that the User has breached any of the terms of this Agreement in accordance with clause 9 (Term and Termination).
 
 By notice to the User, the Licensor may immediately terminate this Licence if:
-- an Insolvency Event occurs in relation to the User; or
-- an Event of Default occurs.
 
-### Termination for Convenience
+(a) an Insolvency Event occurs in relation to the User; or
+
+(b) an Event of Default occurs.
+
+### 9.3.  Termination for Convenience.
 
 The User may choose to stop using the Software and terminate this Agreement (including all Orders) at any time for any reason upon written notice to Pacbyte. Upon any such termination:
-1. You will not be entitled to a refund of any pre-paid fees (including any Additional Services); and
-2. If you have not already paid all applicable fees for the then-current Term or related services period (as applicable), any such fees that are outstanding will become immediately due and payable.
 
-### Obligations on Termination
+(i) You will not be entitled to a refund of any pre-paid fees (including any Additional Services); and
 
+(ii) If you have not already paid all applicable fees for the then-current Term or related services period (as applicable), any such fees that are outstanding will become immediately due and payable.
+
+### 9.4.  Obligations on Termination.
 Upon termination of this Licence, the User must:
-- Cease to Use the Software and any Intellectual Property for any purpose;
-- Promptly discontinue use of the Software and Intellectual Property and destroy all copies of the Software, the Confidential Information, the Information and related materials in its possession or control and upon request by the Licensor certify to the Licensor as to their destruction.
 
-## Dispute Resolution
+(a) Cease to Use the Software and any Intellectual Property for any purpose;
 
-Where any dispute arises between the Parties concerning this Agreement, or the circumstances, representations, or conduct giving rise to the Agreement, no Party may commence any court or arbitration proceedings relating to the dispute (other than for injunctive relief) unless that Party has complied with the procedures set out in this Clause 10.
+(b) Promptly discontinue use of the Software and Intellectual Property and destroy all copies of the Software, the Confidential Information, the Information and related materials in its possession or control and upon request by the Licensor certify to the Licensor as to their destruction.
 
-The Party initiating the dispute (the “initiating party”) must provide written notice of the dispute to the other Party (the “respondent party”) and nominate in that notice the initiating party’s representative for the negotiations. The respondent party must, within seven (7) days of receipt of the notice, give written notice to the initiating party naming the respondent party’s representative for the negotiations. Each representative nominated must have authority to settle or resolve the dispute.
+## 10.  Dispute Resolution
 
-If the Parties are unable to resolve the dispute by discussion and negotiation within 14 days of receipt of the written notice from the initiating party, then the Parties must immediately refer the dispute to mediation.
+(a) Where any dispute arises between the Parties concerning this Agreement, or the circumstances, representations, or conduct giving rise to the Agreement, no Party may commence any court or arbitration proceedings relating to the dispute (other than for injunctive relief) unless that Party has complied with the procedures set out in this Clause 10.
 
-The mediation must be conducted in accordance with the procedures adopted by the Australian Commercial Disputes Centre. The mediation must be conducted by a mediator at a fee agreed by the Parties. Failing agreement between the Parties, the mediator shall be selected and the mediator’s fee determined by the then President of the Law Society of New South Wales.
+(i) The Party initiating the dispute (the “**initiating party**”) must provide written notice of the dispute to the other Party (the “**respondent party**”) and nominate in that notice the initiating party’s representative for the negotiations. The respondent party must, within seven (7) days of receipt of the notice, give written notice to the initiating party naming the respondent party’s representative for the negotiations. Each representative nominated must have authority to settle or resolve the dispute.
 
-Each party must pay its own costs in relation to complying with this Clause 10, except that the costs and expenses of the mediation will be borne by the parties equally.
+(ii) If the Parties are unable to resolve the dispute by discussion and negotiation within 14 days of receipt of the written notice from the initiating party, then the Parties must immediately refer the dispute to mediation.
 
-Unless prevented by the nature of the dispute, the parties will continue to perform this Agreement while attempts are made to resolve the dispute.
+(iii)The mediation must be conducted in accordance with the procedures adopted by the Australian Commercial Disputes Centre. The mediation must be conducted by a mediator at a fee agreed by the Parties. Failing agreement between the Parties, the mediator shall be selected and the mediator’s fee determined by the then President of the Law Society of New South Wales.
 
-## Representations and Warranties
+(b) Each party must pay its own costs in relation to complying with this Clause 10, except that the costs and expenses of the mediation will be borne by the parties equally.
 
-### Representations and Warranties
+(c) Unless prevented by the nature of the dispute, the parties will continue to perform this Agreement while attempts are made to resolve the dispute.
 
+## 11.  Representations and Warranties
+
+### 11.1. Representations and Warranties.
 On each day during the Term, each Party represents and warrants (in respect of its own matters only) for the benefit of the other Party:
 
-**Status**: It is validly created and existing under the laws of its jurisdiction of incorporation, has the power and authority to own its property and carry on its business as now conducted or contemplated and has the capacity to sue and be sued in its own name.
+(a) **status**: It is validly created and existing under the laws of its jurisdiction of incorporation, has the power and authority to own its property and carry on its business as now conducted or contemplated and has the capacity to sue and be sued in its own name.
 
-**Power**: It has the power to enter into and observe and perform its respective obligations under this Licence and to carry out the transactions contemplated by this Licence.
+(b) **power**: It has the power to enter into and observe and perform its respective obligations under this Licence and to carry out the transactions contemplated by this Licence.
 
-**Authorisations**: It has taken all necessary action to authorise the entry into and the observance and performance of its respective obligations under this Licence and the carrying out of the transactions contemplated by this Licence.
+(c) **authorisations**: It has taken all necessary action to authorise the entry into and the observance and performance of its respective obligations under this Licence and the carrying out of the transactions contemplated by this Licence.
 
-**Documents Binding**: This Licence is its valid and binding obligation, enforceable in accordance with its terms subject to laws generally affecting creditor's rights and principles of equity.
+(d) **documents binding**: This Licence is its valid and binding obligation, enforceable in accordance with its terms subject to laws generally affecting creditor's rights and principles of equity.
 
-**Transactions Permitted**: Its entry into and observance and performance of its obligations under this Licence and the carrying out by it of the transactions contemplated by this Licence do not and will not violate in any respect any provision of:
-- Any law or regulation or any judgment, ruling, order or decree of any Governmental Agency binding on it.
-- Its incorporation bylaws, articles of association or constitution.
-- Any other instrument, arrangement or agreement which is binding upon it or its property.
+(e) **transactions permitted**: Its entry into and observance and performance of its obligations under this Licence and the carrying out by it of the transactions contemplated by this Licence do not and will not violate in any respect any provision of:
 
-**Authorisations**: All Authorisations required in connection with the entry into and the observance and performance by it of its obligations under this Licence and the carrying out by it of the transactions contemplated by this Licence, and to ensure the validity and enforceability of this Licence and the transactions contemplated by this Licence, have been obtained and are in full force and effect and there has been no default in the observance and performance of the terms and conditions applicable to any such Authorisation.
+(i) Any law or regulation or any judgment, ruling, order or decree of any Governmental Agency binding on it.
 
-**No Misrepresentation**: All information provided by or on behalf of it to the other Party in or in connection with this Licence is true in all material respects and is not, by the omission of information or otherwise, misleading.
+(ii) Its incorporation bylaws, articles of association or constitution.
 
-**No Undisclosed Agreements**: There are in existence no instruments, arrangements or agreements which have not been disclosed to the other Party which are material in the context of this Licence.
+(iii) Any other instrument, arrangement or agreement which is binding upon it or its property.
 
-**No Trust**: It is not a trustee of any trust or settlement.
+(f) **Authorisations**: All Authorisations required in connection with the entry into and the observance and performance by it of its obligations under this Licence and the carrying out by it of the transactions contemplated by this Licence, and to ensure the validity and enforceability of this Licence and the transactions contemplated by this Licence, have been obtained and are in full force and effect and there has been no default in the observance and performance of the terms and conditions applicable to any such Authorisation.
 
-**Solvency**: No Insolvency Event has occurred and is continuing in relation to it and it is able to pay its debts as they fall due.
+(g) **no misrepresentation**: All information provided by or on behalf of it to the other Party in or in connection with this Licence is true in all material respects and is not, by the omission of information or otherwise, misleading.
 
-**Virus Warranty**: Pacbyte further represents and warrants that it will take reasonable commercial efforts to ensure that the Software, in the form and when provided to you, will be free of any viruses, malware, or other harmful code. For any breach of the foregoing warranty, your sole and exclusive remedy, and Pacbyte’s sole obligation, is to provide a replacement copy of the Software promptly upon notice.
+(h) **no undisclosed agreements**: There are in existence no instruments, arrangements or agreements which have not been disclosed to the other Party which are material in the context of this Licence.
 
-### Reliance
+(i) **no trust**: It is not a trustee of any trust or settlement.
+
+(j) **solvency**: No Insolvency Event has occurred and is continuing in relation to it and it is able to pay its debts as they fall due.
+
+(k) **virus warranty**: Pacbyte further represents and warrants that it will take reasonable commercial efforts to ensure that the Software, in the form and when provided to you, will be free of any viruses, malware, or other harmful code. For any breach of the foregoing warranty, your sole and exclusive remedy, and Pacbyte’s sole obligation, is to provide a replacement copy of the Software promptly upon notice.
+
+### 11.2.  Reliance
 
 Each Party acknowledges that the other Party has entered into this Licence in reliance on the representations and warranties made by it in clause 11.1.
 
-### Indemnity
+### 11.3.  Indemnity
 
 Each Party will indemnify and hold each other harmless against all Claims or Actions, losses, costs, liabilities and expenses (including legal costs on a full indemnity basis) which may be suffered, sustained or incurred directly or indirectly as a result of or in respect of a breach by either party of any of the representations or warranties on its part under clause 11.1.
 
-## General
+## 12.  General
 
-### Notices
+### 22.1.Notices.
+Any notice required under this agreement must be in writing and sent to the contact address of the relevant party as listed in the Order or as updated from time to time with a copy sent to the following email address: **notices@pacbyte.com**. Notices given by email sent before 4pm on a business day are deemed to have been received that day, and otherwise, the next business day. Notices given by post shall be deemed to have been received seven (7) days after dispatch. Any notice must be signed, or if by email, sent, by an officer of the sender or any attorney, solicitor or authorised agent of that Party.
 
-Any notice required under this agreement must be in writing and sent to the contact address of the relevant party as listed in the Order or as updated from time to time with a copy sent to the following email address: notices@pacbyte.com. Notices given by email sent before 4pm on a business day are deemed to have been received that day, and otherwise, the next business day. Notices given by post shall be deemed to have been received seven (7) days after dispatch. Any notice must be signed, or if by email, sent, by an officer of the sender or any attorney, solicitor or authorised agent of that Party.
-
-### No Assignment
-
+### 12.2.  No assignment.
 The User may not assign or transfer any of its rights or obligations pursuant to this Agreement without the prior written consent of the Licensor.
 
-### Further Assurance
-
+### 12.3.  Further assurance.
 Each party will from time to time do all things (including executing all documents) necessary or desirable to give full effect to this Agreement.
 
-### Costs
-
+### 12.4.  Costs.
 Each Party will pay its own costs and expenses in connection with the negotiation, preparation, execution and performance of this Licence except as otherwise specified in these Licence Terms.
 
-### Force Majeure
-
+### 12.5.  Force Majeure.
 Neither party is liable to the other for any failure to perform its obligations under the Agreement to the extent caused by Force Majeure, provided that the affected party:
-- immediately notifies the other party and provides full information about the Force Majeure;
-- uses best efforts to overcome the Force Majeure; and
-- continues to perform its obligations to the extent practicable.
 
-### Supervening Legislation
+(a) immediately notifies the other party and provides full information about the Force Majeure;
 
+(b) uses best efforts to overcome the Force Majeure; and
+
+(c) continues to perform its obligations to the extent practicable.
+
+### 12.6.  Supervening legislation.
 All legislation or any Court order which at any time directly or indirectly:
-- lessens or otherwise varies or affects in favour of one Party over the other Party any obligation under this Licence; or
-- delays or otherwise prevents or prejudicially affects the exercise by one Party rather than the other Party of any right, power, privilege or remedy under this Licence is negated and excluded from this Licence.
 
-### Governing Law and Jurisdiction
+(a) lessens or otherwise varies or affects in favour of one Party over the other Party any obligation under this Licence; or
 
+(b) delays or otherwise prevents or prejudicially affects the exercise by one Party rather than the other Party of any right, power, privilege or remedy under this Licence is negated and excluded from this Licence.
+
+### 12.7. Governing law and jurisdiction.
 This Licence is governed by and construed in accordance with the laws of New South Wales, Australia. Each Party irrevocably and unconditionally submits to the non-exclusive jurisdiction of the courts of New South Wales, Australia and courts of appeal from them. Each Party irrevocably waives any right it may now or in the future have to object to any action being brought in those courts including, without limitation, by claiming that the action has been brought in an inconvenient forum or that those courts have no jurisdiction.
 
-### Variations
-
+### 12.8.  Variations.
 These Licence Terms may be varied by the Licensor at any time and from time to time with notice given to you by email, through the Software or through our website. Together with notice, we will specify the effective date of the modifications and the User’s continued Use or access of the Software after any variation has been made will comprise acceptance by the User of these Licence Terms as varied.
 
-### Waiver
+### 12.9.  Waiver.
+A party’s failure or delay to exercise a power or right does not operate as a waiver of that power or right. The exercise of a power or right does not preclude
 
-A party’s failure or delay to exercise a power or right does not operate as a waiver of that power or right. The exercise of a power or right does not preclude (a) its future exercise; or (b) the exercise of any other power or right. The variation or waiver of a provision of this Agreement or a party’s consent to a departure from a provision by another party will be ineffective unless in writing executed by the parties.
+(a) its future exercise; or
 
-### Remedies
+(b) the exercise of any other power or right. The variation or waiver of a provision of this Agreement or a party’s consent to a departure from a provision by another party will be ineffective unless in writing executed by the parties.
 
+### 12.10.  Remedies.
 The rights provided in these Licence Terms are cumulative and not exclusive of any other rights available in these Licence Terms, any other instrument or at law. This Licence is in addition to and is not prejudiced by or merged in any right a Party now has or may have.
 
-### Severance
-
+### 12.11.  Severance.
 If any part of this Agreement is invalid or unenforceable, this Agreement does not include it. The remainder of this Agreement continues in full force.
 
-### Indemnities
-
+### 12.12.  Indemnities.
 Each indemnity in this Licence is a continuing obligation, separate and independent from the other obligations of the Parties and survives termination, performance, completion or expiration of this Licence. It is not necessary for a Party to incur expense or to make any payment before enforcing a right of indemnity conferred by this Licence.
 
-### Counterparts
-
+### 12.13.  Counterparts.
 The Agreement may be signed in counterparts, each of which constitutes an original and all of which constitute the same agreement. A party may enter the Agreement by signing and emailing a counterpart copy to the other party.
 
-### Entire Agreement
-
+### 12.14.  Entire agreement.
 In relation to the subject matter of this Licence, these Licence Terms and the Documentation, embody the entire understanding of the Parties and constitute the entire terms agreed between the Parties and supersede any prior written or other agreement between the Parties.
 
-### No Merger
-
+### 12.15.  No merger.
 Nothing in this Agreement merges, extinguishes, postpones, lessens or otherwise prejudicially affects any right, power or remedy that a party may have against another party or any other person at any time.
 
-### Consents and Approvals
-
+### 12.16.  Consents and approvals.
 Where this Agreement gives any party a right or power to consent or approve in relation to a matter under this Agreement, that party may withhold any consent or approval or give consent or approval conditionally or unconditionally.
 
-### No Reliance
-
+### 12.17.  No Reliance.
 In entering into this Agreement, each party has not relied on any warranty or representation (whether oral or written) in relation to the subject matter of this Agreement not made in this Agreement.
 
-### Publicity Rights
-
+### 12.18.  Publicity Rights.
 We may identify you as a Pacbyte customer in our promotional materials. We will promptly stop doing so upon your request sent to notices@pacbyte.com.
 
-### Survival of Terms
-
+### 12.19.  Survival of Terms.
 The following terms shall survive expiration or termination of this Agreement: Clause 1 (Definitions); Clause 2 (Licence); Clause 4 (User Undertakings); Clause 5 (Confidentiality); Clause 6 (Intellectual Property Rights); Clause 7 (Infringement); Clause 8 (Indemnity, Limited Warranty and Limit of Liability); Clause 9 (Term and Termination); Clause 10 (Dispute Resolution); Clause 11 (Representations and Warranties); and Clause 12 (General).
