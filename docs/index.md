@@ -8,7 +8,7 @@ This guide will show you how to setup the Netpump Data Server through Azure's ma
 
 ***
 
-**[Netpump Data for Azure Use Cases](Netpump_Data_for_Azure_Use_Cases.md)**
+**[Netpump Data for Azure Use Cases][Netpump_Data_for_Azure_Use_Cases.md]**
 
 'This guide will show you how to setup the app registration for a Netpump Server cluster through Azure portal.
 
