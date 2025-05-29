@@ -52,7 +52,7 @@ Create the core resource group: In the Azure Portal, go to Resource groups and c
 
 Click Review + Create, then Create. Wait for the notification that says “Deployment succeeded.” This confirms the resource group was created successfully.
 
-
+![Create_a_resource_group][001]
 
 Create the install resource group: Repeat the above process to create a second resource group named `rg-netpump-install` in the same region. This second group will be used to hold temporary installation assets separately from core resources. Again, wait for the Deployment succeeded message.
 
@@ -218,6 +218,8 @@ It may take a minute for the certificate to be created. Once the Certificate Ope
 In the certificate’s detail page, find the Secret Identifier (a URL). This is typically labelled as Secret Identifier and looks like https://kv-netpump-install.vault.azure.net/secrets/netpump-tls/. Copy this Secret Identifier URL and paste it into your build sheet (label it “Cert URL”).
 Validation: The Secret Identifier URL should start with your key vault’s URI and include netpump-tls and a version GUID. If you accidentally copy the Certificate Identifier or something else, the deployment will fail. Double-check you have the Secret Identifier (which typically differs by the segment /secrets/ in the URL). Common Pitfall: Copying the wrong URL. Ensure it’s the secret URL (for the private key), not just the certificate (public key) URL.
 9. Create a Storage Account and an SMB File Share
+
+[admin-page-smb]: images/admin-page-smb.png
 Netpump uses an Azure Storage File Share (SMB share) as part of its data transfer pipeline (for staging data, etc.). We will create a storage account and a file share:
 
 In Azure Portal, click + Create a resource and search for Storage account. Select Storage account and click Create.
@@ -228,3 +230,5 @@ Resource group: Select rg-netpump-core (the core resource group).
 Storage account name: stnetpumpdata (as an example - storage account names must be all lowercase, 3-24 characters, and globally unique. You can use your prefix, e.g., stdata. If stnetpumpdata is taken, choose a different variation).
 Region: (should auto-fill with the resource group’s region, ensure it’s the same region as everything else).
 Performance/Redundancy:
+
+[001]: images/installer-gui/001.png
