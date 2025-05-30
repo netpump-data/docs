@@ -392,6 +392,8 @@ The User agrees to provide the Licensor or its authorised representative with th
 
 Upon becoming aware, the User will promptly notify the Licensor:
 
+<ol>
+
 (a) of any Event of Default and the steps taken to remedy or prevent it (whether or not it is a defaulting Party);
 
 (b) if any representation or warranty made in this Licence proves to have been incorrect or misleading in any material respect when made;
@@ -402,13 +404,19 @@ Upon becoming aware, the User will promptly notify the Licensor:
 
 (e) of the appointment of a Person under any legislation to investigate all or any part of its affairs.
 
+</ol>
+
 ### 4.4.  No Use
 
 Except in accordance with these Licence Terms or with the prior written consent of the Licensor, the User must not Use all or any part of the Intellectual Property.
 
 ### 4.5.  Compliance with laws
 
+<ol>
+
 (a) Unless expressly permitted by these Licence Terms, the User agrees not to do any of the acts identified in the Commonwealth of Australia Consolidated Acts, including, without limitation:
+
+<ol>
 
 (i) section 26(1) of the Trade Marks Act 1995 (Cth);
 
@@ -420,25 +428,42 @@ Except in accordance with these Licence Terms or with the prior written consent 
 
 or any comparable legislation in force in the Territory in relation to any of the Intellectual Property.
 
+</ol>
+
 (b) The User must use the Intellectual Property in compliance with all applicable laws, including local laws in the Territory and any place the Intellectual Property is Used or in which the User’s Software is, or is intended to be used.
 
+</ol>
+
 ## 5.  Confidentiality
+
+<ol>
 
 ### (a) Restrictions: 
 Except as permitted by these Licence Terms, the Recipient will not, and will procure that its Representatives will not disclose Information, or permit Information to be disclosed, to any Person; or Use Information for any purpose or in any way which is detrimental to, or in competition with, the Provider or any Affiliate of the Provider.
 
 ### (b) Permitted Disclosure
 
+<ol>
+
 (i) Subject to (ii) below, the Recipient may disclose Information to such of its Representatives, but only to such extent, as is reasonably necessary to enable those Persons in the course of their duties to implement or perform the transactions contemplated by this Licence: 
 
 (ii) Prior to receipt by each such Representative of any Information, the Recipient will ensure that all of its Representatives are aware of the confidentiality of the Information, the existence and terms of this clause 5 (Confidentiality) and comply with the provisions of this clause 5 (Confidentiality) as if they were party to this Licence. The Recipient agrees to be responsible for any act or omission of its Representatives constituting a breach of this clause 5 and acknowledges that the Provider will be entitled to all remedies available to it at law or in equity as if the breach was caused by the Recipient.
 
+</ol>
+
 ### (c) Exceptions
 
 Neither clause 5(a) nor 5(b) applies to any Information which:
-- already is, or becomes, public knowledge other than as a result of a breach of this clause 5 (Confidentiality) by the Recipient or a Representative of the Recipient; or
-- is independently acquired or developed by the Recipient without the benefit or use of Information; or
-- is lawfully received by the Recipient from a third party not owing any obligation of confidentiality to the Provider or a Representative of the Provider.
+
+<ol>
+
+(i) already is, or becomes, public knowledge other than as a result of a breach of this clause 5 (Confidentiality) by the Recipient or a Representative of the Recipient; or
+
+(ii) is independently acquired or developed by the Recipient without the benefit or use of Information; or
+
+(iii) is lawfully received by the Recipient from a third party not owing any obligation of confidentiality to the Provider or a Representative of the Provider.
+
+</ol>
 
 ### (d) Compulsory Disclosure
 
@@ -448,6 +473,8 @@ The Recipient may, so long as the Recipient complies with clause 5(e), disclose 
 
 The Recipient will, unless prevented by law from doing so, before disclosing Information pursuant to clause 5(d):
 
+<ol>
+
 (i) give to the Provider the maximum notice reasonably practicable in the circumstances, specifying the requirement under which the Recipient is required to disclose Information and the precise Information which the Recipient is required to disclose;
 
 (ii) use its best endeavours to oppose or restrict disclosure, or to make disclosure on terms which will preserve as far as possible the confidentiality of the Information;
@@ -455,6 +482,8 @@ The Recipient will, unless prevented by law from doing so, before disclosing Inf
 (iii) take such steps as will permit the Provider to have a reasonable opportunity to oppose or to restrict such disclosure by lawful means; and
 
 (iv) give all reasonable assistance and co-operation which the Provider considers necessary to prevent or minimise the disclosure of the Information.
+
+</ol>
 
 ### (f) Return or Destruction
 
@@ -464,11 +493,15 @@ Upon the termination or completion of the transactions contemplated by this Lice
 
 Clause 5(f) will not apply to any Information to the extent that:
 
+<ol>
+
 (i) such Information forms part of the board minutes, board committee minutes, investment committee minutes, credit committee papers or investment committee papers of the Recipient or a Representative of the Recipient;
 
 (ii) the Recipient or a Representative of the Recipient is required by law to retain a copy of the Information; and
 
 (iii) such Information is archived pursuant to any auto-archiving procedures of the Recipient.
+
+</ol>
 
 ### (h) Copying
 
@@ -482,6 +515,8 @@ The Information always remains the property of the Provider. This Licence does n
 
 The Recipient agrees that:
 
+<ol>
+
 (i) it will not assert any rights in respect of, nor contest the Provider’s ownership of, Information;
 
 (ii) it will take all reasonable steps to protect the Information and keep it secure from unauthorised Persons;
@@ -494,6 +529,8 @@ The Recipient agrees that:
 
 (vi) other than as expressly set out in these Licence Terms, the Provider makes no warranty or representation as to the accuracy, adequacy, or completeness of any Information, or as to the materiality of any Information in the context of the transactions contemplated by this Licence and has no responsibility or liability in any way to the Recipient or any of its Representatives in relation to the use of or reliance on the Information.
 
+</ol>
+
 ### (k) Equitable Remedies
 
 The Recipient acknowledges that, in the event of any alleged breach of this clause 5 (Confidentiality) by the Recipient or any Representative of the Recipient, damages may not be an adequate remedy and the Provider will be entitled to seek equitable relief (including an injunction) in addition to damages. In any proceeding brought by the Provider seeking equitable relief for a breach of this clause 5, neither the Recipient nor any Representative of the Recipient may claim that the breach is one which may not or ought not to be the subject of equitable relief.
@@ -502,29 +539,43 @@ The Recipient acknowledges that, in the event of any alleged breach of this clau
 
 The Recipient will indemnify and hold the Provider harmless against all losses, claims, costs, demands, liabilities and expenses which may be suffered, sustained or incurred by the Provider directly or indirectly as a result of or in respect of:
 
+<ol>
+
 (i) the failure by the Recipient to observe or comply with any of the terms of this clause 5 (Confidentiality) for any reason;
 
 (ii) any unauthorised disclosure of Information by the Recipient’s Representatives; or
 
 (iii) any liability of the Provider to the Recipient’s Representatives in relation to the Information.
 
+</ol>
+
 ### (m) Continuation
 
 The Recipient’s obligations under this Licence concerning protection and Use of Information continue after termination of this Licence and are enforceable by the Provider, including by way of injunction.
+
+</ol>
 
 ## 6.  Intellectual Property Rights
 
 ### 6.1.  Licensor’s Intellectual Property Rights
 
+<ol>
+
 (a) The User acknowledges and agrees that, other than the User’s Software, all existing Intellectual Property Rights, title and interest in all Works created or developed by any Party or its Representatives (whether alone or with others) in connection with that Party’s implementation or performance of the transactions contemplated by this Licence are vested in the Licensor (or an assignee approved by the shareholders of the Licensor) and comprise part of the Intellectual Property. Simultaneously with their creation or development, all future Intellectual Property Rights, title and interest in all such Works will vest in the Licensor and comprise part of the Intellectual Property. The User agrees to:
+
+<ol>
 
 (i) immediately disclose to the Licensor all such Works on creation or development; and
 
 (ii) execute and perform, or procure the execution or performance of, all documents and all acts and things required or desirable to secure any Intellectual Property rights of the Licensor without any remuneration or compensation.
 
+</ol>
+
 (b) The User consents (for the benefit of the Licensor) to any and all acts or omissions (whether occurring before or after this consent is given) in relation to all Works, other than the User’s Software, made or to be made by the User or the User’s Representatives in the course of the User’s implementation or performance of the transactions contemplated by this Licence which might otherwise infringe the Moral Rights of the Licensor or its Representatives in any or all of those Works.
 
 (c) The User warrants that it has given this consent and undertaking genuinely, and without being subjected to any duress by the Licensor or any other Person, and without relying on any representations other than those expressly set out in these Licence Terms.
+
+</ol>
 
 ### 6.2.  User’s Intellectual Property Rights
 
@@ -534,13 +585,19 @@ The User agrees that this clause relates solely to the User’s Software and not
 
 ## 7.  Infringement
 
+<ol>
+
 (a) The User undertakes to do all things reasonably necessary for the protection of the Intellectual Property against deregistration or infringement. If any legal action is necessary to protect the Intellectual Property or the Intellectual Property Rights, the Licensor will undertake that legal action at its expense but in the name of the User if appropriate.
 
 (b) In the event that:
 
+<ol>
+
 (i) The User receives notice of any infringement or threatened infringement of any of the Intellectual Property or any common law passing off by reason of imitations or otherwise; or
 
 (ii) any third party claims that any use of the Intellectual Property is liable to cause deception or confusion to the public;
+
+</ol>
 
 the User must promptly notify the Licensor, giving full particulars, and provide all information and assistance required by the Licensor in the event that the Licensor commences or defends proceedings in relation to any claims or infringements. Any such proceedings will be under the control and at the expense of the Licensor.
 
@@ -548,10 +605,14 @@ the User must promptly notify the Licensor, giving full particulars, and provide
 
 (d) At the request and expense of the Licensor, the User must provide all and any information concerning the User’s use of each Trade Mark and must give co‑operation and assistance to the Licensor in any dispute, litigation or settlement in relation to a Trade Mark.
 
+</ol>
+
 ## 8.  Indemnity, Limited Warranty and Limit of Liability
 
 ### 8.1.  Indemnity by User
 The User releases and indemnifies, and will keep indemnified, each Indemnified Person from and against all:
+
+<ol>
 
 (a) Claims which may be brought, commenced, prosecuted or claimed against any Indemnified Person or in which any Indemnified Person may be involved;
 
@@ -561,12 +622,18 @@ The User releases and indemnifies, and will keep indemnified, each Indemnified P
 
 in consequence of or relating to the Use of the Intellectual Property by the User, except to the extent such claims or loss are caused by the negligence of the Licensor.
 
+</ol>
+
 ### 8.2.  Indemnity by Licensor
 The Licensor indemnifies, and will keep indemnified, the User from and against all:
+
+<ol>
 
 (a) claims, demands, actions, proceedings, prosecutions which may be brought, commenced or prosecuted or claimed against the User or in which the User may be involved; and
 
 (b) all loss (excluding indirect loss or consequential loss), costs (including legal costs on a full indemnity basis), damages, or liability (whether in tort (including negligence), contract breach or statutory duty, equity or otherwise) which the User may suffer or incur,
+
+</ol>
 
 arising in connection with the granting of the Licence or the User’s Use of the Intellectual Property in accordance with this Agreement.
 
