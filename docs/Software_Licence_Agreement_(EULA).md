@@ -257,7 +257,7 @@ In these Licence Terms:
 
 </ol>
 
-### 2.   Licence
+## 2.   Licence
 
 ### 2.1.  Licence Grant
 
