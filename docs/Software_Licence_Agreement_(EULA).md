@@ -102,7 +102,7 @@ b) that default is capable of remedy but it is not remedied by the User within 1
 </ol>
 
 **Insolvency Event**: the occurrence of any one or more of the following events in relation to any Person:
-
+<ol>
 (a) an application is made to a court for an order that it be wound up, declared bankrupt or that a provisional liquidator or receiver or receiver and manager be appointed, unless such application is vexatious or frivolous or is discharged within sixty (60) days;
 
 (b) liquidator or provisional liquidator is appointed, or steps are taken for such appointment;
@@ -127,9 +127,10 @@ b) that default is capable of remedy but it is not remedied by the User within 1
 
 (l) anything occurs under the law of any jurisdiction which has a substantially similar effect to any of the above paragraphs of this definition,
 including a Credit Event but excluding any corporate restructure while solvent of that Person and its Related Bodies Corporate.
+</ol>
 
 **Intellectual Property**: 
-
+<ol>
 (a) the intellectual property comprised in the Software;
 
 (b) all patents granted or pending relating to the Software;
@@ -147,6 +148,7 @@ including a Credit Event but excluding any corporate restructure while solvent o
 (h) any improvements, enhancements, additions, modifications, supplements, variations to, or Works relating to, any of the property referred to in (a), (b), (c), (d), (e), (f) or (g), including any patent continuations,
 
 together with any audio-visual or other sample content provided by, or to which access is given by, the Licensor for the purposes of or in connection with the User’s use of the Software or the development of the User’s Software.
+</ol>
 
 **Intellectual Property Rights**: all forms of intellectual property rights throughout the world including copyright, registered patent, design, trade mark and Information, including know-how and trade-secrets.
 
@@ -199,7 +201,7 @@ ii) multiple virtual machines within a technical environment that partitions a p
 **Territory**: as specified in the Order.
 
 **Trade Mark**: 
-
+<ol>
 (a) the trade mark “Netpump” (with Australian registration number 1815349 and United States USPTO registration number 5471970) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” or “Class 42” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
 
 (b) the trade mark “Pacbyte®” (with Australian registration number 1758251 and United States USPTO registration number 5253194) or any extension, replacement, variation or adaptation of that trademark and whether Used in relation to any of the goods or services of “Class 9” or “Class 42” as defined under the Australian Trademark IP Australia database www.ipaustralia.gov.au or otherwise;
@@ -209,6 +211,7 @@ ii) multiple virtual machines within a technical environment that partitions a p
 (d) any trademark that is the same as or similar to any of the trademarks described in (a), (b) or (c) that any member of the Pacbyte may register or permit to be registered in any jurisdiction; and
 
 (e) any other trademark any member of the Pacbyte may develop or register or permit to be developed or registered with respect to the Intellectual Property.
+</ol>
 
 **Update**: means updates, fixes or other relatively minor modifications to the Software which are applied through the Licensor’s update process.
 
