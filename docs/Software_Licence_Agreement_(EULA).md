@@ -33,11 +33,11 @@ In this Agreement, the following terms have the following meanings unless the co
 **Agreement**: this agreement, which the Parties have intended to enter into in the form of a binding deed.
 
 **Authorisation**: 
-
+<ol>
 (a) any consent, authorisation, registration, filing, agreement, notarisation, certificate, permission, licence, approval, authority or exemption from, by or with a Governmental Agency; and 
 
 (b) in respect of anything which will be proscribed or restricted in whole or part by law if a Governmental Agency intervenes or acts in any way within a specified period after lodgement, filing, registration or notification, the expiry of that period without any intervention or action.
-
+</ol>
 **Authorised Users**: Means on the individuals for whom the User has paid the required fees and whom are designated as an “Authorised User” to access and use the Software. Authorised Users may be an employee, contractor, consultant, agent or other third party who are acting on behalf of the User that has been authorised by the User to Use the Software.
 
 **Additional Services**: Technical Account Manager (“TAM”) services, Support and Maintenance or other services related to the Software provided to the User by the Licensor (or its agents), as identified in an Order.
@@ -47,12 +47,17 @@ In this Agreement, the following terms have the following meanings unless the co
 **Claim**: any claim, proceeding, loss, liability, indemnity, suit, judgment, cost, expense, penalty, fine or damage of any kind including consequential loss.
 
 **Claims or Actions**: any claims, demands or causes of action (whether based in contract, tort (including negligence) or statute, or otherwise arising) in respect of:
+<ol>
 a) this Licence, these Licence Terms or any part of either of them;
+  
 b) Netpump Data or Netpump Video;
-c) the Intellectual Property; or
-d) any aspect of the transactions contemplated by this Licence; and
-e) in relation to the User only, the User’s Software.
 
+c) the Intellectual Property; or
+
+d) any aspect of the transactions contemplated by this Licence; and
+
+e) in relation to the User only, the User’s Software.
+</ol>
 **Confidential Information**: All code, inventions, know-how and business, technical and financial information disclosed by a Provider.
 
 **Consequential Loss**: any form of incidental, indirect, special, exemplary, punitive or consequential Loss including any third party Loss, loss of profits, loss of production, increased operating costs, loss of revenue, loss of data, loss or denial of opportunity, loss of goodwill, loss of reputation, loss of anticipated savings, loss of interest or credit rating and pure economic loss, which is not a natural or normal consequence of a cause of action suffered or incurred by any person whether arising in contract or tort (including negligence) or under any statute.
@@ -66,24 +71,35 @@ e) in relation to the User only, the User’s Software.
 **Documentation**: Any applicable documentation provided or made available by the Licensor with the Software.
 
 **Event of Default**: the User defaults in the performance of any one of its obligations under this Licence and either:
+<ol>
 a) that default is not capable of remedy; or
+  
 b) that default is capable of remedy but it is not remedied by the User within 10 Business Days (or any longer period agreed by the Licensor) of the default occurring.
-
+</ol>
 **Governmental Agency**: any country, state or political subdivision or any government or central bank or any governmental, semi‑governmental, international, judicial, administrative, municipal, local governmental, statutory, regulatory, fiscal, monetary or supervisory authority, body or entity.
 
 **Indemnified Person**: the Licensor and any of its affiliates, successors and assigns, shareholders, partners, contractors, officers, servants, agents and employees.
 
 **Information**: Being a superset of Confidential Information, means:
-
+<ol>
 (a) all information (written, oral or otherwise) supplied or made available to the Recipient by the Provider, including information relating to or developed in connection with:
+  <ol>
+  
   i) the business technology or other affairs of the Provider or any of its Associated Entities;
+    
   ii) the Software;
+  
   iii) the Intellectual Property; and;
+  
   iv) any data, feasibility studies, systems, technology, ideas, concepts, know-how, techniques, designs, specifications, diagrams, models, functions, capabilities and designs, (including computer software, manufacturing processes or other information embodied in drawings or specifications) or intellectual property owned or used by the Provider or any of its Associated Entities;
+  
+  </ol>
   
 (b) all notes, records, copies or other material in whatever form made or derived in whole or in part by the Recipient from, or from inspection or evaluation of, any information of the type referred to in paragraph (a); and
 
 (c) any knowledge or information which the Recipient may acquire as a direct result of acquiring or holding information referred to in paragraph (a) or paragraph (b).
+
+</ol>
 
 **Insolvency Event**: the occurrence of any one or more of the following events in relation to any Person:
 
