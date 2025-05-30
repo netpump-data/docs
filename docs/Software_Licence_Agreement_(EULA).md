@@ -226,6 +226,8 @@ ii) multiple virtual machines within a technical environment that partitions a p
 
 In these Licence Terms:
 
+<ol>
+  
  (a) headings are for convenience only and do not affect interpretation;
  and unless the context requires otherwise:
  
@@ -253,19 +255,27 @@ In these Licence Terms:
   
   (m) where reference is made to an Event of Default continuing, it means that the Event of Default has occurred and has not been remedied to the satisfaction of the Party entitled to rely on that Event of Default to take any action or waived by that Party in writing.
 
+</ol>
+
 ##2.   Licence
 
 ### 2.1.  Licence Grant
 
 On the terms and conditions of these Licence Terms, the Licensor hereby grants to the User this Licence which is a non-exclusive, non-sublicensable, non-transferable and revocable licence to use the Intellectual Property:
 
+<ol>
+
 (a) in the Territory; and
 
 (b) for the Term.
 
+</ol>
+
 ### 2.2.  Restrictions
 
 Except as otherwise expressly permitted in this Agreement, you will not:
+
+<ol>
 
 (a) reproduce, modify, adapt or create derivative works of any part of the Software;
 
@@ -288,6 +298,8 @@ Except as otherwise expressly permitted in this Agreement, you will not:
 (j) export, directly or indirectly, of any information, Intellectual Property or any of the Software Products to any country prohibited by the laws of the United States, Australia or United Kingdom or for which those Governments, entities or any agency thereof at the time of export requires an export licence or other government approval; or
 
 (k) encourage or assist any third party to do any of the foregoing.
+
+</ol>
 
 ### 2.3.  Licence Key
 
@@ -315,11 +327,15 @@ You are solely responsible for ensuring that your systems meet the hardware, sof
 
 The Licensor has agreed to supply the Software to the User at no cost for the Term in consideration for the Users’ promises contained in the Agreement. If the User wishes to extend use of the Software beyond the Term, the User agrees that it will pay all fees in accordance with any future Order that may be entered into between the User and the Licensor for the use of the Software.
 
+<ol>
+
 (a) Unless otherwise specified in the Order, the User will pay all amounts at the time the Order is placed. Other than as expressly set forth in clause 8.1 (Indemnity by User), clause 8.2 (Indemnity by Licensor), clause 8.3 (Limited Warranty) and clause 8.4 (Limit of Liability), all amounts are non-refundable, non-cancellable and non-creditable. In making payments, the User acknowledges that it is not relying on future availability of the Software beyond the current Term or any Upgrades or feature enhancements.
 
 (b) If the User adds Authorised Users, Servers and Devices during the Term, the Licensor will charge the User for the increased number of Authorised Users, Servers and Devices pursuant to the then-currently applicable rates in the next billing cycle. The User agrees that the Licensor may bill for renewals, additional users, additional servers and unpaid fees, as applicable.
 
 (c) If the User purchases Software through an approved Distributor or Reseller, the User owes payment to the Distributor or Reseller as agreed between the User and the Reseller, but the User acknowledges that the Licensor may terminate the User’s rights to use the Software if the Licensor does not receive the corresponding payment from the Distributor or Reseller.
+
+</ol>
 
 ### 3.2.  Taxes
 
@@ -329,7 +345,11 @@ The User shall pay, taxes of any and all kind, including but not limited to, sal
 
 ### 4.1.  Title
 
+<ol>
+
 (a) The User acknowledges:
+
+<ol>
 
 (i) that the Licensor is the owner of all intellectual property (including Intellectual Property Rights and common law rights) in the Intellectual Property and neither the User nor any third party has or will acquire, any right, title or interest (including goodwill) in or to the Intellectual Property;
 
@@ -339,19 +359,30 @@ The User shall pay, taxes of any and all kind, including but not limited to, sal
 
 (iv) the Licensor gives no representation or warranty (except as specified in Clause 8.3 (Limited Warranty), express or implied, with respect to the functionality, performance, accuracy, completeness or fitness for purpose of the Software or any of the Intellectual Property.
 
+</ol>
+
 (b)The User undertakes that the User will not, and will not assist any other Person (whether directly or indirectly) to:
+
+<ol>
 
 (i) take any action that would or might invalidate, challenge, prejudice or put in dispute the Licensor’s right, title or interest in and to the Intellectual Property and the Intellectual Property Rights; or
 
 (ii) support an application to remove, adversely affect or amend any registration of any part of the Intellectual Property or the Intellectual Property Rights.
 
+</ol>
+
 (c) The User agrees that:
+
+<ol>
 
 (i) any and all goodwill in the Intellectual Property arising as a result of the User’s Use under this Licence inures to the Licensor’s benefit exclusively;
 
 (ii) upon expiry or termination of this Licence and any rights granted under this Licence, the Licensor will not be obliged to make any payment to the User attributable to any goodwill associated with the User’s Use of the Intellectual Property; and
 
 (iii) any and all enhancements to or accretions in value of the Intellectual Property arising as a result of Use of this Licence vest in the Licensor.
+
+</ol>
+</ol>ol>
 
 ### 4.2.  Compliance
 
