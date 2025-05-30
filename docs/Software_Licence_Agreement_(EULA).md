@@ -58,6 +58,7 @@ d) any aspect of the transactions contemplated by this Licence; and
 
 e) in relation to the User only, the User’s Software.
 </ol>
+
 **Confidential Information**: All code, inventions, know-how and business, technical and financial information disclosed by a Provider.
 
 **Consequential Loss**: any form of incidental, indirect, special, exemplary, punitive or consequential Loss including any third party Loss, loss of profits, loss of production, increased operating costs, loss of revenue, loss of data, loss or denial of opportunity, loss of goodwill, loss of reputation, loss of anticipated savings, loss of interest or credit rating and pure economic loss, which is not a natural or normal consequence of a cause of action suffered or incurred by any person whether arising in contract or tort (including negligence) or under any statute.
