@@ -16,9 +16,11 @@ This Software License Agreement (this “Agreement”) is a legal contract betwe
 
 By accessing the Software, the User acknowledges and agrees that:
 
-(a) The User will be bound by the joint promises set out in the latest version of these Licence Terms available at(http://www.pacbyte.com/licence); and
+<ol>
+(a) The User will be bound by the joint promises set out in the latest version of these Licence Terms available at (http://www.pacbyte.com/licence); and
 
 (b) This Agreement applies to the Software that includes, displays or links to this Licence Agreement or these Licence Terms and to any updates, supplements or support services for the Software.
+</ol>
 
 ## 1.  Definitions and Interpretation
 
