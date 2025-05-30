@@ -257,7 +257,7 @@ In these Licence Terms:
 
 </ol>
 
-##2.   Licence
+### 2.   Licence
 
 ### 2.1.  Licence Grant
 
@@ -382,7 +382,7 @@ The User shall pay, taxes of any and all kind, including but not limited to, sal
 (iii) any and all enhancements to or accretions in value of the Intellectual Property arising as a result of Use of this Licence vest in the Licensor.
 
 </ol>
-</ol>ol>
+</ol>
 
 ### 4.2.  Compliance
 
