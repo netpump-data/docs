@@ -659,28 +659,44 @@ The Term may be terminated by the Licensor upon notice in the event that the Use
 
 By notice to the User, the Licensor may immediately terminate this Licence if:
 
+<ol>
+
 (a) an Insolvency Event occurs in relation to the User; or
 
 (b) an Event of Default occurs.
+
+</ol>
 
 ### 9.3.  Termination for Convenience.
 
 The User may choose to stop using the Software and terminate this Agreement (including all Orders) at any time for any reason upon written notice to Pacbyte. Upon any such termination:
 
+<ol>
+
 (i) You will not be entitled to a refund of any pre-paid fees (including any Additional Services); and
 
 (ii) If you have not already paid all applicable fees for the then-current Term or related services period (as applicable), any such fees that are outstanding will become immediately due and payable.
 
+</ol>
+
 ### 9.4.  Obligations on Termination.
 Upon termination of this Licence, the User must:
+
+<ol>
 
 (a) Cease to Use the Software and any Intellectual Property for any purpose;
 
 (b) Promptly discontinue use of the Software and Intellectual Property and destroy all copies of the Software, the Confidential Information, the Information and related materials in its possession or control and upon request by the Licensor certify to the Licensor as to their destruction.
 
+</ol>
+
 ## 10.  Dispute Resolution
 
+<ol>
+
 (a) Where any dispute arises between the Parties concerning this Agreement, or the circumstances, representations, or conduct giving rise to the Agreement, no Party may commence any court or arbitration proceedings relating to the dispute (other than for injunctive relief) unless that Party has complied with the procedures set out in this Clause 10.
+
+<ol>
 
 (i) The Party initiating the dispute (the “**initiating party**”) must provide written notice of the dispute to the other Party (the “**respondent party**”) and nominate in that notice the initiating party’s representative for the negotiations. The respondent party must, within seven (7) days of receipt of the notice, give written notice to the initiating party naming the respondent party’s representative for the negotiations. Each representative nominated must have authority to settle or resolve the dispute.
 
@@ -688,14 +704,20 @@ Upon termination of this Licence, the User must:
 
 (iii)The mediation must be conducted in accordance with the procedures adopted by the Australian Commercial Disputes Centre. The mediation must be conducted by a mediator at a fee agreed by the Parties. Failing agreement between the Parties, the mediator shall be selected and the mediator’s fee determined by the then President of the Law Society of New South Wales.
 
+</ol>
+
 (b) Each party must pay its own costs in relation to complying with this Clause 10, except that the costs and expenses of the mediation will be borne by the parties equally.
 
 (c) Unless prevented by the nature of the dispute, the parties will continue to perform this Agreement while attempts are made to resolve the dispute.
+
+</ol>
 
 ## 11.  Representations and Warranties
 
 ### 11.1. Representations and Warranties.
 On each day during the Term, each Party represents and warrants (in respect of its own matters only) for the benefit of the other Party:
+
+<ol>
 
 (a) **status**: It is validly created and existing under the laws of its jurisdiction of incorporation, has the power and authority to own its property and carry on its business as now conducted or contemplated and has the capacity to sue and be sued in its own name.
 
@@ -707,11 +729,15 @@ On each day during the Term, each Party represents and warrants (in respect of i
 
 (e) **transactions permitted**: Its entry into and observance and performance of its obligations under this Licence and the carrying out by it of the transactions contemplated by this Licence do not and will not violate in any respect any provision of:
 
+<ol>
+
 (i) Any law or regulation or any judgment, ruling, order or decree of any Governmental Agency binding on it.
 
 (ii) Its incorporation bylaws, articles of association or constitution.
 
 (iii) Any other instrument, arrangement or agreement which is binding upon it or its property.
+
+</ol>
 
 (f) **Authorisations**: All Authorisations required in connection with the entry into and the observance and performance by it of its obligations under this Licence and the carrying out by it of the transactions contemplated by this Licence, and to ensure the validity and enforceability of this Licence and the transactions contemplated by this Licence, have been obtained and are in full force and effect and there has been no default in the observance and performance of the terms and conditions applicable to any such Authorisation.
 
@@ -724,6 +750,8 @@ On each day during the Term, each Party represents and warrants (in respect of i
 (j) **solvency**: No Insolvency Event has occurred and is continuing in relation to it and it is able to pay its debts as they fall due.
 
 (k) **virus warranty**: Pacbyte further represents and warrants that it will take reasonable commercial efforts to ensure that the Software, in the form and when provided to you, will be free of any viruses, malware, or other harmful code. For any breach of the foregoing warranty, your sole and exclusive remedy, and Pacbyte’s sole obligation, is to provide a replacement copy of the Software promptly upon notice.
+
+</ol>
 
 ### 11.2.  Reliance
 
@@ -750,18 +778,26 @@ Each Party will pay its own costs and expenses in connection with the negotiatio
 ### 12.5.  Force Majeure.
 Neither party is liable to the other for any failure to perform its obligations under the Agreement to the extent caused by Force Majeure, provided that the affected party:
 
+<ol>
+
 (a) immediately notifies the other party and provides full information about the Force Majeure;
 
 (b) uses best efforts to overcome the Force Majeure; and
 
 (c) continues to perform its obligations to the extent practicable.
 
+</ol>
+
 ### 12.6.  Supervening legislation.
 All legislation or any Court order which at any time directly or indirectly:
+
+<ol>
 
 (a) lessens or otherwise varies or affects in favour of one Party over the other Party any obligation under this Licence; or
 
 (b) delays or otherwise prevents or prejudicially affects the exercise by one Party rather than the other Party of any right, power, privilege or remedy under this Licence is negated and excluded from this Licence.
+
+</ol>
 
 ### 12.7. Governing law and jurisdiction.
 This Licence is governed by and construed in accordance with the laws of New South Wales, Australia. Each Party irrevocably and unconditionally submits to the non-exclusive jurisdiction of the courts of New South Wales, Australia and courts of appeal from them. Each Party irrevocably waives any right it may now or in the future have to object to any action being brought in those courts including, without limitation, by claiming that the action has been brought in an inconvenient forum or that those courts have no jurisdiction.
@@ -772,9 +808,13 @@ These Licence Terms may be varied by the Licensor at any time and from time to t
 ### 12.9.  Waiver.
 A party’s failure or delay to exercise a power or right does not operate as a waiver of that power or right. The exercise of a power or right does not preclude
 
+<ol>
+
 (a) its future exercise; or
 
 (b) the exercise of any other power or right. The variation or waiver of a provision of this Agreement or a party’s consent to a departure from a provision by another party will be ineffective unless in writing executed by the parties.
+
+</ol>
 
 ### 12.10.  Remedies.
 The rights provided in these Licence Terms are cumulative and not exclusive of any other rights available in these Licence Terms, any other instrument or at law. This Licence is in addition to and is not prejudiced by or merged in any right a Party now has or may have.
