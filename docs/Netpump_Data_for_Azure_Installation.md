@@ -10,7 +10,8 @@ Follow the steps in order and use a “build sheet” (e.g. a local text file or
 
 Before You Start – Quick Checklist	
 
-1. Create Two Resource Groups	
+##### [1. Create Two Resource Groups](id1)
+
 2. Add Key Vaults to the Resource Groups	
 3. Register the Server Application (Back-end AAD App)	
 4. Register the Client Application (Front-end AAD App)	
@@ -28,7 +29,6 @@ Before You Start – Quick Checklist
 16. Post-Deployment Validation – Confirm Everything is Working
 17. Where to Get Help	
 
-
 ### Before You Start – Quick Checklist
 
 Make sure you have the following prerequisites ready before proceeding. You can tick each item off as you confirm it:
@@ -42,7 +42,7 @@ Make sure you have the following prerequisites ready before proceeding. You can 
 
 Now, let’s begin the installation step-by-step.
 
-## 1. Create Two Resource Groups
+## [1. Create Two Resource Groups](id1)
 
 ### 1. Create the core resource group: 
 In the Azure Portal, go to **Resource groups** and click **Create**. In the Basics tab of the **Create a resource group form**, enter the following:
