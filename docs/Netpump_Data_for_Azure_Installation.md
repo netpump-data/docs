@@ -42,7 +42,7 @@ Make sure you have the following prerequisites ready before proceeding. You can 
 
 Now, let’s begin the installation step-by-step.
 
-## [1. Create Two Resource Groups](#step01)
+## [1. Create Two Resource Groups]{#step01}
 
 ### 1. Create the core resource group: 
 In the Azure Portal, go to **Resource groups** and click **Create**. In the Basics tab of the **Create a resource group form**, enter the following:
