@@ -10,8 +10,7 @@ Follow the steps in order and use a “build sheet” (e.g. a local text file or
 
 Before You Start – Quick Checklist	
 
-##### [1. Create Two Resource Groups](docs/Netpump_Data_for_Azure_Installation.md/step01)
-
+1. Create Two Resource Groups
 2. Add Key Vaults to the Resource Groups	
 3. Register the Server Application (Back-end AAD App)	
 4. Register the Client Application (Front-end AAD App)	
@@ -42,7 +41,7 @@ Make sure you have the following prerequisites ready before proceeding. You can 
 
 Now, let’s begin the installation step-by-step.
 
-## [1. Create Two Resource Groups](url)
+## 1. Create Two Resource Groups
 
 ### 1. Create the core resource group: 
 In the Azure Portal, go to **Resource groups** and click **Create**. In the Basics tab of the **Create a resource group form**, enter the following:
@@ -52,8 +51,6 @@ In the Azure Portal, go to **Resource groups** and click **Create**. In the Basi
 - **Region**: Your chosen region (e.g. West Europe).
 
 Click **Review + Create**, then **Create**. Wait for the notification that says “Deployment succeeded.” This confirms the resource group was created successfully.
-
-![Create_a_resource_group][001]
 
 Azure Portal – Resource Group creation form with the Name and Region filled in.
 
