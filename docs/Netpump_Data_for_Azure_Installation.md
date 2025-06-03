@@ -517,6 +517,8 @@ Double-check each value carefully. **Typos in these values are the #1 cause of d
 
 6.	Wait for the deployment to complete. This can take several minutes as it provisions VM instances, configures networking, etc. Keep an eye on the notifications for “Deployment succeeded.”
 
+<br/>
+
  ![Azure Portal][005]
 
   Azure Portal – Deployment in progress confirmation page for the Netpump Data deployment. 
@@ -538,6 +540,7 @@ Double-check each value carefully. **Typos in these values are the #1 cause of d
 <br/>
 
 ## 11. Retrieve Deployment Outputs and Configure DNS Records
+
 Once the Netpump managed application is deployed, it will provide output values (such as the fully qualified domain names of the Netpump server VMs). We will use these to set up friendly DNS names: 
 
 1.	In the Azure Portal, navigate to the resource group rg-netpump-core where you deployed Netpump. You should see a resource of type Managed Application (or it might appear as a group of resources labelled with the application name you gave, e.g.,netpump-prod).
