@@ -86,7 +86,7 @@ Why two Key Vaults? The core vault (`kv-netpump-core`) is intended to store long
 
 **Validation**: After creation, verify in the portal that **each resource group contains one Key Vault** with the expected name. For example, in `rg-netpump-core` you should see `kv-netpump-core`, and in `rg-netpump-install` you should see `kv-netpump-install`.
 
-### 3. Register the Server Application (Back-end AAD App)
+## 3. Register the Server Application (Back-end AAD App)
 
 Next, set up an Azure AD app registration to represent the Netpump server cluster (the back-end API):
 
@@ -117,7 +117,7 @@ Still on the `NetpumpServerCluster` app, configure it to expose an API:
 
 **Validation**: Back on the Expose an API page, you should now see the new scope listed, and its Enabled status should show “Yes”. This confirms your API scope was created successfully.
 
-### 4. Register the Client Application (Front-end AAD App)
+## 4. Register the Client Application (Front-end AAD App)
 
 Now create a second Azure AD app registration to serve as the client/front-end application (for the Netpump UI or user interactions): 
 
@@ -161,7 +161,7 @@ Validation: After granting consent, the API permission should show the status Gr
 Client Secret creation panel with the secret value visible (highlight the Value field in the screenshot). This is to show how the secret appears once generated.
 Common Pitfall: Not copying the secret value right away. If you navigate away, the value will be hidden forever and you’d have to create a new secret. Always store it securely as soon as it’s created.
 
-5. Configure Authentication for the Client App
+## 5. Configure Authentication for the Client App
 Now that the two app registrations are created, configure the authentication settings for the client app (NetpumpClient) so that it can be used for user sign-ins (including from the desktop GUI, if used): 
 1.	In the NetpumpClient app registration, go to Authentication in the menu. 
 
@@ -175,7 +175,7 @@ Now that the two app registrations are created, configure the authentication set
 4.	Click Save on the Authentication page if it didn't auto-save. The client app is now configured to allow interactive user sign-ins.
 Validation: After saving, you should see the new platform (Web) listed with the URI, and the checkboxes for Access tokens/ID tokens should remain checked. This confirms the client app is ready for user authentication flows. 
 
-6. Assign the Admin Role to Yourself (or a Group)
+## 6. Assign the Admin Role to Yourself (or a Group)
 Recall we created an app role ServerAdmin in the NetpumpClient app’s manifest. Now we must assign this role to the appropriate user(s) who will administer the Netpump servers (likely you, and/or a group of admins): 
 1.	In the Azure Portal, go to Microsoft Entra ID (Azure AD) and navigate to Enterprise applications (this is the list of service principals for your apps). Locate the application NetpumpClient in the list (you can use the search bar if needed) and click it. 
 
@@ -190,7 +190,7 @@ Recall we created an app role ServerAdmin in the NetpumpClient app’s manifest.
 Validation: Refresh the Users and groups page for NetpumpClient. You should see your account (or chosen group) listed with ServerAdmin under the Role column. This means you (or your admins group) now have the elevated role needed to manage Netpump servers via the application. 
 Why do this? Assigning the ServerAdmin role ensures that only authorized users can administer the Netpump Data service. In later steps, when you log into the Netpump interface, the system will check that your account has this role before granting admin access.
 
-7. Grant Key Vault Access to the Client App
+## 7. Grant Key Vault Access to the Client App
 The Netpump deployment (running under the context of the NetpumpClient app) will need to retrieve secrets (like certificates) from Azure Key Vault. We must grant it the necessary permissions on the Key Vaults: 
 
 1.	Go to the Key Vaults blade and open the kv-netpump-install vault (the one in the install resource group).
@@ -210,7 +210,7 @@ Validation: After saving the access policy, in the Access policies list for kv-n
 
 Common Pitfall: Selecting the wrong principal or vault. Ensure you picked the NetpumpClient app (not the server app) for the access policy, and that you applied it on the kv-netpump-install vault. A simple mistake here could cause permission issues when the application tries to retrieve secrets later.
 
-8. Generate the SSL Certificate in Key Vault
+## 8. Generate the SSL Certificate in Key Vault
 Netpump requires an SSL certificate for secure communication. We will generate a self-signed certificate in the Key Vault to use for this purpose: 
 1.	Open the kv-netpump-install Key Vault (the install vault). In the vault, go to the Certificates section and click + Generate/Import. 
 
@@ -230,7 +230,7 @@ Key Vault Certificate details showing the Secret Identifier URL for the netpump-
 
 Validation: The Secret Identifier URL should start with your key vault’s URI and include netpump-tls and a version GUID. If you accidentally copy the Certificate Identifier or something else, the deployment will fail. Double-check you have the Secret Identifier (which typically differs by the segment /secrets/ in the URL). Common Pitfall: Copying the wrong URL. Ensure it’s the secret URL (for the private key), not just the certificate (public key) URL. 
 
-9. Create a Storage Account and an SMB File Share
+## 9. Create a Storage Account and an SMB File Share
 Netpump uses an Azure Storage File Share (SMB share) as part of its data transfer pipeline (for staging data, etc.). We will create a storage account and a file share: 
 
 1.	In Azure Portal, click + Create a resource and search for Storage account. Select Storage account and click Create. 
@@ -259,7 +259,7 @@ Click Create to create the file share.
 Validation: Ensure the file share was created by checking the File shares list for an entry named data. Also verify you have the correct storage credentials: the account name and one of its access keys. A quick way is to verify the connection string you copied starts with DefaultEndpointsProtocol=https;AccountName=stnetpumpdata;... and contains AccountKey=... with a long base64 string — that confirms you have the name and key captured. 
 Common Pitfall: Forgetting to create the file share, or copying only the key but not the name. The Netpump service needs both the share name and the key (or connection string) to connect. Make sure you have the share name (data), the storage account name, and the key in your notes.
 
-10. Deploy Netpump Data from the Azure Marketplace
+## 10. Deploy Netpump Data from the Azure Marketplace
 With all prerequisites in place (app registrations, Key Vault, certificate, storage, etc.), you can now deploy the Netpump Data service via the Azure Marketplace offering: 
 
 1.	In Azure Portal, click + Create a resource and search for Netpump in the Marketplace. Locate Netpump Data (by Pacbyte) and select it. Click Create to start the deployment wizard for this managed application. 
@@ -298,7 +298,7 @@ Validation: If the deployment finishes with a status Succeeded, all Netpump reso
 •	Go back and double-check the values in your build sheet and in the form, fix any issues, and try the deployment again.
 •	You can find detailed error logs by clicking on the deployment in the Notifications or in the resource group’s Deployments section.
 
-11. Retrieve Deployment Outputs and Configure DNS Records
+## 11. Retrieve Deployment Outputs and Configure DNS Records
 Once the Netpump managed application is deployed, it will provide output values (such as the fully qualified domain names of the Netpump server VMs). We will use these to set up friendly DNS names: 
 
 1.	In the Azure Portal, navigate to the resource group rg-netpump-core where you deployed Netpump. You should see a resource of type Managed Application (or it might appear as a group of resources labelled with the application name you gave, e.g.,netpump-prod).
@@ -319,7 +319,7 @@ You can use the DNS management interface of your DNS provider or Azure DNS zone 
 Validation: After adding the records, test name resolution. Open a command prompt or terminal and ping pump1.your-domain.com (replace with your actual domain). It should resolve to an Azure IP (you may not get ping replies if ICMP is blocked, but the resolution should show the cloudapp.azure.com address). This confirms your DNS is set up. Keep in mind DNS propagation might take a few minutes depending on your TTL. 
 Note: We use CNAMEs so that the Azure-provided domain (which points to the VM’s IP) is aliased behind your friendly name. If your organization manages DNS differently, ensure the Netpump servers are reachable via some DNS names that you can use internally.
 
-12. Configure Each Netpump Server via the Admin UI
+## 12. Configure Each Netpump Server via the Admin UI
 At this stage, the infrastructure is up, but each Netpump server instance needs to be configured with the settings (the IDs, secrets, and resource information you prepared). Netpump provides a configuration web interface on each server for initial setup: 
 
 1.	Open a web browser and navigate to the configuration page of the first server: https://pump1.<your-domain>/config (for example, https://pump1.pump.example.com/config). Because we are using a self-signed certificate (generated in Key Vault), your browser will likely show a security/Certificate Warning (the certificate won’t be trusted by your browser). Proceed/ignore the certificate warning to continue to the site:
@@ -366,7 +366,7 @@ Common Pitfalls:
 •	Typos in the configuration values (which could lead to an error or the service not being able to connect to Azure resources). 
 •	If you encounter issues, you can revisit the config page by navigating to the URL again; it will show the fields (possibly pre-filled if it saved some) and errors if any. 
 
-13. (Optional) Install the Netpump Desktop GUI for End Users 
+## 13. (Optional) Install the Netpump Desktop GUI for End Users 
 Netpump also provides a Desktop client application for end-users to easily transfer data. If you wish to use/test the end-user experience, you can install this GUI client: 
 1.	Download the Netpump Desktop installer: Click here to download the Windows Desktop installer.
 
@@ -389,7 +389,7 @@ Validation: If the desktop client successfully transfers data and completes with
 
 
 
-14. Install Netpump Data - On Premises version for Internal Servers
+## 14. Install Netpump Data - On Premises version for Internal Servers
 Download the Netpump On Premises installer: Click here to download the Windows On Premises installer.
 Installing the Application
 1.	Open the downloaded installer file on your local machine.
@@ -424,7 +424,7 @@ If not created as a service the Netpump Service can be started by clicking the D
 Accessing the Netpump Service Administrator Page
 Once the service has started, double click the created Desktop Short or executable file 'netPump.Service,exe' in the install directory. This will activate the Netpump Service Administrator Page. See section 12. Configure Each Netpump Server via the Admin UI above for configuration instructions.
 
-15. Use of PowerShell for Scripting Functions
+## 15. Use of PowerShell for Scripting Functions
 Netpump file transfers can be initiated programmatically over an HTTPS REST API. We supply a PowerShell module that provides a convenient interface to make these API calls using the Start-NetpumpTransfer command.
 Authentication
 The Netpump PowerShell script depends on Microsoft's Az PowerShell module.
@@ -462,27 +462,7 @@ Steps
 9.	Back in the Automation Account, click in the Modules section in the left menu and click Add a Module
  
 
-[001]: images/installer-gui/001.png
-[002]: images/installer-gui/002.png
-[003]: images/installer-gui/003.png
-[004]: images/installer-gui/004.png
-[005]: images/installer-gui/005.png
-[006]: images/installer-gui/006.png
-[007]: images/installer-gui/007.png
-[008]: images/installer-gui/008.png
-[009]: images/installer-gui/009.png
-[010]: images/installer-gui/010.png
-[011]: images/installer-gui/011.png
-[012]: images/installer-gui/012.png
-[013]: images/installer-gui/013.png
-[014]: images/installer-gui/014.png
-[015]: images/installer-gui/015.png
-[016]: images/installer-gui/016.png
-[017]: images/installer-gui/017.png
-[018]: images/installer-gui/018.png
-[019]: images/installer-gui/019.png
-[020]: images/installer-gui/020.png
-[logo]: images/installer-gui/Logo.png
+
 
 
 
@@ -503,7 +483,7 @@ Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\
  
 16.	Your file is copied from the source to the destination via Netpump
 
-16. Post-Deployment Validation – Confirm Everything is Working
+## 16. Post-Deployment Validation – Confirm Everything is Working
 Now that the deployment and configuration are done, perform a few checks to ensure the Netpump Data deployment is healthy:
 Check	Expected Result
 Netpump server status endpoint	Visiting https://pump1.<your-domain>/status (and pump2) returns a JSON response, e.g. { "ready": true }, indicating the server is up and ready. (You may do this in a browser; you might get a basic auth prompt or need to ignore the cert warning again.)
@@ -516,7 +496,7 @@ If any check fails or if you encounter errors at any step:
 •	Make sure the Azure AD apps have the correct permissions and consent. If the status endpoint isn’t ready, it might be an auth issue – check the application’s log (if accessible) or re-run the config step and consent.
 •	You can also redeploy or rotate secrets if needed (for example, generate a new client secret and update the config) in case a secret was lost.
 
-17. Where to Get Help
+## 17. Where to Get Help
 If you need further assistance or run into issues that you cannot resolve, use these resources:
 •	Pacbyte Support Slack: Join the #netpump-azure channel on Slack (if provided by your organization or the vendor) to ask questions to the support team and community.
 •	Netpump Data Documentation: Refer to the official docs at the Netpump Data GitHub Docs for more detailed guides, troubleshooting tips, and updates.
