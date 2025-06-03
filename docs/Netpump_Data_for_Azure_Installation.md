@@ -253,18 +253,30 @@ You will also need to verify `“requestedAccessTokenversion”: 2` . If it appe
 <br/>
 
 ## 5. Configure Authentication for the Client App
-Now that the two app registrations are created, configure the authentication settings for the client app (NetpumpClient) so that it can be used for user sign-ins (including from the desktop GUI, if used): 
-1.	In the NetpumpClient app registration, go to Authentication in the menu. 
 
-2.	Under Platform configurations, click + Add a platform and choose Web (since the Netpump server will interact with this as a web client).
-•	Add a Redirect URI of type Web: enter https://localhost (we use localhost as a placeholder redirect URI for testing/desktop app scenarios).
-•	Under Implicit grant and Hybrid flows, check the boxes for Access tokens and ID tokens. (This enables OAuth2 implicit flow if needed and ensures an access token and ID token are provided in the response.)
-•	Click Configure to save this platform configuration. 
+Now that the two app registrations are created, configure the authentication settings for the client app (`NetpumpClient`) so that it can be used for user sign-ins (including from the desktop GUI, if used): 
 
-3.	(Optional) If you anticipate building a single-page application or JavaScript front-end running on a different port (for example, a development React app on http://localhost:3000), you can also add a SPA platform with that redirect URI. This step is not necessary for the basic installation, but can be done similarly by selecting SPA and adding http://localhost:3000 as a redirect URI (and enabling tokens). 
+1.	In the `NetpumpClient` app registration, go to Authentication in the menu. 
 
-4.	Click Save on the Authentication page if it didn't auto-save. The client app is now configured to allow interactive user sign-ins.
-Validation: After saving, you should see the new platform (Web) listed with the URI, and the checkboxes for Access tokens/ID tokens should remain checked. This confirms the client app is ready for user authentication flows. 
+2.	Under **Platform configurations**, click **+ Add a platform** and choose **Web** (since the Netpump server will interact with this as a web client).
+
+<ol>
+
+•	Add a **Redirect URI** of type Web: enter `https://localhost` (we use localhost as a placeholder redirect URI for testing/desktop app scenarios).
+
+•	Under **Implicit grant and Hybrid flows**, check the boxes for **Access tokens** and **ID tokens**. (This enables OAuth2 implicit flow if needed and ensures an access token and ID token are provided in the response.)
+
+•	Click **Configure** to save this platform configuration.
+
+</ol>
+
+3.	(Optional) If you anticipate building a single-page application or JavaScript front-end running on a different port (for example, a development React app on `http://localhost:3000`), you can also add a **SPA** platform with that redirect URI. This step is not necessary for the basic installation, but can be done similarly by selecting **SPA** and adding `http://localhost:3000` as a redirect URI (and enabling tokens). 
+
+4.	Click **Save** on the Authentication page if it didn't auto-save. The client app is now configured to allow interactive user sign-ins.
+
+**Validation:** After saving, you should see the new platform (Web) listed with the URI, and the checkboxes for Access tokens/ID tokens should remain checked. This confirms the client app is ready for user authentication flows. 
+
+<br/>
 
 ## 6. Assign the Admin Role to Yourself (or a Group)
 Recall we created an app role ServerAdmin in the NetpumpClient app’s manifest. Now we must assign this role to the appropriate user(s) who will administer the Netpump servers (likely you, and/or a group of admins): 
