@@ -54,6 +54,8 @@ In the Azure Portal, go to **Resource groups** and click **Create**. In the Basi
 
 Click **Review + Create**, then **Create**. Wait for the notification that says “Deployment succeeded.” This confirms the resource group was created successfully.
 
+
+
 Azure Portal – Resource Group creation form with the Name and Region filled in.
 
 ### 2. Create the install resource group:  
