@@ -11,47 +11,22 @@ Follow the steps in order and use a “build sheet” (e.g. a local text file or
 Before You Start – Quick Checklist	
 
 ##### [1. Create Two Resource Groups](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
-
-2. Add Key Vaults to the Resource Groups	
-3. Register the Server Application (Back-end AAD App)	
-4. Register the Client Application (Front-end AAD App)	
-5. Configure Authentication for the Client App	
-6. Assign the Admin Role to Yourself (or a Group)	
-7. Grant Key Vault Access to the Client App	
-8. Generate the SSL Certificate in Key Vault	
-9. Create a Storage Account and an SMB File Share	
-10. Deploy Netpump Data from the Azure Marketplace	
-11. Retrieve Deployment Outputs and Configure DNS Records	
-12. Configure Each Netpump Server via the Admin UI	
-13. (Optional) Install the Netpump Desktop GUI for End Users
-14. Install Netpump Data - On Premises version for Internal Servers
-15. Use of PowerShell for Scripting Functions
-16. Post-Deployment Validation – Confirm Everything is Working
-17. Where to Get Help	
-
-
-## Tabs {.tabset}
-### First Tab
-#### link1
-Any content here will go into the first tab...
-
-### Second Tab
-#### link2
-Any content here will go into the second tab...
-
-### Third Tab
-Any content here will go into the second tab...
-
-## Text
-Then a lot of lorem ipsum text as placeholder...
-
-At the end my two testlinks:
-
-[link1](./Netpump_Data_for_Azure_Installation.md#link1)
-[link2](./Netpump_Data_for_Azure_Installation.md#link2)
-
-
-
+##### [2. Add Key Vaults to the Resource Groups](./Netpump_Data_for_Azure_Installation.md#2-add-key-vaults-to-the-resource-groups-1)	
+##### [3. Register the Server Application (Back-end AAD App)]	
+##### [4. Register the Client Application (Front-end AAD App)]	
+##### [5. Configure Authentication for the Client App]	
+##### [6. Assign the Admin Role to Yourself (or a Group)]	
+##### [7. Grant Key Vault Access to the Client App]	
+##### [8. Generate the SSL Certificate in Key Vault]	
+##### [9. Create a Storage Account and an SMB File Share]	
+##### [10. Deploy Netpump Data from the Azure Marketplace]	
+##### [11. Retrieve Deployment Outputs and Configure DNS Records]	
+##### [12. Configure Each Netpump Server via the Admin UI]	
+##### [13. (Optional) Install the Netpump Desktop GUI for End Users]
+##### [14. Install Netpump Data - On Premises version for Internal Servers]
+##### [15. Use of PowerShell for Scripting Functions]
+##### [16. Post-Deployment Validation – Confirm Everything is Working]
+##### [17. Where to Get Help]	
 
 
 ### Before You Start – Quick Checklist
