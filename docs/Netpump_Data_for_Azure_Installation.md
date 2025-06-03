@@ -28,7 +28,7 @@ Follow the steps in order and use a “build sheet” (e.g. a local text file or
 ##### [13. (Optional) Install the Netpump Desktop GUI for End Users](./Netpump_Data_for_Azure_Installation.md#13-Optional-Install-the-Netpump-Desktop-GUI-for-End-Users-1)
 ##### [14. Install Netpump Data On Premises version for Internal Servers](./Netpump_Data_for_Azure_Installation.md#14-Install-Netpump-Data-On-Premises-version-for-Internal-Servers-1)
 ##### [15. Use of PowerShell for Scripting Functions](./Netpump_Data_for_Azure_Installation.md#15-Use-of-PowerShell-for-Scripting-Functions-1)
-##### [16. Post-Deployment Validation – Confirm Everything is Working](./Netpump_Data_for_Azure_Installation.md#16-Post-Deployment-Validation–Confirm-Everything-is-Working-1)
+##### [16. Post-Deployment Validation Confirm Everything is Working](./Netpump_Data_for_Azure_Installation.md#16-Post-Deployment-Validation–Confirm-Everything-is-Working-1)
 ##### [17. Where to Get Help](./Netpump_Data_for_Azure_Installation.md#17-Where-to-Get-Help-1)	
 
 
@@ -482,7 +482,7 @@ Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\
  
 16.	Your file is copied from the source to the destination via Netpump
 
-## 16. Post-Deployment Validation – Confirm Everything is Working
+## 16. Post-Deployment Validation Confirm Everything is Working
 Now that the deployment and configuration are done, perform a few checks to ensure the Netpump Data deployment is healthy:
 Check	Expected Result
 Netpump server status endpoint	Visiting https://pump1.<your-domain>/status (and pump2) returns a JSON response, e.g. { "ready": true }, indicating the server is up and ready. (You may do this in a browser; you might get a basic auth prompt or need to ignore the cert warning again.)
