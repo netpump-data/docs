@@ -383,7 +383,7 @@ Click **Create** to generate the certificate. The vault will create a new certif
  
 Key Vault Certificate details showing the Secret Identifier URL for the netpump-tls certificate (highlight the URL). This will be used by the Netpump service to fetch the certificate at runtime.
 
-</ol>
+<ol>
 
 **Validation:** The Secret Identifier URL should start with your key vault’s URI and include `netpump-tls` and a version GUID. If you accidentally copy the **Certificate Identifier** or something else, the deployment will fail. Double-check you have the **Secret Identifier** (which typically differs by the segment `/secrets/` in the URL). 
 
