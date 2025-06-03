@@ -19,14 +19,14 @@ Before You Start – Quick Checklist
 ##### [7. Grant Key Vault Access to the Client App](./Netpump_Data_for_Azure_Installation.md#7-Grant-Key-Vault-Access-to-the-Client-App-1)	
 ##### [8. Generate the SSL Certificate in Key Vault](./Netpump_Data_for_Azure_Installation.md#8-Generate-the-SSL-Certificate-in-Key-Vault-1)	
 ##### [9. Create a Storage Account and an SMB File Share](./Netpump_Data_for_Azure_Installation.md#9-Create-a-Storage-Account-and-an-SMB-File-Share-1)	
-##### [10. Deploy Netpump Data from the Azure Marketplace](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)	
-##### [11. Retrieve Deployment Outputs and Configure DNS Records](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)	
-##### [12. Configure Each Netpump Server via the Admin UI](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)	
-##### [13. (Optional) Install the Netpump Desktop GUI for End Users](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
-##### [14. Install Netpump Data - On Premises version for Internal Servers](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
-##### [15. Use of PowerShell for Scripting Functions](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
-##### [16. Post-Deployment Validation – Confirm Everything is Working](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
-##### [17. Where to Get Help](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)	
+##### [10. Deploy Netpump Data from the Azure Marketplace](./Netpump_Data_for_Azure_Installation.md#10-Deploy-Netpump-Data-from-the-Azure-Marketplace-1)	
+##### [11. Retrieve Deployment Outputs and Configure DNS Records](./Netpump_Data_for_Azure_Installation.md#11-Retrieve-Deployment-Outputs-and-Configure-DNS-Records-1)	
+##### [12. Configure Each Netpump Server via the Admin UI](./Netpump_Data_for_Azure_Installation.md#12-Configure-Each-Netpump-Server-via-the-Admin-UI-1)	
+##### [13. (Optional) Install the Netpump Desktop GUI for End Users](./Netpump_Data_for_Azure_Installation.md#13-Optional-Install-the-Netpump-Desktop-GUI-for-End-Users-1)
+##### [14. Install Netpump Data - On Premises version for Internal Servers](./Netpump_Data_for_Azure_Installation.md#14-Install-Netpump-Data-On-Premises-version-for-Internal-Servers-1)
+##### [15. Use of PowerShell for Scripting Functions](./Netpump_Data_for_Azure_Installation.md#15-Use-of-PowerShell-for-Scripting-Functions-1)
+##### [16. Post-Deployment Validation – Confirm Everything is Working](./Netpump_Data_for_Azure_Installation.md#16-Post-Deployment-Validation–Confirm-Everything-is-Working-1)
+##### [17. Where to Get Help](./Netpump_Data_for_Azure_Installation.md#17-Where-to-Get-Help-1)	
 
 
 ### Before You Start – Quick Checklist
