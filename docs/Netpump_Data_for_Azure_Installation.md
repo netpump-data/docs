@@ -10,7 +10,7 @@ Follow the steps in order and use a “build sheet” (e.g. a local text file or
 
 Before You Start – Quick Checklist	
 
-##### [1 Create Two Resource Groups](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
+##### [1. Create Two Resource Groups](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
 
 2. Add Key Vaults to the Resource Groups	
 3. Register the Server Application (Back-end AAD App)	
