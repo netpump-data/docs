@@ -149,11 +149,10 @@ Next, set up an **Azure AD app registration** to represent the Netpump server cl
 Now create a second Azure AD app registration to serve as the client/front-end application (for the Netpump UI or user interactions): 
 
 <ol>
- 
- 1.	In **App registrations**, click **+ New registration** again. Create another app with:
+1. In **App registrations**, click **+ New registration** again. Create another app with:
     
 <ol>  
- 
+
 •	Name: `NetpumpClient` (to denote this is the client-facing app). 
  
 •	**Supported account types: Accounts in this organizational directory only** (Single tenant). 
@@ -161,36 +160,53 @@ Now create a second Azure AD app registration to serve as the client/front-end a
 •	**Redirect URI**: Leave blank for now (we will configure authentication later).
 
 Click **Register**. Once created, note the **Application (client) ID** for `NetpumpClient` (copy it to your build sheet; you already have the tenant ID from before, which is the same for both apps). 
-</ol>
-<ol>
 
- 2.	We need to define an **app role** in this client app, so that certain users (or the Netpump server itself) can be assigned as administrators: 
+</ol>
+
+<ol>  
+2. We need to define an **app role** in this client app, so that certain users (or the Netpump server itself) can be assigned as administrators: 
+ 
 •	In the `NetpumpClient` app, open the **Manifest** (you’ll find "Manifest" in the left menu of the app registration blade). 
+
 •	The manifest is a JSON file. Find the `"appRoles": []` section. Insert a new object inside the array to define a role. For example, if the `appRoles` section is empty ( `"appRoles": [] `), you can replace it with the following (make sure it’s inside the square brackets and comma-separated if there are other roles): 
 
+</ol>
+
 **json** 
+
 {
+
  	**"allowedMemberTypes":** [ "User", "Application" ], 
+  
   **"description":** "Administers Netpump servers", 
+  
   **"displayName":** "ServerAdmin",
+  
   **"id":** "<NEW-GUID>", 
+  
   **"isEnabled":** true, 
+  
   **"value":** "ServerAdmin"
- } 
+  
+ }
+ 
 You will also need to verify `“requestedAccessTokenversion”: 2` . If it appears with a NULL value, change the value to “2” as shown.
  
+ ![Azure Portal][002]
+
+
 
 •	Important: Replace <NEW-GUID> with a new unique GUID. (You can generate a GUID using a tool or online GUID generator. Every app role id must be a unique GUID.) 
 •	Save the manifest changes. (The portal will validate the JSON – ensure the syntax is correct.) 
 
-3.	Next, grant this client app permission to call the server app’s API: 
+3. Next, grant this client app permission to call the server app’s API: 
 •	In the NetpumpClient app, go to API Permissions. 
 •	Click + Add a permission → select My APIs → you should see NetpumpServerCluster in the list. Select it. 
 •	Under the Delegated permissions section, find and check the Data.Transfer.All scope (the one you created in the server app) and then click Add permissions. 
 •	The permission will be added with a warning that admin consent is required. Click the Grant admin consent for [Your Tenant] button. Confirm the consent when prompted. This grants tenant-wide consent for your client app to call the server app’s API (so users won’t need to consent individually). 
 Validation: After granting consent, the API permission should show the status Granted for [Your Tenant]. This indicates the permission is active. If you refresh the API Permissions page, you shouldn’t see a “Not granted” warning anymore. 
 
-4.	Lastly for the client app, create a client secret that the Netpump service will use to authenticate as this app: 
+4. Lastly for the client app, create a client secret that the Netpump service will use to authenticate as this app: 
 •	In the NetpumpClient app, go to Certificates & secrets. 
 •	Click + New client secret. For Description, enter something like svc-auth (to indicate this secret is for the service authentication). Set an appropriate expiration (e.g., 24 months). 
 •	Click Add. Azure will generate a new secret. Copy the secret’s Value immediately and paste it into your build sheet (e.g., under “Client Secret”). You will not be able to view this value again after you leave the page. 
