@@ -1,5 +1,6 @@
  ![Azure Portal][Logo]
 
+
 # Netpump Data for Azure — Installation
 
 ## Guide
