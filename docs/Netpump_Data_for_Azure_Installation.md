@@ -189,12 +189,14 @@ Click **Register**. Once created, note the **Application (client) ID** for `Netp
 **"value":** "ServerAdmin"
   
 }
+
+<br/>
  
 You will also need to verify `“requestedAccessTokenversion”: 2` . If it appears with a NULL value, change the value to “2” as shown.
  
  ![Azure Portal][002]
 
-
+<br/>
 
 •	Important: Replace <NEW-GUID> with a new unique GUID. (You can generate a GUID using a tool or online GUID generator. Every app role id must be a unique GUID.) 
 •	Save the manifest changes. (The portal will validate the JSON – ensure the syntax is correct.) 
