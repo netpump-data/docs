@@ -354,24 +354,44 @@ Common Pitfall: Selecting the wrong principal or vault. Ensure you picked the **
 <br/>
 
 ## 8. Generate the SSL Certificate in Key Vault
+
 Netpump requires an SSL certificate for secure communication. We will generate a self-signed certificate in the Key Vault to use for this purpose: 
-1.	Open the kv-netpump-install Key Vault (the install vault). In the vault, go to the Certificates section and click + Generate/Import. 
+
+1.	Open the **kv-netpump-install** Key Vault (the install vault). In the vault, go to the **Certificates** section and click **+ Generate/Import**. 
 
 2.	In the Create a certificate screen:
-•	Method of Certificate Creation: Choose Generate (to create a new certificate).
-•	Certificate Name: netpump-tls (you can use this name for clarity; it will be the friendly name of the cert).
-•	Type of Certificate Authority (CA): Select Self-signed (i.e., generate a self-signed certificate). (In some Azure Portal versions, you might directly have an option like “Self-signed certificate” to choose.)
+
+<ol>
+
+•	**Method of Certificate Creation:** Choose **Generate** (to create a new certificate).
+
+•	**Certificate Name:** `netpump-tls` (you can use this name for clarity; it will be the friendly name of the cert).
+
+•	**Type of Certificate Authority (CA):** Select **Self-signed** (i.e., generate a self-signed certificate). (In some Azure Portal versions, you might directly have an option like “Self-signed certificate” to choose.)
+
 •	You can leave other fields at defaults (Key Type RSA, Key Size 2048, etc., which are fine for a self-signed TLS cert).
-Click Create to generate the certificate. The vault will create a new certificate and also generate an associated secret (with the same name) containing the certificate’s private key. 
 
-3.	It may take a minute for the certificate to be created. Once the Certificate Operation shows as completed (Status: Issued), click on the new certificate (netpump-tls) in the Certificates list. 
+Click **Create** to generate the certificate. The vault will create a new certificate and also generate an associated secret (with the same name) containing the certificate’s private key. 
 
-4.	In the certificate’s detail page, find the Secret Identifier (a URL). This is typically labelled as Secret Identifier and looks like https://kv-netpump-install.vault.azure.net/secrets/netpump-tls/<GUID>. Copy this Secret Identifier URL and paste it into your build sheet (label it “Cert URL”).
+</ol>
 
+3.	It may take a minute for the certificate to be created. Once the **Certificate Operation** shows as completed (Status: Issued), click on the new certificate (`netpump-tls`) in the Certificates list. 
+
+4.	In the certificate’s detail page, find the **Secret Identifier** (a URL). This is typically labelled as **Secret Identifier** and looks like `https://kv-netpump-install.vault.azure.net/secrets/netpump-tls/<GUID>`. Copy this **Secret Identifier URL** and paste it into your build sheet (label it “Cert URL”).
+
+ ![Azure Portal][004]
  
 Key Vault Certificate details showing the Secret Identifier URL for the netpump-tls certificate (highlight the URL). This will be used by the Netpump service to fetch the certificate at runtime.
 
-Validation: The Secret Identifier URL should start with your key vault’s URI and include netpump-tls and a version GUID. If you accidentally copy the Certificate Identifier or something else, the deployment will fail. Double-check you have the Secret Identifier (which typically differs by the segment /secrets/ in the URL). Common Pitfall: Copying the wrong URL. Ensure it’s the secret URL (for the private key), not just the certificate (public key) URL. 
+</ol>
+
+**Validation:** The Secret Identifier URL should start with your key vault’s URI and include `netpump-tls` and a version GUID. If you accidentally copy the **Certificate Identifier** or something else, the deployment will fail. Double-check you have the **Secret Identifier** (which typically differs by the segment `/secrets/` in the URL). 
+
+**Common Pitfall:** Copying the wrong URL. Ensure it’s the secret URL (for the private key), not just the certificate (public key) URL. 
+
+</ol>
+
+<br/>
 
 ## 9. Create a Storage Account and an SMB File Share
 Netpump uses an Azure Storage File Share (SMB share) as part of its data transfer pipeline (for staging data, etc.). We will create a storage account and a file share: 
