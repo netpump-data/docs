@@ -456,43 +456,86 @@ Click **Create** to create the file share.
 <br/>
 
 ## 10. Deploy Netpump Data from the Azure Marketplace
+
 With all prerequisites in place (app registrations, Key Vault, certificate, storage, etc.), you can now deploy the Netpump Data service via the Azure Marketplace offering: 
 
-1.	In Azure Portal, click + Create a resource and search for Netpump in the Marketplace. Locate Netpump Data (by Pacbyte) and select it. Click Create to start the deployment wizard for this managed application. 
+1.	In Azure Portal, click **+ Create a resource** and search for **Netpump** in the Marketplace. Locate **Netpump Data** (by Pacbyte) and select it. Click **Create** to start the deployment wizard for this managed application. 
 
 2.	Basics: On the first screen, provide the basic settings:
-•	Subscription: Your subscription.
-•	Resource Group: Select rg-netpump-core (the core group where the managed app will reside).
-•	Region: Choose the same region you’ve been using (all resources need to align here).
-•	Application Name: netpump-prod (for example – this will name the Netpump application instance. You can use your prefix or a descriptive name).
+
+<ol>
+
+•	**Subscription:** Your subscription.
+
+•	**Resource Group:** Select `rg-netpump-core` (the core group where the managed app will reside).
+
+•	**Region:** Choose the same region you’ve been using (all resources need to align here).
+
+•	**Application Name:** `netpump-prod` (for example – this will name the Netpump application instance. You can use your prefix or a descriptive name).
+
 •	You might see other basic fields like Project details or instance details; fill them as appropriate, but the above are key. 
 
-3.	Plan: On the next screen, choose the appropriate plan/SKU for Netpump Data.
+</ol>
 
-4.	Parameters: This section will have input fields to configure the Netpump deployment. Here is where you paste the values from your build sheet:
-•	Tenant ID – Paste the Azure AD Directory (tenant) ID (GUID).
-•	Client ID – Paste the Application (client) ID of the NetpumpClient app (the front-end app).
-•	Client Secret – Paste the client secret value that you saved for NetpumpClient.
-•	Certificate URL – Paste the Key Vault Secret Identifier URL for the netpump-tls certificate (from step 8).
-•	Storage Account Name – e.g., stnetpumpdata (the name of the storage account you created).
-•	Storage Key or Connection String – depending on the field: if there is a field for the key, paste the storage account Key1 value; if it asks for a connection string, paste the connection string for the storage account.
-•	Static IP Allowlist (optional) – If the deployment form includes an option to specify allowed IP ranges (for accessing the Netpump service), you can enter your corporate IP or range here. If you leave it blank, it will allow default/open access (or whatever the default in the template is).
+3.	**Plan:** On the next screen, choose the appropriate plan/SKU for Netpump Data.
+
+4.	**Parameters:** This section will have input fields to configure the Netpump deployment. Here is where you paste the values from your build sheet:
+
+<ol>
+
+•	**Tenant ID** – Paste the Azure AD Directory (tenant) ID (GUID).
+
+•	**Client ID** – Paste the Application (client) ID of the `NetpumpClient` app (the front-end app).
+
+•	**Client Secret** – Paste the client secret value that you saved for `NetpumpClient`.
+
+•	**Certificate URL** – Paste the Key Vault Secret Identifier URL for the `netpump-tls` certificate (from step 8).
+
+•	**Storage Account Name** – e.g., `stnetpumpdata` (the name of the storage account you created).
+
+•	**Storage Key or Connection String** – depending on the field: if there is a field for the key, paste the storage account Key1 value; if it asks for a connection string, paste the connection string for the storage account.
+
+•	**Static IP Allowlist (optional)** – If the deployment form includes an option to specify allowed IP ranges (for accessing the Netpump service), you can enter your corporate IP or range here. If you leave it blank, it will allow default/open access (or whatever the default in the template is).
+
 •	Any other parameters required.
-Double-check each value carefully. Typos in these values are the #1 cause of deployment failures. Common things to verify:
-•	No extra spaces or missing characters in the GUIDs and keys.
-•	The correct secret (ensure it’s the one for the client app, not some other secret). 
-•	The correct URL (should be the one you copied with /secrets/netpump-tls/). 
 
-5.	Once all parameters are filled, click Review + Create. The portal will validate the inputs. If validation passes, click Create to begin deployment of the Netpump managed application. This will kick off the creation of all necessary Azure resources (VMs, networking, etc.) for Netpump. 
+Double-check each value carefully. **Typos in these values are the #1 cause of deployment failures**. Common things to verify:
+
+<ol>
+
+• No extra spaces or missing characters in the GUIDs and keys.
+
+•	The correct secret (ensure it’s the one for the client app, not some other secret). 
+
+•	The correct URL (should be the one you copied with `/secrets/netpump-tls/`). 
+
+</ol>
+
+</ol>
+
+5.	Once all parameters are filled, click **Review + Create**. The portal will validate the inputs. If validation passes, click **Create** to begin deployment of the Netpump managed application. This will kick off the creation of all necessary Azure resources (VMs, networking, etc.) for Netpump. 
 
 6.	Wait for the deployment to complete. This can take several minutes as it provisions VM instances, configures networking, etc. Keep an eye on the notifications for “Deployment succeeded.”
 
+ ![Azure Portal][005]
 
   Azure Portal – Deployment in progress confirmation page for the Netpump Data deployment. 
 
-Validation: If the deployment finishes with a status Succeeded, all Netpump resources have been created. If it fails, note the error message and consult it. The most common deployment failures at this stage are due to incorrect values in the parameters (for example, an incorrect Client Secret, a wrong Certificate URL, or a typo in the Storage account name/key). If you get a failure: 
-•	Go back and double-check the values in your build sheet and in the form, fix any issues, and try the deployment again.
-•	You can find detailed error logs by clicking on the deployment in the Notifications or in the resource group’s Deployments section.
+<ol>
+
+**Validation:** If the deployment finishes with a status **Succeeded**, all Netpump resources have been created. If it **fails**, note the error message and consult it. The most common deployment failures at this stage are due to incorrect values in the parameters (for example, an incorrect **Client Secret**, a wrong **Certificate URL**, or a typo in the **Storage account name/key**). If you get a failure: 
+
+<ol>
+
+•	Go back and **double-check the values** in your build sheet and in the form, fix any issues, and try the deployment again.
+
+•	You can find detailed error logs by clicking on the deployment in the **Notifications** or in the resource group’s **Deployments section**.
+
+</ol>
+
+</ol>
+
+<br/>
 
 ## 11. Retrieve Deployment Outputs and Configure DNS Records
 Once the Netpump managed application is deployed, it will provide output values (such as the fully qualified domain names of the Netpump server VMs). We will use these to set up friendly DNS names: 
