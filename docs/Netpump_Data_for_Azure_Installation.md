@@ -6,7 +6,7 @@ This guide provides a foolproof, step-by-step process to deploy Netpump Data on 
 
 Follow the steps in order and use a “build sheet” (e.g. a local text file or spreadsheet) to record important values (IDs, secrets, URLs) as you go. Browser-specific tips, common pitfalls, and validation checks are included to ensure a smooth setup.
 
-### Contents ###
+### Contents
 
 ##### [Before You Start – Quick Checklist](./Netpump_Data_for_Azure_Installation.md#Before-You-Start–Quick-Checklist-1)
 
