@@ -54,7 +54,7 @@ In the Azure Portal, go to **Resource groups** and click **Create**. In the Basi
 
 Click **Review + Create**, then **Create**. Wait for the notification that says “Deployment succeeded.” This confirms the resource group was created successfully.
 
-
+ ![Azure Portal][001]
 
 Azure Portal – Resource Group creation form with the Name and Region filled in.
 
@@ -459,6 +459,7 @@ Steps
 9.	Back in the Automation Account, click in the Modules section in the left menu and click Add a Module
  
 
+[001]: images/installer-gui/001.png
 
 
 
