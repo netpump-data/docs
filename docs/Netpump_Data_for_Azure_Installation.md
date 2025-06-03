@@ -226,9 +226,9 @@ You will also need to verify `“requestedAccessTokenversion”: 2` . If it appe
 
 •	The permission will be added with a warning that **admin consent** is required. Click the **Grant admin consent for [Your Tenant]** button. Confirm the consent when prompted. This grants tenant-wide consent for your client app to call the server app’s API (so users won’t need to consent individually).
 
-</ol>
-
 **Validation:** After granting consent, the API permission should show the status **Granted for [Your Tenant]**. This indicates the permission is active. If you refresh the API Permissions page, you shouldn’t see a “Not granted” warning anymore. 
+
+</ol>
 
 <br/>
 
