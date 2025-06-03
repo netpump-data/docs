@@ -148,25 +148,31 @@ Next, set up an **Azure AD app registration** to represent the Netpump server cl
 
 Now create a second Azure AD app registration to serve as the client/front-end application (for the Netpump UI or user interactions): 
 
-1.	In App registrations, click + New registration again. Create another app with: 
-•	Name: NetpumpClient (to denote this is the client-facing app). 
-•	Supported account types: Accounts in this organizational directory only (Single tenant). 
-•	Redirect URI: Leave blank for now (we will configure authentication later). 
-Click Register. Once created, note the Application (client) ID for NetpumpClient (copy it to your build sheet; you already have the tenant ID from before, which is the same for both apps). 
+<ol>
 
-2.	We need to define an app role in this client app, so that certain users (or the Netpump server itself) can be assigned as administrators: 
-•	In the NetpumpClient app, open the Manifest (you’ll find "Manifest" in the left menu of the app registration blade). 
-•	The manifest is a JSON file. Find the "appRoles": [] section. Insert a new object inside the array to define a role. For example, if the appRoles section is empty ( "appRoles": [] ), you can replace it with the following (make sure it’s inside the square brackets and comma-separated if there are other roles): 
-json 
+ 1.	In **App registrations**, click **+ New registration** again. Create another app with: 
+•	Name: `NetpumpClient` (to denote this is the client-facing app). 
+•	**Supported account types: Accounts in this organizational directory only** (Single tenant). 
+•	**Redirect URI**: Leave blank for now (we will configure authentication later).
+
+Click **Register**. Once created, note the **Application (client) ID** for `NetpumpClient` (copy it to your build sheet; you already have the tenant ID from before, which is the same for both apps). 
+</ol>
+<ol>
+
+ 2.	We need to define an **app role** in this client app, so that certain users (or the Netpump server itself) can be assigned as administrators: 
+•	In the `NetpumpClient` app, open the **Manifest** (you’ll find "Manifest" in the left menu of the app registration blade). 
+•	The manifest is a JSON file. Find the `"appRoles": []` section. Insert a new object inside the array to define a role. For example, if the `appRoles` section is empty ( `"appRoles": [] `), you can replace it with the following (make sure it’s inside the square brackets and comma-separated if there are other roles): 
+
+**json** 
 {
- 	"allowedMemberTypes": [ "User", "Application" ], 
-"description": "Administers Netpump servers", 
-"displayName": "ServerAdmin",
- "id": "<NEW-GUID>", 
-"isEnabled": true, 
-"value": "ServerAdmin"
+ 	**"allowedMemberTypes":** [ "User", "Application" ], 
+  **"description":** "Administers Netpump servers", 
+  **"displayName":** "ServerAdmin",
+  **"id":** "<NEW-GUID>", 
+  **"isEnabled":** true, 
+  **"value":** "ServerAdmin"
  } 
-You will also need to verify “requestedAccessTokenversion”: 2 . If it appears with a NULL value, change the value to “2” as shown.
+You will also need to verify `“requestedAccessTokenversion”: 2` . If it appears with a NULL value, change the value to “2” as shown.
  
 
 •	Important: Replace <NEW-GUID> with a new unique GUID. (You can generate a GUID using a tool or online GUID generator. Every app role id must be a unique GUID.) 
