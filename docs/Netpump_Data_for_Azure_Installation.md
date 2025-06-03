@@ -109,23 +109,24 @@ Why two Key Vaults? The core vault (`kv-netpump-core`) is intended to store long
 ## 3. Register the Server Application (Back-end AAD App)
 
 Next, set up an **Azure AD app registration** to represent the Netpump server cluster (the back-end API):
-
 <ol>
-
 1. In the Azure Portal, open **Microsoft Entra ID** (Azure Active Directory). From the left menu, select **App registrations**, then click **+ New registration**.
-
+</ol>
+<ol>
 2. Fill out the Register an application form:
 
 - **Name**: `NetpumpServerCluster` (or a similar name identifying the Netpump server cluster).
 - **Supported account types**: Choose **Accounts in this organizational directory only** (Single tenant).
 - **Redirect URI**: Leave this blank for the server app (no redirect URI needed for a backend service).
   Click **Register** to create the application.
-
+</ol>
+<ol>
 3. After registration, you will be taken to the **NetpumpServerCluster** app overview. **Copy the following IDs** from the overview and paste them into your build sheet for later use:
 
 - **Directory (tenant) ID** – (GUID identifying your Azure AD tenant).
 - **Application (client) ID** – (GUID for this NetpumpServerCluster app).
-
+</ol>
+<ol>
 4. Still on the NetpumpServerCluster app, configure it to expose an API:
 
 - In the app's left-hand menu, go to **Expose an API**.
