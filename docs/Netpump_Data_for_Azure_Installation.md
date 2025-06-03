@@ -29,7 +29,7 @@ Follow the steps in order and use a “build sheet” (e.g. a local text file or
 ##### [17. Where to Get Help](./Netpump_Data_for_Azure_Installation.md#17-Where-to-Get-Help-1)	
 
 
-### Before You Start – Quick Checklist
+## Before You Start – Quick Checklist
 
 Make sure you have the following prerequisites ready before proceeding. You can tick each item off as you confirm it:
 
