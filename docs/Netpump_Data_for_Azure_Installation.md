@@ -28,7 +28,7 @@ Before You Start – Quick Checklist
 16. Post-Deployment Validation – Confirm Everything is Working
 17. Where to Get Help	
 
-<filename: Netpump_Data_for_Azure_Installation>
+<filename: Netpump_Data_for_Azure_Installation.md>
 
 ## Tabs {.tabset}
 ### First Tab
@@ -47,8 +47,8 @@ Then a lot of lorem ipsum text as placeholder...
 
 At the end my two testlinks:
 
-[link1](./Netpump_Data_for_Azure_Installation#link1)
-[link2](./Netpump_Data_for_Azure_Installation#link2)
+[link1](./Netpump_Data_for_Azure_Installation.md#link1)
+[link2](./Netpump_Data_for_Azure_Installation.md#link2)
 
 
 
