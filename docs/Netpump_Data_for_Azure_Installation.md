@@ -12,7 +12,7 @@ Before You Start – Quick Checklist
 
 ##### [1. Create Two Resource Groups](./Netpump_Data_for_Azure_Installation.md#1-create-two-resource-groups-1)
 ##### [2. Add Key Vaults to the Resource Groups](./Netpump_Data_for_Azure_Installation.md#2-add-key-vaults-to-the-resource-groups-1)	
-##### [3. Register the Server Application (Back-end AAD App)]	
+##### [3. Register the Server Application (Back-end AAD App)](./Netpump_Data_for_Azure_Installation.md#3-register-the-server-application-back-end-AAD-App-1)
 ##### [4. Register the Client Application (Front-end AAD App)]	
 ##### [5. Configure Authentication for the Client App]	
 ##### [6. Assign the Admin Role to Yourself (or a Group)]	
