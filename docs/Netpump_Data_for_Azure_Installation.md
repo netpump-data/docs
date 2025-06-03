@@ -176,19 +176,19 @@ Click **Register**. Once created, note the **Application (client) ID** for `Netp
 
 {
 
- 	**"allowedMemberTypes":** [ "User", "Application" ], 
+**"allowedMemberTypes":** [ "User", "Application" ], 
   
-  **"description":** "Administers Netpump servers", 
+**"description":** "Administers Netpump servers", 
   
-  **"displayName":** "ServerAdmin",
+**"displayName":** "ServerAdmin",
   
-  **"id":** "<NEW-GUID>", 
+**"id":** "<NEW-GUID>", 
   
-  **"isEnabled":** true, 
+**"isEnabled":** true, 
   
-  **"value":** "ServerAdmin"
+**"value":** "ServerAdmin"
   
- }
+}
  
 You will also need to verify `“requestedAccessTokenversion”: 2` . If it appears with a NULL value, change the value to “2” as shown.
  
