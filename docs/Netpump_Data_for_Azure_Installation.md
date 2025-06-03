@@ -317,24 +317,41 @@ Why do this? Assigning the ServerAdmin role ensures that only authorized users c
 <br/>
 
 ## 7. Grant Key Vault Access to the Client App
-The Netpump deployment (running under the context of the NetpumpClient app) will need to retrieve secrets (like certificates) from Azure Key Vault. We must grant it the necessary permissions on the Key Vaults: 
+The Netpump deployment (running under the context of the `NetpumpClient` app) will need to retrieve secrets (like certificates) from Azure Key Vault. We must grant it the necessary permissions on the Key Vaults: 
 
-1.	Go to the Key Vaults blade and open the kv-netpump-install vault (the one in the install resource group).
+1.	Go to the **Key Vaults** blade and open the **kv-netpump-install** vault (the one in the install resource group).
 
-2.	In the key vault, under Settings, click Access policies (ensure you are using Vault access policy model, which is default). 
+2.	In the key vault, under **Settings**, click **Access policies** (ensure you are using Vault access policy model, which is default). 
 
-3.	Click + Create (or Add Access Policy). In the Add access policy form:
-•	For Configure from template (optional), you can leave it as “None” (we’ll select permissions manually).
-•	Under Key permissions you can leave unselected (no key needed for now).
-•	Under Secret permissions, select Get and List.
-•	Under Certificate permissions, select Get and List as well. (This will allow the app to retrieve certificate secrets from the vault.)
-•	In the Principal field, click None selected to open the principal picker. Search for NetpumpClient (the name of the app registration we created). You should see it appear (it will have a guid ID associated). Select it and click Select.
-•	Click Add to add this access policy, then Save on the Access Policies page to apply it. 
+3.	Click **+ Create** (or **Add Access Policy**). In the Add access policy form:
 
-4.	(Optional) If you anticipate that the Netpump service will need to access the core vault (kv-netpump-core) at runtime (for example, to fetch cluster certificates stored there),you can repeat the above steps for kv-netpump-core as well. Grant the same Get and List for secrets and certificates to the NetpumpClient principal on that vault. (This step can be done later or as needed; it’s not strictly required for the initial deployment, since we will put our certificate in the install vault.)
-Validation: After saving the access policy, in the Access policies list for kv-netpump-install, you should see an entry for Principal: NetpumpClient with the selected Secret Permissions and Certificate Permissions listed (Get, List). This indicates the client app (and thus our Netpump service) can read secrets from that vault. If you open the kv-netpump-install Overview and click Managed identities, you will not see the app here because we added an access policy directly for the service principal; that's expected. 
+<ol>
 
-Common Pitfall: Selecting the wrong principal or vault. Ensure you picked the NetpumpClient app (not the server app) for the access policy, and that you applied it on the kv-netpump-install vault. A simple mistake here could cause permission issues when the application tries to retrieve secrets later.
+•	For **Configure from template (optional)**, you can leave it as “None” (we’ll select permissions manually).
+
+•	Under **Key permissions** you can leave unselected (no key needed for now).
+
+•	Under **Secret permissions**, select **Get** and **List**.
+
+•	Under **Certificate permissions**, select **Get** and **List** as well. (This will allow the app to retrieve certificate secrets from the vault.)
+
+•	In the **Principal** field, click **None selected** to open the principal picker. Search for **NetpumpClient** (the name of the app registration we created). You should see it appear (it will have a guid ID associated). Select it and click **Select**.
+
+•	Click **Add** to add this access policy, then **Save** on the Access Policies page to apply it. 
+
+</ol>
+
+4.	(Optional) If you anticipate that the Netpump service will need to access the core vault (`kv-netpump-core`) at runtime (for example, to fetch cluster certificates stored there),you can repeat the above steps for `kv-netpump-core` as well. Grant the same **Get** and **List** for secrets and certificates to the **NetpumpClient** principal on that vault. (This step can be done later or as needed; it’s not strictly required for the initial deployment, since we will put our certificate in the install vault.)
+
+<ol>
+
+**Validation:** After saving the access policy, in the **Access policies** list for `kv-netpump-install`, you should see an entry for **Principal: NetpumpClient** with the selected **Secret Permissions** and **Certificate Permissions** listed (Get, List). This indicates the client app (and thus our Netpump service) can read secrets from that vault. If you open the `kv-netpump-install` **Overview** and click **Managed identities**, you will not see the app here because we added an access policy directly for the service principal; that's expected. 
+
+Common Pitfall: Selecting the wrong principal or vault. Ensure you picked the **NetpumpClient** app (not the server app) for the access policy, and that you applied it on the **kv-netpump-install** vault. A simple mistake here could cause permission issues when the application tries to retrieve secrets later.
+
+</ol>
+
+<br/>
 
 ## 8. Generate the SSL Certificate in Key Vault
 Netpump requires an SSL certificate for secure communication. We will generate a self-signed certificate in the Key Vault to use for this purpose: 
