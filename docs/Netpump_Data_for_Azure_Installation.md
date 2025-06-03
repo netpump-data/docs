@@ -460,7 +460,26 @@ Steps
  
 
 [001]: images/installer-gui/001.png
-
+[002]: images/installer-gui/002.png
+[003]: images/installer-gui/003.png
+[004]: images/installer-gui/004.png
+[005]: images/installer-gui/005.png
+[006]: images/installer-gui/006.png
+[007]: images/installer-gui/007.png
+[008]: images/installer-gui/008.png
+[009]: images/installer-gui/009.png
+[010]: images/installer-gui/010.png
+[011]: images/installer-gui/011.png
+[012]: images/installer-gui/012.png
+[013]: images/installer-gui/013.png
+[014]: images/installer-gui/014.png
+[015]: images/installer-gui/015.png
+[016]: images/installer-gui/016.png
+[017]: images/installer-gui/017.png
+[018]: images/installer-gui/018.png
+[019]: images/installer-gui/019.png
+[020]: images/installer-gui/020.png
+[logo]: images/installer-gui/001.png
 
 
 
