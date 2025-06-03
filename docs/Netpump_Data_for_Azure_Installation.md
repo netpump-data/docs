@@ -1,3 +1,5 @@
+ ![Azure Portal][Logo]
+
 # Netpump Data for Azure — Installation
 
 ## Guide
@@ -479,7 +481,7 @@ Steps
 [018]: images/installer-gui/018.png
 [019]: images/installer-gui/019.png
 [020]: images/installer-gui/020.png
-[logo]: images/installer-gui/001.png
+[logo]: images/installer-gui/Logo.png
 
 
 
