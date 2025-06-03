@@ -274,7 +274,11 @@ Now that the two app registrations are created, configure the authentication set
 
 4.	Click **Save** on the Authentication page if it didn't auto-save. The client app is now configured to allow interactive user sign-ins.
 
+<ol>
+
 **Validation:** After saving, you should see the new platform (Web) listed with the URI, and the checkboxes for Access tokens/ID tokens should remain checked. This confirms the client app is ready for user authentication flows. 
+
+</ol>
 
 <br/>
 
