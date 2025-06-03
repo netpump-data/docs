@@ -535,3 +535,4 @@ Congratulations! You have deployed Netpump Data on Azure and configured it end-t
 [018]: images/installer-gui/018.png
 [019]: images/installer-gui/019.png
 [020]: images/installer-gui/020.png
+[Logo]: images/installer-gui/Logo.png
