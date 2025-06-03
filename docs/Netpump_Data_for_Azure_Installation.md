@@ -149,10 +149,15 @@ Next, set up an **Azure AD app registration** to represent the Netpump server cl
 Now create a second Azure AD app registration to serve as the client/front-end application (for the Netpump UI or user interactions): 
 
 <ol>
-
- 1.	In **App registrations**, click **+ New registration** again. Create another app with: 
+ 
+ 1.	In **App registrations**, click **+ New registration** again. Create another app with:
+    
+<ol>  
+ 
 •	Name: `NetpumpClient` (to denote this is the client-facing app). 
+ 
 •	**Supported account types: Accounts in this organizational directory only** (Single tenant). 
+
 •	**Redirect URI**: Leave blank for now (we will configure authentication later).
 
 Click **Register**. Once created, note the **Application (client) ID** for `NetpumpClient` (copy it to your build sheet; you already have the tenant ID from before, which is the same for both apps). 
