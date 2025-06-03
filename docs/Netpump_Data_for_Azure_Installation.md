@@ -9,7 +9,7 @@ This guide provides a foolproof, step-by-step process to deploy Netpump Data on 
 
 Follow the steps in order and use a “build sheet” (e.g. a local text file or spreadsheet) to record important values (IDs, secrets, URLs) as you go. Browser-specific tips, common pitfalls, and validation checks are included to ensure a smooth setup.
 
-### Contents
+## Contents
 
 ##### [Before You Start Quick Checklist](./Netpump_Data_for_Azure_Installation.md#Before-You-Start-Quick-Checklist-1)
 
@@ -31,6 +31,7 @@ Follow the steps in order and use a “build sheet” (e.g. a local text file or
 ##### [16. Post Deployment Validation Confirm Everything is Working](./Netpump_Data_for_Azure_Installation.md#16-Post-Deployment-Validation-Confirm-Everything-is-Working-1)
 ##### [17. Where to Get Help](./Netpump_Data_for_Azure_Installation.md#17-Where-to-Get-Help-1)	
 
+<br/>
 
 ## Before You Start Quick Checklist
 
@@ -43,9 +44,16 @@ Make sure you have the following prerequisites ready before proceeding. You can 
 - **Your public DNS zone (e.g. pump.example.com)**: Required for creating DNS CNAME records later.
 - **A local “build sheet” (spreadsheet or text file) open**: Where you will paste IDs, secrets, and URLs as you obtain them.
 
+<br/>
+
+
 Now, let’s begin the installation step-by-step.
 
+<br/>
+
 ## 1. Create Two Resource Groups
+
+<ol>
 
 ### 1. Create the core resource group: 
 In the Azure Portal, go to **Resource groups** and click **Create**. In the Basics tab of the **Create a resource group form**, enter the following:
@@ -65,11 +73,17 @@ Repeat the above process to create a second resource group named `rg-netpump-ins
 
 Why two resource groups? Separating core resources and installation assets helps with organization and cleanup. The `rg-netpump-core` group will contain the persistent Netpump service resources, while `rg-netpump-install` will contain short-lived setup resources that can be isolated or removed later.
 
+</ol>
+
+<br/>
+
 ## 2. Add Key Vaults to the Resource Groups
 
 You will create two Azure Key Vaults – one in each resource group:
 
-**1. Core Key Vault:** In the `rg-netpump-core` resource group, click + Create and search for Key Vault. Select Key Vault and click Create. In the Key Vault creation form:
+<ol>
+
+**1. Core Key Vault:** In the **rg-netpump-core** resource group, click **+ Create** and search for **Key Vault**. Select Key Vault and click **Create**. In the Key Vault creation form:
 
 - **Key Vault Name**: `kv-netpump-core` (must be globally unique within Azure, usually the prefix plus core is fine).
 
@@ -79,11 +93,18 @@ You will create two Azure Key Vaults – one in each resource group:
 
 Click **Review + Create**, then **Create**. Wait for the Key Vault deployment to succeed.
 
-**2. Install Key Vault:** Repeat the process in the `rg-netpump-install` group. Create a Key Vault named `kv-netpump-install` (same region). Wait for deployment success.
+**2. Install Key Vault:** Repeat the process in the **rg-netpump-install** group. Create a Key Vault named `kv-netpump-install` (same region). Wait for deployment success.
 
 Why two Key Vaults? The core vault (`kv-netpump-core`) is intended to store long-lived secrets like cluster certificates, while the install vault (`kv-netpump-install`) will store short-lived secrets used during the installation process. This separation adds security and clarity.
 
+<ol>
+
 **Validation**: After creation, verify in the portal that **each resource group contains one Key Vault** with the expected name. For example, in `rg-netpump-core` you should see `kv-netpump-core`, and in `rg-netpump-install` you should see `kv-netpump-install`.
+
+</ol>
+</ol>
+
+<br/>
 
 ## 3. Register the Server Application (Back-end AAD App)
 
