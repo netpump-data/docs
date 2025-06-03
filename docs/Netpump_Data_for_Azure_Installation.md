@@ -28,7 +28,7 @@ Before You Start – Quick Checklist
 16. Post-Deployment Validation – Confirm Everything is Working
 17. Where to Get Help	
 
-<filename: Netpump_Data_for_Azure_Installation.md>
+<filename: Netpump_Data_for_Azure_Installation>
 
 ## Tabs {.tabset}
 ### First Tab
