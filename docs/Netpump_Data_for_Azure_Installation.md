@@ -283,19 +283,38 @@ Now that the two app registrations are created, configure the authentication set
 <br/>
 
 ## 6. Assign the Admin Role to Yourself (or a Group)
-Recall we created an app role ServerAdmin in the NetpumpClient app’s manifest. Now we must assign this role to the appropriate user(s) who will administer the Netpump servers (likely you, and/or a group of admins): 
-1.	In the Azure Portal, go to Microsoft Entra ID (Azure AD) and navigate to Enterprise applications (this is the list of service principals for your apps). Locate the application NetpumpClient in the list (you can use the search bar if needed) and click it. 
 
-2.	In the NetpumpClient enterprise application blade, go to Users and groups in the left menu. 
+Recall we created an app role ServerAdmin in the `NetpumpClient` app’s manifest. Now we must assign this role to the appropriate user(s) who will administer the Netpump servers (likely you, and/or a group of admins):
 
-3.	Click + Add user/group at the top. In the Add Assignment pane:
-•	Click Users > None Selected to open the user picker. Find and select your own user account (or an Azure AD group containing the relevant administrators). Click Select.
-•	Now click Roles > None Selected. You should see the ServerAdmin role we created. Select ServerAdmin and click Select.
+1.	In the Azure Portal, go to **Microsoft Entra ID** (Azure AD) and navigate to **Enterprise applications** (this is the list of service principals for your apps). Locate the application **NetpumpClient** in the list (you can use the search bar if needed) and click it. 
+
+2.	In the NetpumpClient enterprise application blade, go to **Users and groups** in the left menu. 
+
+3.	Click **+ Add user/group** at the top. In the Add Assignment pane:
+
+<ol>
+
+•	Click **Users > None Selected** to open the user picker. Find and select your own user account (or an Azure AD group containing the relevant administrators). Click **Select**.
+
+•	Now click **Roles > None Selected**. You should see the **ServerAdmin** role we created. Select **ServerAdmin** and click **Select**.
+
 •	Click Assign to assign the selected user (you) to the ServerAdmin role for the NetpumpClient app. 
 
-4.	After assignment, you can verify it’s in place: the user or group should now be listed under Users and groups with Role showing as ServerAdmin.
-Validation: Refresh the Users and groups page for NetpumpClient. You should see your account (or chosen group) listed with ServerAdmin under the Role column. This means you (or your admins group) now have the elevated role needed to manage Netpump servers via the application. 
+</ol>
+
+4.	After assignment, you can verify it’s in place: the user or group should now be listed under Users and groups with **Role** showing as **ServerAdmin**.
+
+<ol>
+
+**Validation:** Refresh the Users and groups page for NetpumpClient. You should see your account (or chosen group) listed with **ServerAdmin** under the Role column.
+
+This means you (or your admins group) now have the elevated role needed to manage Netpump servers via the application. 
+
 Why do this? Assigning the ServerAdmin role ensures that only authorized users can administer the Netpump Data service. In later steps, when you log into the Netpump interface, the system will check that your account has this role before granting admin access.
+
+</ol>
+
+<br/>
 
 ## 7. Grant Key Vault Access to the Client App
 The Netpump deployment (running under the context of the NetpumpClient app) will need to retrieve secrets (like certificates) from Azure Key Vault. We must grant it the necessary permissions on the Key Vaults: 
