@@ -212,6 +212,8 @@ You will also need to verify `“requestedAccessTokenversion”: 2` . If it appe
 
 </ol>
 
+<br/>
+
 3. Next, grant this client app permission to call the server app’s API:
 
 <ol>
@@ -228,14 +230,27 @@ You will also need to verify `“requestedAccessTokenversion”: 2` . If it appe
 
 **Validation:** After granting consent, the API permission should show the status **Granted for [Your Tenant]**. This indicates the permission is active. If you refresh the API Permissions page, you shouldn’t see a “Not granted” warning anymore. 
 
-4. Lastly for the client app, create a client secret that the Netpump service will use to authenticate as this app: 
-•	In the NetpumpClient app, go to Certificates & secrets. 
-•	Click + New client secret. For Description, enter something like svc-auth (to indicate this secret is for the service authentication). Set an appropriate expiration (e.g., 24 months). 
-•	Click Add. Azure will generate a new secret. Copy the secret’s Value immediately and paste it into your build sheet (e.g., under “Client Secret”). You will not be able to view this value again after you leave the page. 
+<br/>
 
+4. Lastly for the client app, create a **client secret** that the Netpump service will use to authenticate as this app:
+
+<ol>
+   
+•	In the `NetpumpClient` app, go to **Certificates & secrets**.
+
+•	Click **+ New client secret**. For **Description**, enter something like `svc-auth` (to indicate this secret is for the service authentication). Set an appropriate expiration (e.g., 24 months). 
+
+•	Click **Add**. Azure will generate a new secret. **Copy the secret’s Value* immediately and paste it into your build sheet (e.g., under “Client Secret”). **You will not be able to view this value again after you leave the page.**
+
+</ol>
+
+ ![Azure Portal][003]
+
+ Client Secret creation panel with the **secret value visible** (highlight the Value field in the screenshot). This is to show how the secret appears once generated.
  
-Client Secret creation panel with the secret value visible (highlight the Value field in the screenshot). This is to show how the secret appears once generated.
-Common Pitfall: Not copying the secret value right away. If you navigate away, the value will be hidden forever and you’d have to create a new secret. Always store it securely as soon as it’s created.
+**Common Pitfall:** Not copying the secret value right away. If you navigate away, the value will be hidden forever and you’d have to create a new secret. Always store it securely as soon as it’s created.
+
+<br/>
 
 ## 5. Configure Authentication for the Client App
 Now that the two app registrations are created, configure the authentication settings for the client app (NetpumpClient) so that it can be used for user sign-ins (including from the desktop GUI, if used): 
