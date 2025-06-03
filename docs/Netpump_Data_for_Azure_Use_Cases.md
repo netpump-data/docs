@@ -1,3 +1,7 @@
+ ![Azure Portal][Logo]
+
+
+
 # Netpump Data for Azure Use Cases
 
 ## Accelerated Data Transfer Use Cases (Leveraging ~12×Speed Boost)
@@ -59,3 +63,6 @@ Each of these scenarios is enabled or significantly enhanced by Netpump’s perf
 - **Real-time Collaboration on Large Data** – Lets distributed teams work on the same large datasets (geoscience, genomics, etc.) by quickly syncing changes. (Medium Priority)
 
 All these leverage Netpump’s core strength: turning the network “speed limit” from a roadblock into a competitive advantage.
+
+
+[Logo]: images/installer-gui/Logo.png
