@@ -394,33 +394,66 @@ Key Vault Certificate details showing the Secret Identifier URL for the netpump-
 <br/>
 
 ## 9. Create a Storage Account and an SMB File Share
+
 Netpump uses an Azure Storage File Share (SMB share) as part of its data transfer pipeline (for staging data, etc.). We will create a storage account and a file share: 
 
-1.	In Azure Portal, click + Create a resource and search for Storage account. Select Storage account and click Create. 
+1.	In Azure Portal, click **+ Create a resource** and search for **Storage account**. **Select Storage** account and click **Create**. 
 
 2.	In the Create a storage account form (Basics tab):
-•	Subscription: Your subscription.
-•	Resource group: Select rg-netpump-core (the core resource group).
-•	Storage account name: stnetpumpdata (as an example - storage account names must be all lowercase, 3-24 characters, and globally unique. You can use your prefix, e.g., st<prefix>data. If stnetpumpdata is taken, choose a different variation).
-•	Region: (should auto-fill with the resource group’s region, ensure it’s the same region as everything else).
-•	Performance/Redundancy: You can leave the defaults (Standard performance, Locally-redundant storage (LRS) is fine unless your scenario needs geo-redundancy).
+
+<ol>
+
+•	**Subscription:** Your subscription.
+
+•	**Resource group**: Select `rg-netpump-core` (the core resource group).
+
+•	**Storage account name:** `stnetpumpdata` (as an example - storage account names must be all lowercase, 3-24 characters, and globally unique. You can use your prefix, e.g., `st<prefix>data`. If `stnetpumpdata` is taken, choose a different variation).
+
+•	**Region:** (should auto-fill with the resource group’s region, ensure it’s the same region as everything else).
+
+•	**Performance/Redundancy:** You can leave the defaults (Standard performance, Locally-redundant storage (LRS) is fine unless your scenario needs geo-redundancy).
+
 •	Leave other settings at defaults unless you have specific requirements.
 
-Click Review + Create, then Create. Wait for the deployment to finish (it might take a minute for the storage account to be ready). 
+Click **Review + Create**, then **Create**. Wait for the deployment to finish (it might take a minute for the storage account to be ready). 
 
-3.	Once the storage account is created, navigate to the storage account resource(stnetpumpdata). In the left menu under Data storage, click File shares. 
+</ol>
 
-4.	Click + File share. Create a new file share:
-•	Name: data (this will be the share name; you can choose another name but “data” is simple for our guide).
-•	Quota: leave default or set as needed (the default is fine for now).
-Click Create to create the file share. 
+3.	Once the storage account is created, navigate to the storage account resource(stnetpumpdata). In the left menu under **Data storage**, click **File shares**. 
+
+4.	Click **+ File share**. Create a new file share:
+
+<ol>
+
+•	**Name:** `data` (this will be the share name; you can choose another name but “data” is simple for our guide).
+
+•	**Quota:** leave default or set as needed (the default is fine for now).
+
+Click **Create** to create the file share. 
+
+</ol>
 
 5.	Now retrieve the connection string (or at least the key) for the storage account:
-•	In the storage account’s menu, go to Access keys. 
-•	You will see two keys (key1 and key2). Click Show to reveal Key1, and copy the Connection string for Key1. Paste this connection string into your build sheet (label it “Storage connection string”). The connection string contains the storage account name and the key.
-(Alternatively, you can copy the storage account name and key1 value separately into the build sheet. The upcoming deployment will ask for these pieces. The connection string just conveniently packages them, but we will likely input them separately.)
-Validation: Ensure the file share was created by checking the File shares list for an entry named data. Also verify you have the correct storage credentials: the account name and one of its access keys. A quick way is to verify the connection string you copied starts with DefaultEndpointsProtocol=https;AccountName=stnetpumpdata;... and contains AccountKey=... with a long base64 string — that confirms you have the name and key captured. 
-Common Pitfall: Forgetting to create the file share, or copying only the key but not the name. The Netpump service needs both the share name and the key (or connection string) to connect. Make sure you have the share name (data), the storage account name, and the key in your notes.
+
+<ol>
+
+•	In the storage account’s menu, go to **Access keys**.
+
+•	You will see two keys (key1 and key2). Click **Show** to reveal **Key1**, and copy the Connection string for Key1. Paste this connection string into your build sheet (label it “Storage connection string”). The connection string contains the storage account name and the key.
+
+(Alternatively, you can copy the storage **account name** and **key1** value separately into the build sheet. The upcoming deployment will ask for these pieces. The connection string just conveniently packages them, but we will likely input them separately.)
+
+<ol>
+
+**Validation:** Ensure the file share was created by checking the **File shares** list for an entry named `data`. Also verify you have the correct storage credentials: the account name and one of its access keys. A quick way is to verify the connection string you copied starts with `DefaultEndpointsProtocol=https;AccountName=stnetpumpdata;...` and contains `AccountKey=...` with a long base64 string — that confirms you have the name and key captured.
+
+**Common Pitfall:** Forgetting to create the file share, or copying only the key but not the name. The Netpump service needs both the share name and the key (or connection string) to connect. Make sure you have the share name (`data`), the storage account name, and the key in your notes.
+
+</ol>
+
+</ol>
+
+<br/>
 
 ## 10. Deploy Netpump Data from the Azure Marketplace
 With all prerequisites in place (app registrations, Key Vault, certificate, storage, etc.), you can now deploy the Netpump Data service via the Azure Marketplace offering: 
