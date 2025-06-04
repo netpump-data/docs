@@ -913,11 +913,11 @@ Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\
 
 Now that the deployment and configuration are done, perform a few checks to ensure the Netpump Data deployment is healthy:
 
-**Netpump server status endpoint:** Visiting https://pump1.<your-domain>/status (and pump2) returns a JSON response, e.g. { "ready": true }, indicating the server is up and ready. (You may do this in a browser; you might get a basic auth prompt or need to ignore the cert warning again.)
+**Netpump server status endpoint:** Visiting `https://pump1<your-domain>/status` (and `pump2`) returns a JSON response, e.g. `{ "ready": true }`, indicating the server is up and ready. (You may do this in a browser; you might get a basic auth prompt or need to ignore the cert warning again.)
 
 **Test file transfer (Desktop or API):** A file transfer via the Netpump system completes successfully and noticeably faster (e.g., ~20× faster) than a traditional direct SMB transfer of the same file. This demonstrates the acceleration is in effect.
 
-**Azure Portal –Resource health (for the Netpump VMs):** In the Azure Portal, navigate to the Resource health for the Netpump VMs or the managed application. All Netpump virtual machines should show as Available/Healthy (no failures or critical alerts). 
+**Azure Portal –Resource health (for the Netpump VMs):** In the Azure Portal, navigate to the Resource health for the Netpump VMs or the managed application. All Netpump virtual machines should show as **Available/Healthy** (no failures or critical alerts). 
 
 If all the above checks are good, your Netpump Data deployment is successfully up and running! 
 
