@@ -703,8 +703,6 @@ Netpump also provides a Desktop client application for end-users to easily trans
 
 1.	**Request the Netpump Desktop installer:** Click [here](http://netpump.com.au/appdownloads/Netpump_Desktop_App_Setup_412.exe) to download the Windows Desktop installer.
 
-http://netpump.com.au/appdownloads/Netpump_Desktop_App_Setup_412.exe
-
 2.	Run the installer on your machine and follow the prompts to install Netpump Desktop. 
 
 3.	Launch the **Netpump Desktop** application. On first launch, it will prompt you to **Sign in**. Use your Azure AD credentials (the user account that was given the Server Admin role, or any user authorized to use Netpump if applicable). This should trigger a login via your web browser or a pop-up – log in and grant any requested permissions. 
