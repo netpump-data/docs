@@ -617,36 +617,81 @@ Double-check that each field is filled correctly with no typos. This is essentia
 
 </ol>
 
-6.	Click Save Configuration on the configuration page.
+3.	Click **Save Configuration** on the configuration page.
+
+<ol>
+
 •	Once you click Save, the Netpump server will typically attempt to verify these settings and might initiate an authentication flow.
-•	You should be prompted with a Microsoft Entra ID sign-in window (this could be a pop-up or redirect for OAuth consent). Log in with a Global Administrator account for your Azure AD (the same one that has permission to consent to apps).
-•	After signing in, you will see a permission request (because the Netpump server is asking to use the NetpumpClient app’s credentials to access the API or directory). The prompt will likely say something about granting permissions (for example, it might list the Data. Transfer. All scope or other permissions the service needs).
 
-•	Click Accept to grant consent. This is a one-time consent needed to allow the Netpump server to operate with the provided credentials. 
+•	You should be prompted with a Microsoft Entra ID **sign-in window** (this could be a pop-up or redirect for OAuth consent). **Log in with a Global Administrator account** for your Azure AD (the same one that has permission to consent to apps).
 
-4.	After accepting, the page should return to the Netpump UI. Look for a confirmation message at the top of the config page. Ideally, you should see a green banner or text stating “Settings updated successfully” (or similar positive confirmation).
+•	After signing in, you will see a permission request (because the Netpump server is asking to use the `NetpumpClient` app’s credentials to access the API or directory). The prompt will likely say something about granting permissions (for example, it might list the `Data.Transfer.All` scope or other permissions the service needs).
+
+•	Click **Accept** to grant consent. This is a one-time consent needed to allow the Netpump server to operate with the provided credentials. 
+
+</ol>
+
+4.	After accepting, the page should return to the Netpump UI. Look for a confirmation message at the top of the config page. Ideally, you should see a green banner or text stating **“Settings updated successfully”** (or similar positive confirmation).
+
+<ol>
+
 •	If there is an error message instead, re-check the values you entered. A common mistake is an incorrect secret or a mis-typed GUID.
-•	If the page seems to hang after login, ensure that the pop-up was not blocked by your browser. Also ensure you used a Global Admin as standard users might not be allowed to consent depending on your tenant settings. 
+
+•	If the page seems to hang after login, ensure that the pop-up was not blocked by your browser. Also ensure you used a Global Admin as standard users might not be allowed to consent depending on your tenant settings.
+
+</ol>
 
 5.	Now repeat the configuration for the second server:
-•	Visit https://pump2.<your-domain>/config (e.g., https://pump2.pump.example.com/config).
+
+<ol>
+
+•	Visit `https://pump2.<your-domain>/config` (e.g., `https://pump2.pump.example.com/config`).
+
 •	Again, ignore the certificate warning and fill in the exact same values (Tenant ID, Client ID, Secret, Cert URL, SMB path, username, password).
+
 •	Save and again sign in with Global Admin to accept permissions on this server as well. You should get the same “success” indication for pump2. 
+
+</ol>
+
 Each Netpump server in the cluster needs to be configured. If you had more nodes, you’d repeat for each. In our two-node example, you’ve done both. 
 
+<br>
+
  ![Azure Portal][006]
+
+<br>
  
 Netpump server Configuration 
 
-Validation: To confirm that each Netpump server is properly configured, you can navigate to https://pump1.<your-domain>/status (and similarly pump2). This should display a JSON status, for example: 
+<ol>
+
+**Validation:** To confirm that each Netpump server is properly configured, you can navigate to `https://pump1.<your-domain>/status` (and similarly pump2). This should display a JSON status, for example: 
+
 json 
+
 { "ready": true } 
+
 This indicates the server is up and running with the configuration. (You might do this after the next step as well.) 
-Common Pitfalls: 
+
+**Common Pitfalls: **
+
+<ol>
+
 •	Not using a Global Admin for the consent step (resulting in an “insufficient privileges” error). 
+
 •	Browser blocking the sign-in pop-up (ensure pop-ups are allowed for your Netpump site or use a new tab via copy-paste if needed). 
+
 •	Typos in the configuration values (which could lead to an error or the service not being able to connect to Azure resources). 
+
 •	If you encounter issues, you can revisit the config page by navigating to the URL again; it will show the fields (possibly pre-filled if it saved some) and errors if any. 
+
+</ol>
+
+</ol>
+
+</ol>
+
+<br>
 
 ## 13. (Optional) Install the Netpump Desktop GUI for End Users 
 Netpump also provides a Desktop client application for end-users to easily transfer data. If you wish to use/test the end-user experience, you can install this GUI client: 
