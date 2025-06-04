@@ -699,8 +699,6 @@ This indicates the server is up and running with the configuration. (You might d
 
 Netpump also provides a Desktop client application for end-users to easily transfer data. If you wish to use/test the end-user experience, you can install this GUI client: 
 
-<ol>
-
 1.	**Request the Netpump Desktop installer:** Click [here](http://netpump.com.au/appdownloads/Netpump_Desktop_App_Setup_412.exe) to download the Windows Desktop installer.
 
 2.	Run the installer on your machine and follow the prompts to install Netpump Desktop. 
@@ -708,19 +706,36 @@ Netpump also provides a Desktop client application for end-users to easily trans
 3.	Launch the **Netpump Desktop** application. On first launch, it will prompt you to **Sign in**. Use your Azure AD credentials (the user account that was given the Server Admin role, or any user authorized to use Netpump if applicable). This should trigger a login via your web browser or a pop-up – log in and grant any requested permissions. 
 
 4.	Once signed in, you should see the Netpump desktop interface. You can now test transferring data:
-•	Select an Origin service and a Destination service from the options (for example, one could be an on-prem folder or an Azure storage, and the other the Netpump service – refer to Netpump docs for how it appears, but likely the Netpump servers show up as a transfer target).
+
+<ol>
+
+•	Select an **Origin** service and a **Destination** service from the options (for example, one could be an on-prem folder or an Azure storage, and the other the Netpump service – refer to Netpump docs for how it appears, but likely the Netpump servers show up as a transfer target).
+
 •	Choose some files or folders to transfer (the UI might allow you to browse and tick folders).
-•	Click Start Transfer. 
+
+•	Click **Start Transfer**. 
+
+</ol>
 
 5.	Monitor the transfer progress. You should see a progress bar or status indicator. When it's complete, it should show 100% and indicate success for the transfer.
 
+<br>
 
- Netpump Desktop application showing a transfer. This demonstrates that data transfer is working via the Netpump system.
+ ![Azure Portal][007]
+
+<br>
+
+Netpump Desktop application showing a transfer. This demonstrates that data transfer is working via the Netpump system.
+
 This step is optional, but it’s a good end-to-end test that the whole setup (client app, authentication, Netpump servers, and storage) is functioning for real file transfers.
 
-Validation: If the desktop client successfully transfers data and completes with no errors, it means the Netpump service is operating as expected. You could compare the transfer speed to a normal SMB copy to see the improvement (Netpump boasts significantly faster transfer, e.g., “20× faster than baseline SMB copy”). Also, check that the files indeed arrived at the destination (e.g., in the Azure Files share) intact. 
+<ol>
 
+**Validation:** If the desktop client successfully transfers data and completes with no errors, it means the Netpump service is operating as expected. You could compare the transfer speed to a normal SMB copy to see the improvement (Netpump boasts significantly faster transfer, e.g., “20× faster than baseline SMB copy”). Also, check that the files indeed arrived at the destination (e.g., in the Azure Files share) intact. 
 
+</ol>
+
+<br>
 
 ## 14. Install Netpump Data On Premises version for Internal Servers
 Download the Netpump On Premises installer: Click here to download the Windows On Premises installer.
