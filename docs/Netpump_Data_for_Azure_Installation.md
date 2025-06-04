@@ -723,8 +723,6 @@ Netpump also provides a Desktop client application for end-users to easily trans
 
  ![Azure Portal][007]
 
-<br>
-
 Netpump Desktop application showing a transfer. This demonstrates that data transfer is working via the Netpump system.
 
 This step is optional, but it’s a good end-to-end test that the whole setup (client app, authentication, Netpump servers, and storage) is functioning for real file transfers.
@@ -738,10 +736,16 @@ This step is optional, but it’s a good end-to-end test that the whole setup (c
 <br>
 
 ## 14. Install Netpump Data On Premises version for Internal Servers
-Download the Netpump On Premises installer: Click here to download the Windows On Premises installer.
-Installing the Application
+
+**Download the Netpump On Premises installer:** Click [here](http://netpump.com.au/appdownloads/Netpump_Service_Onprem_Setup_412.exe) to download the Windows On Premises installer.
+
+**Installing the Application**
+
+<ol>
+
 1.	Open the downloaded installer file on your local machine.
-2.	Confirm the displayed End User License Agreement. This can also be viewed online at Netpump EULA.
+
+2.	Confirm the displayed End User License Agreement. This can also be viewed online at [Netpump EULA](./Software_Licence_Agreement_(EULA).md).
  
 
 
@@ -753,15 +757,14 @@ Installing the Application
 
 
 
-
-3.	Select components to install.
+4.	Select components to install.
  
-4.	Select to Install as a service.
+5.	Select to Install as a service.
 Select this option to have Netpump Service created as a Windows Service that starts automatically with machine boot.
  
-5.	Select the installation directory.
+6.	Select the installation directory.
  
-6.	Installation is now complete.
+7.	Installation is now complete.
 You may choose to start the service at this time and/or create a Desktop Shortcut.
  
 
