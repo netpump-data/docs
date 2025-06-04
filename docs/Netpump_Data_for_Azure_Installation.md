@@ -829,11 +829,16 @@ You will need to know the following information, which you would have used when 
 <ol>
 
 •	**Tenant ID** of your Azure Active Directory tenant.
+
 •	**Object ID** of your Netpump cluster Enterprise Application (note: the Enterprise Application is different to the App Registration).
-•	**App Role ID** of the Automation role you created during the App Registration
-•	**URLs** of the origin and destination Netpump servers
-•	**Source UNC path** of the file to transfer from the origin server
-•	**Destination UNC path** of where to store the file on the destination server
+
+•	**App Role ID** of the Automation role you created during the App Registration.
+
+•	**URLs** of the origin and destination Netpump servers.
+
+•	**Source UNC path** of the file to transfer from the origin server.
+
+•	**Destination UNC path** of where to store the file on the destination server.
 
 </ol>
 
@@ -882,15 +887,23 @@ You will need to know the following information, which you would have used when 
   ![Azure Portal][019]
  
 13.	Edit the Runbook and enter the following script, replacing the parameters with your origin and destination server URLs and your origin and destination UNC paths:
-Connect-AzAccount -Identity
+
+`Connect-AzAccount -Identity
+
 Import-Module Netpump
-Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\YOUR-UNC\YOUR-SHARE\YOUR-FOLDER -OriginService https://YOUR-URL -Paths \\YOUR-UNC\YOUR-SHARE\YOUR-SOURCE-FILE
-15.	Click Publish
-16.	Click Start, and Yes to confirm
+
+Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\YOUR-UNC\YOUR-SHARE\YOUR-FOLDER -OriginService https://YOUR-URL -Paths \\YOUR-UNC\YOUR-SHARE\YOUR-SOURCE-FILE`
+
+14.	Click **Publish**.
+    
+15.	Click **Start**, and **Yes** to confirm.
+
+  ![Azure Portal][020]
  
-17.	Your file is copied from the source to the destination via Netpump
+16.	Your file is copied from the source to the destination via Netpump
 
 ## 16. Post Deployment Validation Confirm Everything is Working
+
 Now that the deployment and configuration are done, perform a few checks to ensure the Netpump Data deployment is healthy:
 Check	Expected Result
 Netpump server status endpoint	Visiting https://pump1.<your-domain>/status (and pump2) returns a JSON response, e.g. { "ready": true }, indicating the server is up and ready. (You may do this in a browser; you might get a basic auth prompt or need to ignore the cert warning again.)
