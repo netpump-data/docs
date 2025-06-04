@@ -782,7 +782,7 @@ You may choose to start the service at this time and/or create a Desktop Shortcu
 
 If created as a service the Netpump Service will start automatically on machine boot. To start/stop manually load Service and search for NetpumpService.
 
- ![Azure Portal][013]
+ ![Azure Portal][012a]
  
 If not created as a service the Netpump Service can be started by clicking the Desktop Shortcut or executable 'netPump.Service.exe' file in the install directory.
 
