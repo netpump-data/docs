@@ -741,39 +741,56 @@ This step is optional, but it’s a good end-to-end test that the whole setup (c
 
 **Installing the Application**
 
-<ol>
-
 1.	Open the downloaded installer file on your local machine.
 
 2.	Confirm the displayed End User License Agreement. This can also be viewed online at [Netpump EULA](./Software_Licence_Agreement_(EULA).md).
+
+<br>
  
+ ![Azure Portal][008]
 
+3.	Select components to install.
 
+ ![Azure Portal][009]
 
-
-
-
-
-
-
-
-4.	Select components to install.
+ <br>
  
-5.	Select to Install as a service.
+4.	Select to Install as a service.
+	
 Select this option to have Netpump Service created as a Windows Service that starts automatically with machine boot.
- 
-6.	Select the installation directory.
- 
-7.	Installation is now complete.
-You may choose to start the service at this time and/or create a Desktop Shortcut.
- 
 
-Starting the Application
+ ![Azure Portal][010]
+
+ <br>
+ 
+ 
+5.	Select the installation directory.
+
+  ![Azure Portal][011]
+
+<br>
+ 
+6.	Installation is now complete.
+
+You may choose to start the service at this time and/or create a Desktop Shortcut.
+
+  ![Azure Portal][012]
+
+<br>
+
+**Starting the Application**
+
 If created as a service the Netpump Service will start automatically on machine boot. To start/stop manually load Service and search for NetpumpService.
+
+ ![Azure Portal][013]
  
 If not created as a service the Netpump Service can be started by clicking the Desktop Shortcut or executable 'netPump.Service.exe' file in the install directory.
-Accessing the Netpump Service Administrator Page
+
+**Accessing the Netpump Service Administrator Page**
+
 Once the service has started, double click the created Desktop Short or executable file 'netPump.Service,exe' in the install directory. This will activate the Netpump Service Administrator Page. See section 12. Configure Each Netpump Server via the Admin UI above for configuration instructions.
+
+<br>
 
 ## 15. Use of PowerShell for Scripting Functions
 Netpump file transfers can be initiated programmatically over an HTTPS REST API. We supply a PowerShell module that provides a convenient interface to make these API calls using the Start-NetpumpTransfer command.
