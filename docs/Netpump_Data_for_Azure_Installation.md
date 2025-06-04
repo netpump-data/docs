@@ -580,24 +580,44 @@ You can use the DNS management interface of your DNS provider or Azure DNS zone 
 <br>
 
 ## 12. Configure Each Netpump Server via the Admin UI
+
 At this stage, the infrastructure is up, but each Netpump server instance needs to be configured with the settings (the IDs, secrets, and resource information you prepared). Netpump provides a configuration web interface on each server for initial setup: 
 
-1.	Open a web browser and navigate to the configuration page of the first server: https://pump1.<your-domain>/config (for example, https://pump1.pump.example.com/config). Because we are using a self-signed certificate (generated in Key Vault), your browser will likely show a security/Certificate Warning (the certificate won’t be trusted by your browser). Proceed/ignore the certificate warning to continue to the site:
-•	In Chrome/Edge, you may need to click Advanced and then Continue to site.
-•	In Firefox, you might add an exception.
-•	If the page fails to load, double-check your DNS is resolving correctly, and that the URL is https:// (SSL) and not http. The Netpump UI likely requires HTTPS. 
+1.	Open a web browser and navigate to the configuration page of the first server: `https://pump1.<your-domain>/config` (for example, `https://pump1.pump.example.com/config`). Because we are using a self-signed certificate (generated in Key Vault), your browser will likely show a security/Certificate Warning (the certificate won’t be trusted by your browser). **Proceed/ignore the certificate warning** to continue to the site:
 
-2.	You should see a Netpump Configuration page (a form) on pump1. Now, fill in all fields on the form using the values from your build sheet:
-•	Tenant ID: The Azure AD Directory (Tenant) ID (GUID).
-•	Client ID: The Application (Client) ID of your NetpumpClient app registration.
-•	Client Secret: The client secret value you created for NetpumpClient.
-•	Certificate URL: The Key Vault Secret Identifier URL for netpump-tls (the one you copied in step 8).
-•	SMB Share Path: \\<storage-account-name>.file.core.windows.net\<share> – in our example, \\stnetpumpdata.file.core.windows.net\data. (This is the UNC path to the Azure file share you created.)
-•	SMB Username: Azure\<storage-account-name> – for example, Azure\stnetpumpdata. (When connecting to an Azure Files share via SMB, the username is the word "Azure" followed by a backslash and the storage account name.)
-•	SMB Password: The Storage account key (Key1 that you copied). This serves as the password for the SMB share. 
+<ol>
+
+•	In Chrome/Edge, you may need to click **Advanced** and then **Continue to site**.
+
+•	In Firefox, you might add an exception.
+
+•	If the page fails to load, double-check your DNS is resolving correctly, and that the URL is `https://` (SSL) and not `http`. The Netpump UI likely requires HTTPS. 
+
+</ol>
+
+2.	You should see a **Netpump Configuration** page (a form) on pump1. Now, fill in **all fields** on the form using the values from your build sheet:
+
+<ol>
+
+•	**Tenant ID:** The Azure AD Directory (Tenant) ID (GUID).
+
+•	**Client ID:** The Application (Client) ID of your NetpumpClient app registration.
+
+•	**Client Secret:** The client secret value you created for NetpumpClient.
+
+•	**Certificate URL:** The Key Vault Secret Identifier URL for netpump-tls (the one you copied in step 8).
+
+•	**SMB Share Path:** `\\<storage-account-name>.file.core.windows.net\<share>` – in our example, `\\stnetpumpdata.file.core.windows.net\data`. (This is the UNC path to the Azure file share you created.)
+
+•	**SMB Username:** Azure\<storage-account-name> – for example, `Azure\stnetpumpdata`. (When connecting to an Azure Files share via SMB, the username is the word "Azure" followed by a backslash and the storage account name.)
+
+•	**SMB Password:** The Storage account key (Key1 that you copied). This serves as the password for the SMB share. 
+
 Double-check that each field is filled correctly with no typos. This is essentially the same info you provided during deployment, but now directly in the app’s config. 
 
-3.	Click Save Configuration on the configuration page.
+</ol>
+
+6.	Click Save Configuration on the configuration page.
 •	Once you click Save, the Netpump server will typically attempt to verify these settings and might initiate an authentication flow.
 •	You should be prompted with a Microsoft Entra ID sign-in window (this could be a pop-up or redirect for OAuth consent). Log in with a Global Administrator account for your Azure AD (the same one that has permission to consent to apps).
 •	After signing in, you will see a permission request (because the Netpump server is asking to use the NetpumpClient app’s credentials to access the API or directory). The prompt will likely say something about granting permissions (for example, it might list the Data. Transfer. All scope or other permissions the service needs).
@@ -613,6 +633,8 @@ Double-check that each field is filled correctly with no typos. This is essentia
 •	Again, ignore the certificate warning and fill in the exact same values (Tenant ID, Client ID, Secret, Cert URL, SMB path, username, password).
 •	Save and again sign in with Global Admin to accept permissions on this server as well. You should get the same “success” indication for pump2. 
 Each Netpump server in the cluster needs to be configured. If you had more nodes, you’d repeat for each. In our two-node example, you’ve done both. 
+
+ ![Azure Portal][006]
  
 Netpump server Configuration 
 
