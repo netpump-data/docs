@@ -782,7 +782,7 @@ You may choose to start the service at this time and/or create a Desktop Shortcu
 
 If created as a service the Netpump Service will start automatically on machine boot. To start/stop manually load Service and search for NetpumpService.
 
- ![Azure Portal][012a]
+  ![Azure Portal][012a]
  
 If not created as a service the Netpump Service can be started by clicking the Desktop Shortcut or executable 'netPump.Service.exe' file in the install directory.
 
@@ -793,29 +793,51 @@ Once the service has started, double click the created Desktop Short or executab
 <br>
 
 ## 15. Use of PowerShell for Scripting Functions
+
 Netpump file transfers can be initiated programmatically over an HTTPS REST API. We supply a PowerShell module that provides a convenient interface to make these API calls using the Start-NetpumpTransfer command.
-Authentication
-The Netpump PowerShell script depends on Microsoft's Az PowerShell module.
-Your PowerShell environment must call Connect-AzAccount to authenticate prior to calling Start-NetpumpTransfer.
+
+**Authentication**
+
+The Netpump PowerShell script depends on Microsoft's [Az PowerShell](https://learn.microsoft.com/en-us/powershell/azure/install-azure-powershell?view=azps-10.3.0) module.
+
+Your PowerShell environment must call [Connect-AzAccount](https://learn.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-10.3.0) to authenticate prior to calling Start-NetpumpTransfer.
+
 The Azure account you use must have the Automation role for the Netpump Server App Registration in Azure.
-Netpump module
-The module is contained in Netpump.zip. Extract this zip file and use the PowerShell command Import-Module .\Netpump.psm1 to import it.
-The Start-NetpumpTransfer command starts a transfer.
+
+**Netpump module**
+
+The module is contained in [Netpump.zip](https://github.com/netpump-data/docs/blob/main/docs/Netpump.zip)). Extract this zip file and use the PowerShell command Import-Module .\Netpump.psm1 to import it.
+
+The `Start-NetpumpTransfer` command starts a transfer.
+
 Run Get-Help Start-NetpumpTransfer to see further documentation.
-Walkthrough: Azure Automation Runbook
+
+**Walkthrough: Azure Automation Runbook**
+
 In this example we will create an Azure Automation Runbook to initiate a Netpump file transfer.
+
 We will create the Automation Account, grant the Automation Account's Service Principal permission to use the Netpump cluster, create a simple Runbook, and transfer a file.
-Prerequisites
+
+**Prerequisites**
+
 You will need two Netpump servers in a Netpump cluster already set up.
-For the initial setup, you will need PowerShell with the Microsoft.Graph module installed. (Run Install-Module Microsoft.Graph -Scope CurrentUser, or see Microsoft.Graph documentation for further installation options.)
+
+For the initial setup, you will need **PowerShell** with the **Microsoft.Graph** module installed. (Run `Install-Module Microsoft.Graph -Scope CurrentUser`, or see [Microsoft.Graph documentation](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0) for further installation options.)
+
 You will need to know the following information, which you would have used when setting up your Netpump servers:
-•	Tenant ID of your Azure Active Directory tenant.
-•	Object ID of your Netpump cluster Enterprise Application (note: the Enterprise Application is different to the App Registration).
-•	App Role ID of the Automation role you created during the App Registration
-•	URLs of the origin and destination Netpump servers
-•	Source UNC path of the file to transfer from the origin server
-•	Destination UNC path of where to store the file on the destination server
-Steps
+
+<ol>
+
+•	**Tenant ID** of your Azure Active Directory tenant.
+•	**Object ID** of your Netpump cluster Enterprise Application (note: the Enterprise Application is different to the App Registration).
+•	**App Role ID** of the Automation role you created during the App Registration
+•	**URLs** of the origin and destination Netpump servers
+•	**Source UNC path** of the file to transfer from the origin server
+•	**Destination UNC path** of where to store the file on the destination server
+
+</ol>
+
+**Steps**
 1.	Download Netpump.zip which contains the PowerShell module. You will upload this to the Azure Automation Account later in this walkthrough.
 2.	In Azure Portal, create a new Automation Account
  
@@ -896,6 +918,7 @@ Congratulations! You have deployed Netpump Data on Azure and configured it end-t
 [010]: images/installer-gui/010.png
 [011]: images/installer-gui/011.png
 [012]: images/installer-gui/012.png
+[012a]: images/installer-gui/012a.png
 [013]: images/installer-gui/013.png
 [014]: images/installer-gui/014.png
 [015]: images/installer-gui/015.png
