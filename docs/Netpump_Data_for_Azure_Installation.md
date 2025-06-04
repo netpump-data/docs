@@ -869,10 +869,13 @@ You will need to know the following information, which you would have used when 
 
   ![Azure Portal][015]
 
+<br>
  
 9.	Back in the **Automation Account**, click in the **Modules** section in the left menu and click **Add a Module**.
  
   ![Azure Portal][016]
+
+<br>
 
 10.	**Upload** the `Netpump.zip` file and choose 5.1 for the PowerShell version. Click **Import**.
 
@@ -881,6 +884,8 @@ You will need to know the following information, which you would have used when 
 11.	Go to the **Runbooks section** in the left menu and click **Create a runbook**.
 
    ![Azure Portal][018]
+
+<br>
 
 12.	Choose a name for the runbook, type of PowerShell, version 5.1, and click **Create**.
 
@@ -902,38 +907,49 @@ Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\
  
 16.	Your file is copied from the source to the destination via Netpump
 
+<br>
+
 ## 16. Post Deployment Validation Confirm Everything is Working
 
 Now that the deployment and configuration are done, perform a few checks to ensure the Netpump Data deployment is healthy:
-Check	Expected Result
-Netpump server status endpoint	Visiting https://pump1.<your-domain>/status (and pump2) returns a JSON response, e.g. { "ready": true }, indicating the server is up and ready. (You may do this in a browser; you might get a basic auth prompt or need to ignore the cert warning again.)
-Test file transfer (Desktop or API)	A file transfer via the Netpump system completes successfully and noticeably faster (e.g., ~20× faster) than a traditional direct SMB transfer of the same file. This demonstrates the acceleration is in effect.
-Azure Portal –Resource health (for the Netpump VMs)	In the Azure Portal, navigate to the Resource health for the Netpump VMs or the managed application. All Netpump virtual machines should show as Available/Healthy (no failures or critical alerts). 
+
+**Netpump server status endpoint:** Visiting https://pump1.<your-domain>/status (and pump2) returns a JSON response, e.g. { "ready": true }, indicating the server is up and ready. (You may do this in a browser; you might get a basic auth prompt or need to ignore the cert warning again.)
+
+**Test file transfer (Desktop or API):** A file transfer via the Netpump system completes successfully and noticeably faster (e.g., ~20× faster) than a traditional direct SMB transfer of the same file. This demonstrates the acceleration is in effect.
+
+**Azure Portal –Resource health (for the Netpump VMs):** In the Azure Portal, navigate to the Resource health for the Netpump VMs or the managed application. All Netpump virtual machines should show as Available/Healthy (no failures or critical alerts). 
 
 If all the above checks are good, your Netpump Data deployment is successfully up and running! 
+
 If any check fails or if you encounter errors at any step:
-•	Revisit your configurations: The most common culprits are an incorrect Client Secret, an incorrect Certificate URL, or a wrong Storage account key. Even a single character off will cause authentication to fail.
+
+<ol>
+
+•	**Revisit your configurations:** The most common culprits are an incorrect **Client Secret**, an incorrect **Certificate URL**, or a wrong **Storage account key**. Even a single character off will cause authentication to fail.
+
 •	Make sure the Azure AD apps have the correct permissions and consent. If the status endpoint isn’t ready, it might be an auth issue – check the application’s log (if accessible) or re-run the config step and consent.
+
 •	You can also redeploy or rotate secrets if needed (for example, generate a new client secret and update the config) in case a secret was lost.
 
+</ol>
+
+<br>
+
 ## 17. Where to Get Help
+
 If you need further assistance or run into issues that you cannot resolve, use these resources:
-•	Pacbyte Support Slack: Join the #netpump-azure channel on Slack (if provided by your organization or the vendor) to ask questions to the support team and community.
-•	Netpump Data Documentation: Refer to the official docs at the Netpump Data GitHub Docs for more detailed guides, troubleshooting tips, and updates.
-•	EULA and Additional Info: Review the End User License Agreement (EULA) and additional notes in the documentation (e.g., the file Netpump-EULA.pdf in the docs repository) to understand usage terms. 
 
-Congratulations! You have deployed Netpump Data on Azure and configured it end-to-end. Your new data transfer service is ready to use. Enjoy significantly faster data transfers and remember to monitor the system and rotate secrets/certificates as needed for security maintenance. If you ever need to redo the setup or add another Netpump cluster, you can follow this guide again with new app registrations and resources (consider using a new prefix for multiple deployments). Happy pumping!
+<ol>
 
+•	**Pacbyte Support Slack:** Join the `#netpump-azure` channel on Slack (if provided by your organization or the vendor) to ask questions to the support team and community.
 
+•	**Netpump Data Documentation:** Refer to the official docs at the Netpump Data GitHub Docs for more detailed guides, troubleshooting tips, and updates.
 
+•	**EULA and Additional Info:** Review the End User License Agreement (EULA) and additional notes in the documentation (e.g., the file Netpump-EULA.pdf in the docs repository) to understand usage terms. 
 
+</ol>
 
-
-
-
-
-
-
+**Congratulations!** You have deployed Netpump Data on Azure and configured it end-to-end. Your new data transfer service is ready to use. Enjoy significantly faster data transfers and remember to monitor the system and rotate secrets/certificates as needed for security maintenance. If you ever need to redo the setup or add another Netpump cluster, you can follow this guide again with new app registrations and resources (consider using a new prefix for multiple deployments). Happy pumping!
 
 
 [001]: images/installer-gui/001.png
