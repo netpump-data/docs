@@ -806,7 +806,7 @@ The Azure account you use must have the Automation role for the Netpump Server A
 
 **Netpump module**
 
-The module is contained in [Netpump.zip](https://github.com/netpump-data/docs/blob/main/docs/Netpump.zip)). Extract this zip file and use the PowerShell command Import-Module .\Netpump.psm1 to import it.
+The module is contained in [Netpump.zip](https://github.com/netpump-data/docs/blob/main/docs/Netpump.zip). Extract this zip file and use the PowerShell command Import-Module .\Netpump.psm1 to import it.
 
 The `Start-NetpumpTransfer` command starts a transfer.
 
@@ -838,40 +838,57 @@ You will need to know the following information, which you would have used when 
 </ol>
 
 **Steps**
-1.	Download Netpump.zip which contains the PowerShell module. You will upload this to the Azure Automation Account later in this walkthrough.
+
+1.	Download [Netpump.zip](https://github.com/netpump-data/docs/blob/main/docs/Netpump.zip) which contains the PowerShell module. You will upload this to the Azure Automation Account later in this walkthrough.
+
 2.	In Azure Portal, create a new Automation Account
+
+  ![Azure Portal][013]
+
  
 3.	Go to the newly created Automation Account
+	
 4.	Click in the Identity section in the left menu and copy the Object (principal) ID to the clipboard
+
+  ![Azure Portal][014]
+
+<br>
  
-5.	Run PowerShell on your local computer
-6.	At the PowerShell prompt, run Connect-MgGraph -TenantId $tenantId -Scopes "User.Read","Application.ReadWrite.All"
-7.	At the PowerShell prompt, run New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -PrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -ResourceId $NETPUMP_ENTERPRISE_APP_OBJECT_ID -AppRoleId $AUTOMATION_APP_ROLE_ID. Replace each of the $VARIABLEs in this command with your actual values, which will all be GUIDs in the format 00000000-0000-0000-0000-000000000000.
-8.	To confirm that the above command was successful, check the Enterprise Application for your Netpump cluster, on the Users and groups page, the name of your Automation Account should now appear in the list.
+5.	Run **PowerShell** on your local computer
+
+6.	At the PowerShell prompt, **run** `Connect-MgGraph -TenantId $tenantId -Scopes "User.Read","Application.ReadWrite.All"`
+
+7.	At the PowerShell prompt, **run** `New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -PrincipalId $SERVICE_PRINCIPAL_OBJECT_ID -ResourceId $NETPUMP_ENTERPRISE_APP_OBJECT_ID -AppRoleId $AUTOMATION_APP_ROLE_ID`. **Replace** each of the **$VARIABLEs** in this command with your actual values, which will all be GUIDs in the format `00000000-0000-0000-0000-000000000000`.
+
+8.	To confirm that the above command was successful, check the **Enterprise Application** for your `Netpump cluster`, on the **Users and groups page**, the name of your **Automation Account** should now appear in the list.
+
+  ![Azure Portal][015]
+
  
-9.	Back in the Automation Account, click in the Modules section in the left menu and click Add a Module
+9.	Back in the **Automation Account**, click in the **Modules** section in the left menu and click **Add a Module**.
  
+  ![Azure Portal][016]
 
+10.	**Upload** the `Netpump.zip` file and choose 5.1 for the PowerShell version. Click **Import**.
 
-
-
-
-
-10.	Upload the Netpump.zip file and choose 5.1 for the PowerShell version. Click Import.
+  ![Azure Portal][017]
  
-11.	Go to the Runbooks section in the left menu and click Create a runbook.
- 
+11.	Go to the **Runbooks section** in the left menu and click **Create a runbook**.
 
-12.	Choose a name for the runbook, type of PowerShell, version 5.1, and click Create.
+   ![Azure Portal][018]
+
+12.	Choose a name for the runbook, type of PowerShell, version 5.1, and click **Create**.
+
+  ![Azure Portal][019]
  
 13.	Edit the Runbook and enter the following script, replacing the parameters with your origin and destination server URLs and your origin and destination UNC paths:
 Connect-AzAccount -Identity
 Import-Module Netpump
 Start-NetpumpTransfer -DestinationService https://YOUR-URL -DestinationFolder \\YOUR-UNC\YOUR-SHARE\YOUR-FOLDER -OriginService https://YOUR-URL -Paths \\YOUR-UNC\YOUR-SHARE\YOUR-SOURCE-FILE
-14.	Click Publish
-15.	Click Start, and Yes to confirm
+15.	Click Publish
+16.	Click Start, and Yes to confirm
  
-16.	Your file is copied from the source to the destination via Netpump
+17.	Your file is copied from the source to the destination via Netpump
 
 ## 16. Post Deployment Validation Confirm Everything is Working
 Now that the deployment and configuration are done, perform a few checks to ensure the Netpump Data deployment is healthy:
