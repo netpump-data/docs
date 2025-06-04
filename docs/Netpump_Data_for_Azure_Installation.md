@@ -543,23 +543,41 @@ Double-check each value carefully. **Typos in these values are the #1 cause of d
 
 Once the Netpump managed application is deployed, it will provide output values (such as the fully qualified domain names of the Netpump server VMs). We will use these to set up friendly DNS names: 
 
-1.	In the Azure Portal, navigate to the resource group rg-netpump-core where you deployed Netpump. You should see a resource of type Managed Application (or it might appear as a group of resources labelled with the application name you gave, e.g.,netpump-prod).
+1.	In the Azure Portal, navigate to the resource group `rg-netpump-core` where you deployed Netpump. You should see a resource of type **Managed Application** (or it might appear as a group of resources labelled with the application name you gave, e.g.,`netpump-prod`).
 
 2.	Click on the Netpump managed application resource (it might have the same name you provided as “Application Name”). In its overview or left-hand menu, find Outputs. (If it’s a classic ARM template deployment, you might instead go to the Deployments section and check the output there.) 
 
 3.	In the Outputs, identify the fully qualified domain names (FQDNs) for the Netpump server instances. For example, you might see outputs like:
-•	pump0_FQDN : netpump-0.westeurope.cloudapp.azure.com
-•	pump1_FQDN : netpump-1.westeurope.cloudapp.azure.com 
+
+<ol>
+
+•	`pump0_FQDN` : `netpump-0.westeurope.cloudapp.azure.com`
+
+•	`pump1_FQDN` : `netpump-1.westeurope.cloudapp.azure.com` 
+
 (Your naming might differ, but essentially there will be one FQDN for each VM in the cluster.) Copy these FQDNs to your build sheet or make note of them. 
 
-4.	Now, configure DNS CNAME records in your public DNS zone (the one you identified earlier, e.g., pump.example.com) to map friendly names to these Azure FQDNs:
-•	For the first server: create a CNAME record with Name pump1 (for example) and Value set to the first FQDN (netpump-0.westeurope.cloudapp.azure.com or as appropriate).
-•	For the second server: create a CNAME with Name pump2 pointing to the second FQDN.
-This will allow users to access the servers via e.g. pump1.your-domain.com and pump2.your-domain.com. (If your DNS zone is exactly pump.example.com, then pump1.pump.example.com will be the full address.)
-You can use the DNS management interface of your DNS provider or Azure DNS zone to add these records. In Azure DNS, you would go to your DNS zone resource and use + Record set to add CNAMEs.
+</ol>
 
-Validation: After adding the records, test name resolution. Open a command prompt or terminal and ping pump1.your-domain.com (replace with your actual domain). It should resolve to an Azure IP (you may not get ping replies if ICMP is blocked, but the resolution should show the cloudapp.azure.com address). This confirms your DNS is set up. Keep in mind DNS propagation might take a few minutes depending on your TTL. 
-Note: We use CNAMEs so that the Azure-provided domain (which points to the VM’s IP) is aliased behind your friendly name. If your organization manages DNS differently, ensure the Netpump servers are reachable via some DNS names that you can use internally.
+4.	Now, configure DNS **CNAME** records in your public DNS zone (the one you identified earlier, e.g., `pump.example.com`) to map friendly names to these Azure FQDNs:
+
+<ol>
+
+•	For the first server: create a CNAME record with **Name** `pump1` (for example) and Value set to the first FQDN (`netpump-0.westeurope.cloudapp.azure.com` or as appropriate).
+
+•	For the second server: create a CNAME with **Name** `pump2` pointing to the second FQDN.
+
+This will allow users to access the servers via e.g. `pump1.your-domain.com` and `pump2.your-domain.com`. (If your DNS zone is exactly `pump.example.com`, then `pump1.pump.example.com` will be the full address.)
+
+You can use the DNS management interface of your DNS provider or Azure DNS zone to add these records. In Azure DNS, you would go to your DNS zone resource and use **+ Record** set to add CNAMEs.
+
+**Validation:** After adding the records, test name resolution. Open a command prompt or terminal and `ping pump1.your-domain.com` (replace with your actual domain). It should resolve to an Azure IP (you may not get ping replies if ICMP is blocked, but the resolution should show the cloudapp.azure.com address). This confirms your DNS is set up. Keep in mind DNS propagation might take a few minutes depending on your TTL. 
+
+**Note:** We use CNAMEs so that the Azure-provided domain (which points to the VM’s IP) is aliased behind your friendly name. If your organization manages DNS differently, ensure the Netpump servers are reachable via some DNS names that you can use internally.
+
+</ol>
+
+<br>
 
 ## 12. Configure Each Netpump Server via the Admin UI
 At this stage, the infrastructure is up, but each Netpump server instance needs to be configured with the settings (the IDs, secrets, and resource information you prepared). Netpump provides a configuration web interface on each server for initial setup: 
